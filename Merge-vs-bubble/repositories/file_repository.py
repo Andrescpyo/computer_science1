@@ -20,3 +20,20 @@ class FileRepository:
             file.write("\n".join(map(str, numbers)))
 
         print(f"File '{filename}' saved successfully.")
+
+    @staticmethod
+    def load_numbers(filename: str) -> list[int]:
+        """Loads a list of numbers from a text file.
+
+        Args:
+            filename (str): Name of the file.
+
+        Returns:
+            list[int]: List of numbers loaded from the file.
+        """
+        file_path = os.path.join(FileRepository.DATA_PATH, filename)
+
+        with open(file_path, "r", encoding="utf-8") as file:
+            numbers = list(map(int, file.readlines()))
+
+        return numbers
