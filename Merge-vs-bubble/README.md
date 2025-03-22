@@ -1,19 +1,31 @@
-# Merge-vs-bubble
+# Merge Sort vs. Bubble Sort
 
-## Merge
+## Merge Sort
 
-Merge is a simple algorithm that takes two sorted lists and merges them into a single sorted list. It is a recursive algorithm, meaning that it breaks down the problem into smaller subproblems until it reaches the base case. The base case is when the two lists are empty, in which case, they are considered to be merged into a single list.
+Merge Sort is an efficient and stable sorting algorithm that follows the "divide and conquer" paradigm. It divides the input list into smaller sublists, sorts them recursively, and then merges them to produce a sorted list.
 
-The merge algorithm works by comparing the first elements of the two lists and selecting the smaller one to be the first element of the merged list. It then compares the second elements of the two lists and selects the smaller one to be the second element of the merged list. This process is repeated until one of the lists is empty, at which point the remaining elements of the other list are appended to the merged list.
+The Merge Sort algorithm works by dividing the list into halves until each sublist contains a single element (or is empty). Then, it merges these sublists in a sorted manner to produce a final sorted list.
 
-Here is an example of the merge algorithm in action:
+Here is an overview of the Merge Sort algorithm:
 
+1.  Divide the list into halves recursively until each sublist contains a single element.
+2.  Merge the sublists in a sorted manner.
+
+Example of Merge Sort (simplified to show the concept):
 ```
-Input: L1 = [3, 5, 8], L2 = [2, 4, 6]
-Output: [2, 3, 4, 5, 6, 8]
+Input: [5, 3, 8, 4, 2]
+
+Divide: [5, 3, 8] [4, 2]
+Divide: [5] [3, 8] [4] [2]
+Divide: [5] [3] [8] [4] [2]
+Merge: [3, 5] [8] [2, 4]
+Merge: [3, 5, 8] [2, 4]
+Merge: [2, 3, 4, 5, 8] 
+
+Output: [2, 3, 4, 5, 8]
 ```
 
-In this example, the first element of L1 is 3, which is smaller than the first element of L2. Therefore, the first element of the merged list is 2. The second element of L1 is 5, which is smaller than the second element of L2. Therefore, the second element of the merged list is 3. The third element of L1 is 8, which is greater than the third element of L2. Therefore, the third element of the merged list is 4. The fourth element of L1 is 2, which is smaller than the fourth element of L2. Therefore, the fourth element of the merged list is 5. The fifth element of L1 is 4, which is smaller than the fifth element of L2. Therefore, the fifth element of the merged list is 6. The sixth element of L1 is 6, which is greater than the sixth element of L2. Therefore, the sixth element of the merged list is 8. The seventh element of L1 is 8, which is greater than the seventh element of L2. Therefore, the seventh element of the merged list is 8.
+In this example, the Merge Sort algorithm is used to sort the list [5, 3, 8, 4, 2] and for each step, it divides the list into halves and merges the sublists in a sorted manner.
 
 ## Bubble Sort
 
@@ -32,36 +44,31 @@ In this example, the algorithm compares the first two elements of the list, 5 an
 
 ## Time Complexity
 
-The time complexity of the merge algorithm is O(n), where n is the number of elements in the two sorted lists. This is because the algorithm needs to compare each element of the two lists and select the smaller one to be the first element of the merged list. The time complexity of the bubble sort algorithm is also O(n), where n is the number of elements in the list. This is because the algorithm needs to compare each element of the list and swap them if they are in the wrong order.
+-   **Merge Sort:** The time complexity of Merge Sort is O(n log n) in all cases (worst, average, and best).
+-   **Bubble Sort:** The time complexity of Bubble Sort is O(n^2) in the average and worst cases, and O(n) in the best case (already sorted list).
 
 ## Space Complexity
 
-The space complexity of the merge algorithm is O(n), where n is the number of elements in the two sorted lists.This is because the algorithm needs to create a new list to store the merged elements. The space complexity of the bubble sort algorithm is also O(1), because it only requires a constant amount of additional space to store temporary variables.
+-   **Merge Sort:** The space complexity of Merge Sort is O(n) due to the additional space required for the sublists during merging.
+-   **Bubble Sort:** The space complexity of Bubble Sort is O(1) as it only requires a constant amount of extra space for temporary variables.
 
 ## Advantages and Disadvantages
 
-The merge algorithm is a simple and straightforward algorithm that is easy to understand and implement. It is also a stable sorting algorithm, meaning that it preserves the relative order of equal elements. However, the merge algorithm has a time complexity of O(n), which means that it is not efficient for large lists.
+**Merge Sort:**
 
-The bubble sort algorithm is a simple and straightforward algorithm that is easy to understand and implement. It is also a stable sorting algorithm, meaning that it preserves the relative order of equal elements. However, the bubble sort algorithm has a time complexity of O(n), which means that it is not efficient for large lists.
+-   **Advantages:** Efficient for large lists, stable (preserves the relative order of equal elements).
+-   **Disadvantages:** Requires additional space.
 
-## Example
+**Bubble Sort:**
 
-Here is an example of the merge and bubble sort algorithms in action:
-
-```
-Input: [5, 3, 8, 4, 2]
-Output: [2, 3, 4, 5, 8]
-
-```
-
-In this example, the merge algorithm is used to merge two sorted lists, [5, 3, 8, 4, 2] and [2, 3, 4, 5, 8]. The merged list is [2, 3, 4, 5, 8]. The bubble sort algorithm is used to sort the list [5, 3, 8, 4, 2]. The sorted list is [2, 3, 4, 5, 8].
+-   **Advantages:** Simple to understand and implement.
+-   **Disadvantages:** Inefficient for large lists due to its quadratic time complexity.
 
 ## Conclusion
 
-The merge algorithm is a simple and straightforward algorithm that is easy to understand and implement. It is also a stable sorting algorithm, meaning that it preserves the relative order of equal elements. However, the merge algorithm has a time complexity of O(n), which means that it is not efficient for large lists.
+Merge Sort is a more efficient and practical sorting algorithm for large lists compared to Bubble Sort. Although Merge Sort requires additional space, its O(n log n) time complexity makes it suitable for a wide range of applications. Bubble Sort, due to its simplicity, can be useful for small lists or for educational purposes, but it is not recommended for large lists due to its inefficiency.
 
-The bubble sort algorithm is a simple and straightforward algorithm that is easy to understand and implement. It is also a stable sorting algorithm, meaning that it preserves the relative order of equal elements. However, the bubble sort algorithm has a time complexity of O(n), which means that it is not efficient for large lists.     
+## Authors and Codes:
 
-## Autors and codes:
 - Andres Cerdas Padilla  / 20231020053
-- Juan Esteban Bedoya Lautero / 
+- Juan Esteban Bedoya Lautero / 20231020057
