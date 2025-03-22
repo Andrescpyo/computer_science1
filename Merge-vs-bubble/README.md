@@ -62,6 +62,6 @@ The merge algorithm is a simple and straightforward algorithm that is easy to un
 
 The bubble sort algorithm is a simple and straightforward algorithm that is easy to understand and implement. It is also a stable sorting algorithm, meaning that it preserves the relative order of equal elements. However, the bubble sort algorithm has a time complexity of O(n), which means that it is not efficient for large lists.     
 
-## Autor:
+## Autors and codes:
 - Andres Cerdas Padilla  / 20231020053
 - Juan Esteban Bedoya Lautero / 2023
