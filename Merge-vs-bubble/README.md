@@ -66,4 +66,4 @@ The bubble sort algorithm is a simple and straightforward algorithm that is easy
 
 ## Autor:
 - Andres Cerdas Padilla  / 20231020053
-- Juan Esteban Bedoya Lautero / 
+- Juan Esteban Bedoya Lautero / 2023
