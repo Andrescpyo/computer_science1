@@ -9,8 +9,8 @@ class BubbleSortController:
     def sort_and_save():
         """Sorts a list of numbers using bubble sort algorithm and saves it in 
         three different files."""
-        filenames = ["numbers_100.txt", "numbers_1000.txt", "numbers_10000.txt"]
-        new_filenames = ["bubble_100.txt", "bubble_1000.txt", "bubble_10000.txt"]
+        filenames = ["numbers_50.txt", "numbers_100.txt", "numbers_500.txt", "numbers_1000.txt","numbers_5000.txt", "numbers_10000.txt"]
+        new_filenames = ["bubble_50.txt", "bubble_100.txt", "bubble_500.txt", "bubble_1000.txt","bubble_5000.txt", "bubble_10000.txt"]
 
         for filename, new_filename in zip(filenames, new_filenames):
             numbers = FileRepository.load_numbers(filename)
@@ -24,8 +24,8 @@ class MergeSortController:
     def sort_and_save():
         """Sorts a list of numbers using merge sort algorithm and saves it in 
         three different files."""
-        filenames = ["numbers_100.txt", "numbers_1000.txt", "numbers_10000.txt"]
-        new_filenames = ["merge_100.txt", "merge_1000.txt", "merge_10000.txt"]
+        filenames = ["numbers_50.txt", "numbers_100.txt", "numbers_500.txt", "numbers_1000.txt","numbers_5000.txt", "numbers_10000.txt"]
+        new_filenames = ["merge_50.txt", "merge_100.txt", "merge_500.txt", "merge_1000.txt","merge_5000.txt", "merge_10000.txt"]
 
         for filename, new_filename in zip(filenames, new_filenames):
             numbers = FileRepository.load_numbers(filename)

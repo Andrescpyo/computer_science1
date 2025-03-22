@@ -1,4 +1,3 @@
-
 import os
 
 class FileRepository:
@@ -36,6 +35,6 @@ class FileRepository:
 
         with open(file_path, "r", encoding="utf-8") as file:
             content = file.read()
-            numbers = list(map(int, content.split(",")))  # Modificación aquí
+            numbers = list(map(int, content.split(",")))
 
         return numbers
