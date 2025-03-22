@@ -13,19 +13,19 @@ class BubbleSort:
         Returns:
             list[int]: Sorted list of numbers.
         """
-
-        start_time = time.time() #measure the time
-        steps = 0                #count the number of steps
-        iterations = 0           #count the number of iterations
-
+        start_time = time.time()
+        steps = 0
+        iterations = 0
         n = len(data)
         for i in range(n):
-            iterations += 1
-            for j in range(n-i-1):
-                steps += 1
-                if data[j] > data[j+1]:
-                    data[j], data[j+1] = data[j+1], data[j]
-                    steps += 1  #count the swaps as a step
+            steps += 1  # Increment at the beginning of the outer loop
+            iterations += 1  # Increment at the beginning of the outer loop
+            for j in range(n - i - 1):
+                steps += 1  # Increment for the comparison
+                iterations += 1  # Increment for the comparison
+                if data[j] > data[j + 1]:
+                    data[j], data[j + 1] = data[j + 1], data[j]
+                    steps += 1  # Increment for the swap
         end_time = time.time()
         elapsed_time = end_time - start_time
         print(f"Bubble sort took {elapsed_time:.20f} seconds.")
@@ -45,10 +45,10 @@ class MergeSort:
         Returns:
             list[int]: Sorted list of numbers.
         """
-
-        steps = 0                #count the number of steps
-        iterations = 0           #count the number of iterations
-        return MergeSort._merge_sort(data, steps, iterations)[0]
+        steps = 0
+        iterations = 0
+        sorted_data, steps, iterations = MergeSort._merge_sort(data, steps, iterations)
+        return sorted_data
 
     @staticmethod
     def _merge_sort(data: list[int], steps: int, iterations: int) -> tuple[list[int], int, int]:
@@ -63,7 +63,8 @@ class MergeSort:
 
             i = j = k = 0
             while i < len(left_half) and j < len(right_half):
-                iterations += 1
+                iterations += 1  # Increment for the comparison
+                steps += 1      # Increment for the comparison
                 if left_half[i] < right_half[j]:
                     data[k] = left_half[i]
                     i += 1
@@ -71,23 +72,25 @@ class MergeSort:
                     data[k] = right_half[j]
                     j += 1
                 k += 1
-                steps += 1
+                steps += 1 # Increment for the assignment to data[k]
 
             while i < len(left_half):
+                iterations += 1
+                steps += 1
                 data[k] = left_half[i]
                 i += 1
                 k += 1
                 steps += 1
-                iterations += 1
 
             while j < len(right_half):
+                iterations += 1
+                steps += 1
                 data[k] = right_half[j]
                 j += 1
                 k += 1
                 steps += 1
-                iterations += 1
         return data, steps, iterations
-    
+
     @staticmethod
     def sort_time(data: list[int]) -> list[int]:
         """Sorts the list of numbers using merge sort algorithm and measures time.
@@ -99,7 +102,7 @@ class MergeSort:
             list[int]: Sorted list of numbers.
         """
         start_time = time.time()
-        sorted_data, steps, iterations = MergeSort._merge_sort(data.copy(), 0, 0) # Make a copy to avoid modifying original in place
+        sorted_data, steps, iterations = MergeSort._merge_sort(data.copy(), 0, 0)
         end_time = time.time()
         elapsed_time = end_time - start_time
         print(f"Merge sort took {elapsed_time:.20f} seconds.")
