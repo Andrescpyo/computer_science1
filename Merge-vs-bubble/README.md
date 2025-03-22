@@ -62,4 +62,7 @@ In this example, the merge algorithm is used to merge two sorted lists, [5, 3, 8
 
 The merge algorithm is a simple and straightforward algorithm that is easy to understand and implement. It is also a stable sorting algorithm, meaning that it preserves the relative order of equal elements. However, the merge algorithm has a time complexity of O(n), which means that it is not efficient for large lists.
 
-The bubble sort algorithm is a simple and straightforward algorithm that is easy to understand and implement. It is also a stable sorting algorithm, meaning that it preserves the relative order of equal elements. However, the bubble sort algorithm has a time complexity of O(n), which means that it is not efficient for large lists.            
+The bubble sort algorithm is a simple and straightforward algorithm that is easy to understand and implement. It is also a stable sorting algorithm, meaning that it preserves the relative order of equal elements. However, the bubble sort algorithm has a time complexity of O(n), which means that it is not efficient for large lists.     
+
+## Autor:
+- Andres Cerdas Padilla
