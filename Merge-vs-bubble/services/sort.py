@@ -1,3 +1,4 @@
+import time
 
 class BubbleSort:
     """Service for sorting a list of numbers using bubble sort algorithm."""
@@ -12,11 +13,15 @@ class BubbleSort:
         Returns:
             list[int]: Sorted list of numbers.
         """
+        start_time = time.time()
         n = len(data)
         for i in range(n):
             for j in range(n-i-1):
                 if data[j] > data[j+1]:
                     data[j], data[j+1] = data[j+1], data[j]
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        print(f"Bubble sort took {elapsed_time:.6f} seconds.")
         return data
 
 class MergeSort:
@@ -59,5 +64,21 @@ class MergeSort:
                 data[k] = right_half[j]
                 j += 1
                 k += 1
+        return data
+    
+    @staticmethod
+    def sort_time(data: list[int]) -> list[int]:
+        """Sorts the list of numbers using merge sort algorithm.
+        
+        Args:
+            data (list[int]): List of numbers to sort.
 
+        Returns:
+            list[int]: Sorted list of numbers.
+        """
+        start_time = time.time()
+        MergeSort.sort(data)
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        print(f"Merge sort took {elapsed_time:.6f} seconds.")
         return data

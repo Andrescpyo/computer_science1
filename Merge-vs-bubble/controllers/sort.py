@@ -29,5 +29,5 @@ class MergeSortController:
 
         for filename, new_filename in zip(filenames, new_filenames):
             numbers = FileRepository.load_numbers(filename)
-            sorted_numbers = MergeSort.sort(numbers)
+            sorted_numbers = MergeSort.sort_time(numbers)
             FileRepository.save_numbers(new_filename, sorted_numbers)

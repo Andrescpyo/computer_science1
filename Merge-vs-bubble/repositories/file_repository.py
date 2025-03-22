@@ -20,7 +20,7 @@ class FileRepository:
         with open(file_path, "w", encoding="utf-8") as file:
             file.write(",".join(map(str, numbers)))
 
-        print(f"File '{filename}' saved successfully.")
+        print(f"File '{filename}' saved successfully.\n")
 
     @staticmethod
     def load_numbers(filename: str) -> list[int]:
