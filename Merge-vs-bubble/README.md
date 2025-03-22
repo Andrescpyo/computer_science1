@@ -52,8 +52,6 @@ Here is an example of the merge and bubble sort algorithms in action:
 Input: [5, 3, 8, 4, 2]
 Output: [2, 3, 4, 5, 8]
 
-Input: [5, 3, 8, 4, 2]
-Output: [2, 3, 4, 5, 8]
 ```
 
 In this example, the merge algorithm is used to merge two sorted lists, [5, 3, 8, 4, 2] and [2, 3, 4, 5, 8]. The merged list is [2, 3, 4, 5, 8]. The bubble sort algorithm is used to sort the list [5, 3, 8, 4, 2]. The sorted list is [2, 3, 4, 5, 8].
