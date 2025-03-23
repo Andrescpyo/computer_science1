@@ -50,25 +50,6 @@ class MergeSort:
         sorted_data, steps, iterations = MergeSort._merge_sort(data, steps, iterations)
         return sorted_data
 
-class MergeSort:
-    """Service for sorting a list of numbers using merge sort algorithm."""
-
-    @staticmethod
-    def sort(data: list[int]) -> list[int]:
-        """Sorts the list of numbers using merge sort algorithm.
-        
-        Args:
-            data (list[int]): List of numbers to sort.
-
-        Returns:
-            list[int]: Sorted list of numbers.
-        """
-        steps = 0
-        iterations = 0
-        sorted_data, steps, iterations = MergeSort._merge_sort(data, steps, iterations)
-        print(f"Merge sort took {steps} comparison steps and {iterations} iterations.")
-        return sorted_data
-
     @staticmethod
     def _merge_sort(data: list[int], steps: int, iterations: int) -> tuple[list[int], int, int]:
         """Recursive helper function for merge sort."""
