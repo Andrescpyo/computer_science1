@@ -76,6 +76,7 @@ class MergeSort:
             mid = len(data) // 2
             left_half = data[:mid]
             right_half = data[mid:]
+            steps += 1  # Increment for the assignment to mid            
 
             left_half, steps, iterations = MergeSort._merge_sort(left_half, steps, iterations)
             right_half, steps, iterations = MergeSort._merge_sort(right_half, steps, iterations)
