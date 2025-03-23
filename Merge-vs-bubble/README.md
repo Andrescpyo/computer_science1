@@ -64,11 +64,26 @@ In this example, the algorithm compares the first two elements of the list, 5 an
 -   **Advantages:** Simple to understand and implement.
 -   **Disadvantages:** Inefficient for large lists due to its quadratic time complexity.
 
+## Graphics
+
+Here are the diagrams of the different classification algorithms, comparing the amount of data versus the total number of steps. The final graph is the average of three different tests performed with our implementation of the algorithms:
+
+#### Merge Sort:
+![Merge Sort](Graphics/Cantidad_vs_Pasos_Merge.png)
+
+#### Bubble Sort:
+![Bubble Sort](Graphics/Cantidad_vs_Pasos_Bubble.png)
+
+#### Merge Sort vs Bubble Sort:
+Here we can see the comparison and difference between both algorithms with the same data in terms of the total number of steps to reach the solution:
+
+![Merge Sort vs Bubble Sort](Graphics/Merge_vs_Bubble.png)
+
 ## Conclusion
 
 Merge Sort is a more efficient and practical sorting algorithm for large lists compared to Bubble Sort. Although Merge Sort requires additional space, its O(n log n) time complexity makes it suitable for a wide range of applications. Bubble Sort, due to its simplicity, can be useful for small lists or for educational purposes, but it is not recommended for large lists due to its inefficiency.
 
-## Authors and Codes:
+## ✒️ Authors and Codes:
 
 - Andres Cerdas Padilla  / 20231020053
 - Juan Esteban Bedoya Lautero / 20231020057
