@@ -64,6 +64,35 @@ In this example, the algorithm compares the first two elements of the list, 5 an
 -   **Advantages:** Simple to understand and implement.
 -   **Disadvantages:** Inefficient for large lists due to its quadratic time complexity.
 
+## Sort vs. Bubble Sort
+
+The main objective of this project is to empirically compare the efficiency of the Merge Sort and Bubble Sort sorting algorithms. Through experimentation and data analysis, we seek to verify and contrast their theoretical complexities (O(n log n) for Merge Sort and O(n²) for Bubble Sort) in practical scenarios.
+
+**Methodology:**
+
+The project consists of the following steps:
+
+1. **Random Data Generation:**
+* The `main.py` script generates lists of random numbers of different sizes (n).
+2. **Sorting with Merge Sort and Bubble Sort:**
+* The Merge Sort and Bubble Sort algorithms are applied to these lists to sort them.
+3. **Step Measurement:**
+* The number of steps each algorithm takes during the sorting process is recorded.
+4. **Complexity Analysis and Verification:**
+* The collected data is analyzed to determine whether the number of steps increases in accordance with the theoretical complexities of the algorithms.
+* The `test.py` script is used to calculate and display the ratios between actual steps and theoretical complexities, allowing for empirical verification of the algorithms' behavior.
+
+**How ​​to Run the Code:**
+
+1. **Requirements:**
+* Make sure you have Python installed on your system.
+2. **Run main.py:**
+* Open a terminal or command line.
+* Navigate to the project directory.
+* Run the [main.py](main.py) script:
+
+```bash python main.py```
+
 ## Graphics
 
 Here are the diagrams of the different classification algorithms, comparing the amount of data versus the total number of steps. The final graph is the average of three different tests performed with our implementation of the algorithms:
@@ -79,9 +108,65 @@ Here we can see the comparison and difference between both algorithms with the s
 
 ![Merge Sort vs Bubble Sort](Graphics/Merge_vs_Bubble.png)
 
-## Conclusion
+## Sorting Algorithm Complexity Check (Merge Sort and Bubble Sort)
 
-Merge Sort is a more efficient and practical sorting algorithm for large lists compared to Bubble Sort. Although Merge Sort requires additional space, its O(n log n) time complexity makes it suitable for a wide range of applications. Bubble Sort, due to its simplicity, can be useful for small lists or for educational purposes, but it is not recommended for large lists due to its inefficiency.
+[This Python script](test.py) is used to empirically verify whether the sorting algorithms Merge Sort and Bubble Sort perform according to their expected theoretical complexities: O(n log n) for Merge Sort and O(n²) for Bubble Sort.
+
+**Purpose:**
+
+The main objective of this script is to:
+
+* Evaluate whether the implementation of the Merge Sort and Bubble Sort algorithms exhibits an increase in the number of steps that is proportional to their theoretical complexities.
+* Provide empirical evidence that supports or refutes the theoretical complexities of these algorithms.
+
+**Methodology:**
+
+The script performs the following:
+
+1. **Input Data:**
+* Uses dictionaries (`merge_data` and `bubble_data`) that contain the average number of steps each algorithm took to sort lists of different sizes (`n`).
+2. **Theoretical Complexity Calculation:**
+* For Merge Sort, it calculates `n * log2(n)` for each input size n, representing the theoretical complexity O(n log n).
+* For Bubble Sort, it calculates `n^2` for each input size n, representing the theoretical complexity O(n²).
+3. **Ratio Calculation:**
+* Calculates the `ratio` by dividing the actual number of steps (`steps`) by the theoretical value calculated in the previous step.
+ 4. **Printing Results:**
+* Prints the results for each input size n, including the actual number of steps, the theoretical complexity, and the calculated `ratio`.
+
+**Interpretation of Results:**
+
+* If algorithms behave according to their theoretical complexities, the `ratio` should remain approximately constant as the input size n increases.
+* A small variation in the ratio is considered normal, while a large variation could mean that the algorithm's implementation does not match its theoretical complexity.
+
+**Usage:**
+
+To run this script, simply save the code in a Python file (e.g., complexity_verification.py) and run it from the command line:
+
+```bash python complexity_verification.py```
+
+
+## Final Conclusion: Complexity Analysis of Merge Sort and Bubble Sort
+
+After analyzing the results obtained from running the Merge Sort and Bubble Sort algorithms on lists of different sizes, and verifying their behavior using the [test.py](test.py) script, the following conclusions can be drawn:
+
+**Merge Sort:**
+
+* **Efficiency for Large Lists:** The test.py results clearly show that the number of steps performed by Merge Sort grows proportionally to n log n, even for large lists (up to 1,000,000 elements). The ratio between the number of steps and n log n remains constant around 1.99, confirming its theoretical complexity of O(n log n).
+* **Practicality:** Despite requiring additional space for merging sublists, Merge Sort's efficiency in terms of time makes it a practical and suitable algorithm for sorting large data sets in various applications.
+
+**Bubble Sort:**
+
+* **Inefficiency for Large Lists:** Data from test.py reveals that the number of steps in Bubble Sort increases quadratically with the list size, as expected for an O(n²) algorithm. The ratio between the number of steps and n² remains constant around 0.75, confirming its theoretical complexity.
+* **Simplicity vs. Efficiency:** Although Bubble Sort is easy to implement and understand, its inefficiency makes it unsuitable for sorting large lists. Its use is limited to small lists or educational purposes, where simplicity is more important than efficiency.
+
+**Comparison and Recommendations:**
+
+* **Merge Sort is Superior for Large Lists:** Empirical evidence confirms that Merge Sort is significantly more efficient and practical for sorting large lists compared to Bubble Sort.
+
+* **Bubble Sort Use Cases:** Bubble Sort can be useful in scenarios where lists are small or when algorithm simplicity is paramount, such as in educational settings.
+* **Practical Considerations:** When choosing a sorting algorithm, it is crucial to consider data size and efficiency requirements. For applications that handle large data sets, Merge Sort is the preferred choice due to its time efficiency.
+
+In summary, this empirical analysis, supported by test.py data, reinforces the theoretical understanding of the complexities of Merge Sort and Bubble Sort. Merge Sort proves to be an efficient and practical algorithm for large lists, while Bubble Sort is more suitable for small lists or educational purposes due to its simplicity but inefficiency on large data sets.
 
 ## ✒️ Authors and Codes:
 
