@@ -2,6 +2,33 @@
 
 This report explains why the presented algorithm is one of the best approaches to solve the problem of Maximum Number of Candies. The solution uses dynamic programming (DP) combined with a backtracking mechanism.
 
+## How to Use the Program (Input Format)
+
+To use the program correctly, you must provide input in a specific format via standard input (keyboard or redirected file). The input consists of:
+
+1. **First Line (Matrix Dimensions):**
+   - Two integers separated by a space: `M` and `N`, where:
+     - `M` is the number of rows in the matrix.
+     - `N` is the number of columns per row.
+
+2. **Next M Lines (Matrix Rows):**
+   - Each of the following `M` lines should contain exactly `N` integers separated by spaces.
+   - Each line represents a row in the matrix.
+
+### Example input
+5 6
+10 16 15 4 8 17
+19 16 15 13 17 20
+14 12 7 10 18 14
+23 27 22 26 31 24
+10 8 7 5 6 9
+### Output
+Solution:
+row 2: 19 15 20
+row 4: 27 26 24
+Total: 131
+
+
 ## Overview of the Approach
 
 The problem is divided into two main parts:
