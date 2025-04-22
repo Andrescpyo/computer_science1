@@ -16,18 +16,21 @@ To use the program correctly, you must provide input in a specific format via st
    - Each line represents a row in the matrix.
 
 ### Example input
-'''5 6
+```
+5 6
 10 16 15 4 8 17
 19 16 15 13 17 20
 14 12 7 10 18 14
 23 27 22 26 31 24
-10 8 7 5 6 9'''
+10 8 7 5 6 9
+```
 ### Output
+```
 Solution:
 row 2: 19 15 20
 row 4: 27 26 24
 Total: 131
-
+```
 
 ## Overview of the Approach
 
