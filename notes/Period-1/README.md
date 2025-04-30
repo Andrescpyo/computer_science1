@@ -121,6 +121,7 @@ Quick sort selecciona un "pivote", divide el arreglo en dos partes (menores y ma
 Insertion sort construye una lista ordenada una entrada a la vez, insertando cada nuevo elemento en su lugar correspondiente. Funciona bien para listas pequeñas o casi ordenadas.  
 **Complejidad promedio y peor caso:** O(n<sup>2</sup>)  
 **Mejor caso (lista ya ordenada):** O(n)
+
 **Ejemplo:**
 ![insertion](images/insertion.png)
 
