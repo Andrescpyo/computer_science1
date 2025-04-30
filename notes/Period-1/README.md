@@ -48,6 +48,7 @@ Ejemplo: algoritmos eficientes de ordenamiento como *merge sort* y *heap sort*.
 
 - O(n<sup>2</sup>): tiempo cuadrático. 
 El tiempo de ejecución crece cuadráticamente a medida que aumenta el tamaño de la entrada.
+
 Ejemplo: clasificación de burbujas.
 
 ![Big O notation](images/bigO.png)
@@ -75,22 +76,29 @@ Los algoritmos voraces toman decisiones óptimas en cada paso con la esperanza d
 ### Backtracking
 El backtracking construye soluciones paso a paso y retrocede cuando una opción no lleva a una solución válida. Es útil para problemas de decisión, generación de combinaciones o permutaciones, como el sudoku o el problema de las n reinas.  
 **Complejidad común:** O(2<sup>n</sup>) o peor en muchos casos, aunque puede reducirse con podas inteligentes.
+
 **Ejemplo:** Buscar la salida de un laberinto.
+
 ![Backtracking](images/backtracking.jpg)
 
 ### Ramificación y poda
 Extensión del backtracking que incluye técnicas para evitar explorar ramas del árbol de soluciones que no pueden conducir a una solución óptima. Muy usado en problemas de optimización como el *knapsack problem* o el *viajero*.  
 **Complejidad común:** Similar a backtracking, pero con mejoras prácticas significativas en muchos casos.
+
 **Ejemplo:** Obtener la solución a un *Sliding Puzzle*.
+
 ![ramificacion](images/ramificacion.jpg)
 
 
 ### Programación dinámica
 Resuelve problemas dividiéndolos en subproblemas y **almacenando los resultados** para evitar cálculos repetidos. Es eficiente para problemas con subestructuras óptimas y solapamiento de subproblemas (**heurísticas**), como Fibonacci, mochila o cadenas.
+
 **Ejemplo 1:** Buscar el máximo de dulces que se pueden obtener, si al tomar una casilla se borra la de abajo y las de ambos sentidos.
+
 ![pd-dulces](images/pd-dulces.jpg)
 
 **Ejemplo 2:** Buscar el minimo de petardos necesarios para saber cuanto resiste una cantidad de buzones. 
+
 ![Pd buzones](images/pd-buzones.jpg)
 
 
@@ -100,20 +108,26 @@ Resuelve problemas dividiéndolos en subproblemas y **almacenando los resultados
 El algoritmo de burbuja compara pares de elementos adyacentes y los intercambia si están en el orden incorrecto. Este proceso se repite hasta que la lista está ordenada. Es simple pero ineficiente, especialmente con listas grandes.  
 **Complejidad promedio y peor caso:** O(n<sup>2</sup>)  
 **Mejor caso (lista ya ordenada):** O(n)
+
 **Ejemplo:**
+
 ![burbuja](images/burbuja.png)
 
 ### Merge sort
 Merge sort es un algoritmo de tipo divide y vencerás. Divide el arreglo en mitades, ordena cada mitad recursivamente y luego las combina en una sola lista ordenada. Es muy eficiente y estable.  
 **Complejidad en todos los casos:** O(n log n)
+
 **Ejemplo:** 
+
 ![Merge-sort](images/merge-sort.jpg)
 
 ### Quick sort
 Quick sort selecciona un "pivote", divide el arreglo en dos partes (menores y mayores al pivote) y aplica el mismo procedimiento a cada parte. Aunque no es estable, es muy rápido en la práctica.  
 **Complejidad promedio:** O(n log n)  
 **Peor caso:** O(n<sup>2</sup>) (cuando el pivote es mal elegido)
+
 **Ejemplo:**
+
 ![quicksort](images/quicksort.jpg)
 
 
@@ -123,12 +137,15 @@ Insertion sort construye una lista ordenada una entrada a la vez, insertando cad
 **Mejor caso (lista ya ordenada):** O(n)
 
 **Ejemplo:**
+
 ![insertion](images/insertion.png)
 
 ### Heapsort
 Heapsort usa una estructura llamada heap para seleccionar el siguiente elemento más grande (o pequeño) de forma eficiente. Es eficiente y no usa memoria adicional significativa, pero no es estable.  
 **Complejidad en todos los casos:** O(n log n)
+
 **Ejemplo:**
+
 ![heapsort](images/heapsort.png)
 
 ## Estructuras de datos lineales
@@ -169,6 +186,7 @@ Una pila (stack) es una estructura que sigue el principio **LIFO** (Last In, Fir
 - **Ordenado:** Implícitamente  
 - **Mutables:** Sí  
 - **Métodos comunes:** `.append()` para push, `.pop()` para pop
+
 ![stack](images/stack.png)
 
 #### - Queue
@@ -176,4 +194,5 @@ Una cola (queue) sigue el principio **FIFO** (First In, First Out). El primer el
 - **Ordenado:** Implícitamente  
 - **Mutables:** Sí  
 - **Métodos comunes:** `.append()` para encolar, `.popleft()` con `deque` para desencolar
+
 ![queue](images/queue.png)
