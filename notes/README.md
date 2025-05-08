@@ -4,7 +4,7 @@
 - **[Corte 1](Period-1/README.md)**
     - 15% Parcial (Moodle)
     - 20% Trabajos
-- **Corte 2**
+- **[Corte 2](Period-2/README.md)**
     - 15% Parcial (Hoja exámen)
     - 20% Trabajos
 - **Corte 3**
