@@ -1,90 +1,68 @@
 
 import os
-from graphviz import Digraph
+import networkx as nx
+import matplotlib.pyplot as plt
+from tree import BinaryTree, Node
 
-class TreeNode:
-    """Represents a node in a binary expression tree.
-
-    Attributes:
-        value (str): The value of the node (operator or operand).
-        left (TreeNode): The left child node.
-        right (TreeNode): The right child node.
-    """
-
-    def __init__(self, value: str):
-        self.value = value
-        self.left = None
-        self.right = None
-
-
-class ExpressionTreeVisualizer:
-    """Generates a visual representation of a binary expression tree."""
+class BinaryTreeVisualizer:
+    """Visualizes a binary search tree using matplotlib and networkx."""
 
     @staticmethod
-    def build_tree_from_postfix(postfix_expr: str) -> TreeNode:
-        """Builds an expression tree from a postfix expression.
+    def plot(tree: BinaryTree, filename: str = "binary_tree.png") -> None:
+        """Generates and saves a PNG visualization of the binary tree.
 
         Args:
-            postfix_expr (str): The postfix expression with tokens separated by spaces.
-
-        Returns:
-            TreeNode: The root node of the constructed expression tree.
+            tree (BinaryTree): The binary tree to visualize.
+            filename (str): The filename for the output PNG image.
         """
-        tokens = postfix_expr.split()
-        stack = []
-        for token in tokens:
-            if token.isalnum():
-                stack.append(TreeNode(token))
-            else:
-                right = stack.pop()
-                left = stack.pop()
-                node = TreeNode(token)
-                node.left = left
-                node.right = right
-                stack.append(node)
-        return stack[-1]
+        G = nx.DiGraph()
+        pos = {}
+        labels = {}
+        x_counter = [0]
 
-    @staticmethod
-    def generate_image(root: TreeNode, filename: str = "expression_tree"):
-        """Generates and saves a PNG image of the expression tree.
+        def add_nodes(node: Node, depth: int = 0) -> None:
+            """Adds nodes and edges to the graph recursively.
 
-        Args:
-            root (TreeNode): The root node of the tree to visualize.
-            filename (str): Name of the output file (without extension).
-        """
+            Args:
+                node (Node): The current node being added.
+                depth (int): The depth of the node in the tree.
+            """
+            if node is None:
+                return
+
+            add_nodes(node.left, depth + 1)
+
+            node_id = id(node)
+            pos[node_id] = (x_counter[0], -depth)
+            labels[node_id] = str(node.value)
+            G.add_node(node_id)
+
+            if node.left:
+                G.add_edge(node_id, id(node.left))
+            if node.right:
+                G.add_edge(node_id, id(node.right))
+
+            x_counter[0] += 1
+
+            add_nodes(node.right, depth + 1)
+
+        add_nodes(tree.root)
+
         current_dir = os.path.dirname(os.path.abspath(__file__))
         full_path = os.path.join(current_dir, filename)
 
-        dot = Digraph()
-        ExpressionTreeVisualizer._add_nodes_edges(dot, root)
-        dot.render(full_path, format="png", cleanup=True)
-
-    @staticmethod
-    def _add_nodes_edges(dot: Digraph, node: TreeNode, count: dict = None) -> str:
-        """Recursively adds nodes and edges to the Graphviz graph.
-
-        Args:
-            dot (Digraph): The Graphviz object to add nodes and edges to.
-            node (TreeNode): The current node in the expression tree.
-            count (dict): A counter dictionary to generate unique node IDs.
-
-        Returns:
-            str: The unique identifier of the current node.
-        """
-        if count is None:
-            count = {"id": 0}
-
-        node_id = str(count["id"])
-        dot.node(node_id, node.value)
-        current_id = count["id"]
-        count["id"] += 1
-
-        if node.left:
-            left_id = ExpressionTreeVisualizer._add_nodes_edges(dot, node.left, count)
-            dot.edge(str(current_id), left_id)
-
-        if node.right:
-            right_id = ExpressionTreeVisualizer._add_nodes_edges(dot, node.right, count)
-            dot.edge(str(current_id), right_id)
-
-        return str(current_id)
+        plt.figure(figsize=(10, 6))
+        nx.draw(
+            G,
+            pos,
+            labels=labels,
+            with_labels=True,
+            arrows=False,
+            node_size=1000,
+            node_color="#D0E3FA",
+            font_size=12
+        )
+        plt.title("Binary Search Tree")
+        plt.axis("off")
+        plt.savefig(full_path, bbox_inches="tight")
+        plt.show()
