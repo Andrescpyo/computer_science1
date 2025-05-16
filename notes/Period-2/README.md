@@ -8,6 +8,13 @@ A continuación se encuentran los temas de segundo corte.
     - [Conversión de infija a posfija](#conversión-de-infija-a-posfija)
     - [Notación prefija](#notación-prefija)
 
+- **[Árboles Binarios](#árboles-binarios)**
+    - [Propiedades](#propiedades)
+    - [Recorridos](#recorridos)
+    - [Operaciones principales](#operaciones-principales)
+    - [Tipos de árboles binarios](#tipos-de-árboles-binarios)
+    - [Algoritmos de búsqueda](#algoritmos-de-búsqueda)
+
 ## Notación -fija
 En matemáticas y ciencias de la computación, las notaciones infija, posfija y prefija son formas de escribir expresiones aritméticas. Cada una tiene reglas distintas sobre el orden de los operandos y los operadores, lo cual influye en cómo se evalúan y procesan las expresiones, especialmente en estructuras como árboles de expresión, compiladores o calculadoras.
 
@@ -98,3 +105,45 @@ PROCEDIMIENTO Convertir_Infija_a_Postfija(exp_infija)
 
 FIN PROCEDIMIENTO
 ```
+
+## Árboles Binarios
+
+Un árbol binario es una estructura de datos jerárquica en la que cada nodo tiene como máximo dos hijos: uno izquierdo y uno derecho. Se utilizan comúnmente para búsquedas, ordenamientos y representaciones jerárquicas.
+
+### Propiedades
+
+- **Menores o iguales a la izquierda:** En un árbol binario de búsqueda (BST), los valores menores o iguales al nodo actual se ubican en la subrama izquierda, mientras que los mayores van a la derecha.
+- **Grado:** Es 2, porque cada nodo puede tener como máximo dos hijos.
+- **Altura:** Número máximo de aristas desde la raíz hasta una hoja.
+- **Niveles:** Corresponden a las profundidades del árbol desde la raíz (nivel 0).
+- **Nodos por nivel:** Un árbol binario puede tener hasta `2^n` nodos en el nivel `n`.
+- **Altura de un árbol balanceado:** Aproximadamente `log₂(n)`, donde `n` es el número total de nodos.
+- **Raíz:** Es el nodo madre o principal del árbol.
+- **Hojas:** Son los nodos terminales que no tienen hijos.
+
+### Recorridos
+
+- **In-orden (in-order):** Se lee en el orden: izquierda → raíz → derecha. Esto permite recorrer un BST en orden ascendente.
+- También existen:
+  - **Pre-orden:** raíz → izquierda → derecha
+  - **Post-orden:** izquierda → derecha → raíz
+
+### Operaciones principales
+
+- **Agregar nodo:** Se compara el nuevo valor con los nodos existentes, y se coloca a la izquierda si es menor o igual, o a la derecha si es mayor.
+- **Eliminar nodo:**
+  - Si es una hoja: se elimina directamente.
+  - Si tiene un solo hijo: se reemplaza con su hijo.
+  - Si tiene dos hijos: se busca su sucesor (el nodo más pequeño del subárbol derecho), se reemplaza el valor, y luego se elimina el sucesor.
+- **Buscar nodo:** Se recorre el árbol comparando el valor buscado, aprovechando las propiedades del BST para descartar subárboles enteros.
+
+### Tipos de árboles binarios
+- **Lleno:** Todos los niveles están completamente llenos, excepto el último, y sus nodos están lo más a la izquierda posible.
+- **Completo:** Todos los nodos tienen 0 o 2 hijos, y todos los niveles están completamente llenos excepto posiblemente el último, que se llena de izquierda a derecha.
+- **Perfecto:** Todos los niveles están completamente llenos, y todos los nodos tienen exactamente dos hijos o ninguno.
+
+### Algoritmos de búsqueda
+
+- **BFS (Breadth-First Search o búsqueda en anchura):** Recorre nivel por nivel, de izquierda a derecha.
+- **DFS (Depth-First Search o búsqueda en profundidad):** Recorre lo más profundo posible por cada rama antes de retroceder (puede ser in-orden, pre-orden o post-orden).
+
