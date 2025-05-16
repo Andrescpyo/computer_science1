@@ -65,4 +65,4 @@ class BinaryTreeVisualizer:
         plt.title("Binary Search Tree")
         plt.axis("off")
         plt.savefig(full_path, bbox_inches="tight")
-        plt.show()
+        # plt.show()

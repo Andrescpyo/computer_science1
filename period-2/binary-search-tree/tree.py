@@ -1,4 +1,5 @@
 
+from math import log2
 from typing import Optional, List
 
 class Node:
@@ -21,6 +22,49 @@ class BinaryTree:
     def __init__(self):
         """Initializes an empty binary search tree."""
         self.root: Optional[Node] = None
+
+    @property
+    def height(self) -> int:
+        """Calculates the height of the tree.
+
+        Returns:
+            int: The height of the tree.
+        """
+        return self.get_height(self.root)
+
+    @property
+    def nodes(self) -> int:
+        """Counts the number of nodes in the tree.
+
+        Returns:
+            int: The number of nodes in the tree.
+        """
+        return self.count_nodes(self.root)
+
+    @property
+    def balanced_height(self) -> int:
+        """Calculates the balanced height of the tree.
+
+        Returns:
+            int: The balanced height of the tree.
+        """
+        return log2(self.nodes)
+
+    def get_height(self, node: Optional[Node]) -> int:
+        """Calculates the height of the tree.
+
+        Args:
+            node (Optional[Node]): The root node of the tree.
+
+        Returns:
+            int: The height of the tree.
+        """
+        if node is None:
+            return 0
+        else:
+            left_height = self.get_height(node.left)
+            right_height = self.get_height(node.right)
+            return max(left_height, right_height) + 1
 
     def insert(self, value: int) -> None:
         """Inserts a value into the binary tree.
@@ -58,6 +102,20 @@ class BinaryTree:
             node.right = self._insert_recursive(node.right, value)
 
         return node
+
+    def count_nodes(self, node: Optional[Node]) -> int:
+        """Counts the number of nodes in the tree.
+
+        Args:
+            node (Optional[Node]): The root node of the tree.
+
+        Returns:
+            int: The number of nodes in the tree.
+        """
+        if node is None:
+            return 0
+        else:
+            return 1 + self.count_nodes(node.left) + self.count_nodes(node.right)
 
     def search(self, value: int) -> bool:
         """Searches for a value in the binary tree.
