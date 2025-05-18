@@ -15,7 +15,7 @@ print(f"Nodos del arbol 1: {tree.nodes}")
 print(f"Altura del arbol 2: {tree2.height}")
 
 print("\nInorder traversal:")
-print(tree.inorder_traversal(tree.root))
+print(tree)
 
 btv.plot(tree, "tree.png")
 btv.plot(tree2, "tree2.png")

@@ -1,4 +1,3 @@
-
 from math import log2
 from typing import Optional, List
 
@@ -6,7 +5,7 @@ class Node:
     """Represents a node in a binary search tree."""
 
     def __init__(self, value: int):
-        """Initializes a Node.
+        """Initializes a Node with the given value.
 
         Args:
             value (int): The value to store in the node.
@@ -17,54 +16,53 @@ class Node:
 
 
 class BinaryTree:
-    """Implements a binary search tree."""
+    """Implements a binary search tree with basic operations."""
 
     def __init__(self):
         """Initializes an empty binary search tree."""
         self.root: Optional[Node] = None
 
+    def __str__(self) -> str:
+        """Generates a string representation of the tree in in-order traversal.
+        Returns:
+            str: A string representation of the tree's values in in-order.
+        """
+        return " ".join(str(num) for num in self.inorder_traversal())
+
     @property
     def height(self) -> int:
-        """Calculates the height of the tree.
-
-        Returns:
-            int: The height of the tree.
-        """
-        return self.get_height(self.root)
+        """int: The height of the tree, measured as the number of levels."""
+        return self._get_height(self.root)
 
     @property
     def nodes(self) -> int:
-        """Counts the number of nodes in the tree.
-
-        Returns:
-            int: The number of nodes in the tree.
-        """
-        return self.count_nodes(self.root)
+        """int: The total number of nodes in the tree."""
+        return self._count_nodes(self.root)
 
     @property
     def balanced_height(self) -> int:
-        """Calculates the balanced height of the tree.
+        """int: The minimal possible height of a perfectly balanced tree.
 
-        Returns:
-            int: The balanced height of the tree.
+        This represents the theoretical minimum height achievable by a complete
+        binary tree with the same number of nodes. For an empty tree, returns 0.
         """
-        return log2(self.nodes)
+        n = self.nodes
+        if n == 0:
+            return 0
+        return int(log2(n))
 
-    def get_height(self, node: Optional[Node]) -> int:
-        """Calculates the height of the tree.
+    def _get_height(self, node: Optional[Node]) -> int:
+        """Calculates the height of the subtree rooted at the given node.
 
         Args:
-            node (Optional[Node]): The root node of the tree.
+            node (Optional[Node]): The root node of the subtree.
 
         Returns:
-            int: The height of the tree.
+            int: Height of the subtree. Returns 0 if the node is None.
         """
         if node is None:
             return 0
-        else:
-            left_height = self.get_height(node.left)
-            right_height = self.get_height(node.right)
-            return max(left_height, right_height) + 1
+        return max(self._get_height(node.left), self._get_height(node.right)) + 1
 
     def insert(self, value: int) -> None:
         """Inserts a value into the binary tree.
@@ -78,98 +76,92 @@ class BinaryTree:
         """Inserts a list of values into the binary tree.
 
         Args:
-            values (List[int]): A list of integer values to insert.
+            values (List[int]): A list of integers to insert. Values are inserted
+                in the order they appear in the list.
         """
         for value in values:
             self.insert(value)
 
     def _insert_recursive(self, node: Optional[Node], value: int) -> Node:
-        """Recursively inserts a value starting from a given node.
+        """Recursively inserts a value into the subtree rooted at the given node.
 
         Args:
-            node (Optional[Node]): The current node in recursion.
+            node (Optional[Node]): The root node of the current subtree.
             value (int): The value to insert.
 
         Returns:
-            Node: The modified subtree with the new node inserted.
+            Node: The root node of the modified subtree.
         """
         if node is None:
             return Node(value)
-
         if value <= node.value:
             node.left = self._insert_recursive(node.left, value)
         else:
             node.right = self._insert_recursive(node.right, value)
-
         return node
 
-    def count_nodes(self, node: Optional[Node]) -> int:
-        """Counts the number of nodes in the tree.
+    def _count_nodes(self, node: Optional[Node]) -> int:
+        """Counts the number of nodes in the subtree rooted at the given node.
 
         Args:
-            node (Optional[Node]): The root node of the tree.
+            node (Optional[Node]): The root node of the subtree.
 
         Returns:
-            int: The number of nodes in the tree.
+            int: Number of nodes in the subtree. Returns 0 if the node is None.
         """
         if node is None:
             return 0
-        else:
-            return 1 + self.count_nodes(node.left) + self.count_nodes(node.right)
+        return 1 + self._count_nodes(node.left) + self._count_nodes(node.right)
 
     def search(self, value: int) -> bool:
-        """Searches for a value in the binary tree.
+        """Checks if a value exists in the tree.
 
         Args:
             value (int): The value to search for.
 
         Returns:
-            bool: True if found, False otherwise.
+            bool: True if the value is found, False otherwise.
         """
         return self._search_recursive(self.root, value)
 
     def _search_recursive(self, node: Optional[Node], value: int) -> bool:
-        """Recursively searches for a value in the tree.
+        """Recursively searches for a value in the subtree rooted at the given node.
 
         Args:
-            node (Optional[Node]): The current node in recursion.
-            value (int): The value to search.
+            node (Optional[Node]): The root node of the current subtree.
+            value (int): The value to search for.
 
         Returns:
-            bool: True if found, False otherwise.
+            bool: True if the value is found in the subtree, False otherwise.
         """
         if node is None:
             return False
-
         if node.value == value:
             return True
-
         if value < node.value:
             return self._search_recursive(node.left, value)
-        else:
-            return self._search_recursive(node.right, value)
+        return self._search_recursive(node.right, value)
 
     def delete(self, value: int) -> None:
         """Deletes a node with the specified value from the tree.
 
         Args:
-            value (int): The value to delete.
+            value (int): The value of the node to delete.
         """
         self.root = self._delete_recursive(self.root, value)
 
     def _delete_recursive(self, node: Optional[Node], value: int) -> Optional[Node]:
-        """Recursively deletes a node from the tree.
+        """Recursively deletes a node with the specified value from the subtree.
 
         Args:
-            node (Optional[Node]): The current node in recursion.
-            value (int): The value to delete.
+            node (Optional[Node]): The root node of the current subtree.
+            value (int): The value of the node to delete.
 
         Returns:
-            Optional[Node]: The modified subtree with the node removed.
+            Optional[Node]: The root node of the modified subtree.
         """
         if node is None:
-            return node
-
+            return None
         if value < node.value:
             node.left = self._delete_recursive(node.left, value)
         elif value > node.value:
@@ -177,50 +169,45 @@ class BinaryTree:
         else:
             if node.left is None:
                 return node.right
-            elif node.right is None:
+            if node.right is None:
                 return node.left
-
             temp = self._min_value_node(node.right)
             node.value = temp.value
             node.right = self._delete_recursive(node.right, temp.value)
-
         return node
 
     def _min_value_node(self, node: Node) -> Node:
-        """Finds the node with the minimum value in a subtree.
+        """Finds the node with the minimum value in the given subtree.
 
         Args:
-            node (Node): The root of the subtree.
+            node (Node): The root node of the subtree.
 
         Returns:
-            Node: The node with the smallest value.
+            Node: The node with the smallest value in the subtree.
         """
         current = node
         while current.left is not None:
             current = current.left
         return current
 
-    def inorder_traversal(self, node: Optional[Node]) -> str:
-        """Returns the in-order traversal of the tree as a string.
-
-        Args:
-            node (Optional[Node]): The root node to start traversal from.
+    def inorder_traversal(self) -> List[int]:
+        """Generates an in-order traversal of the tree.
 
         Returns:
-            str: Space-separated in-order traversal of the tree.
+            List[int]: A list of values in in-order (ascending) sequence.
         """
-        result: List[str] = []
-        self._inorder_helper(node, result)
-        return " ".join(result)
+        result: List[int] = []
+        self._inorder_helper(self.root, result)
+        return result
 
-    def _inorder_helper(self, node: Optional[Node], result: List[str]) -> None:
-        """Recursive helper for in-order traversal.
+    def _inorder_helper(self, node: Optional[Node], result: List[int]) -> None:
+        """Recursively performs in-order traversal of the subtree.
 
         Args:
-            node (Optional[Node]): The current node in traversal.
-            result (List[str]): Accumulator for the traversal result.
+            node (Optional[Node]): The current root node of the subtree.
+            result (List[int]): List to accumulate the traversal results.
         """
         if node is not None:
             self._inorder_helper(node.left, result)
-            result.append(str(node.value))
+            result.append(node.value)
             self._inorder_helper(node.right, result)
