@@ -62,7 +62,11 @@ class BinaryTree:
         """
         if node is None:
             return 0
-        return max(self._get_height(node.left), self._get_height(node.right)) + 1
+        left = self._get_height(node.left)
+        right = self._get_height(node.right)
+        height = max(left, right) + 1
+        print(height)
+        return height
 
     def insert(self, value: int) -> None:
         """Inserts a value into the binary tree.
