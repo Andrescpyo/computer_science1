@@ -8,7 +8,7 @@ tree2 = BinaryTree()
 tree2.insert_list([700, 699, 698, 697, 696, 695, 694, 693, 692, 691, 690, 689, 688, 687, 686, 681, 682])
 
 print(tree.search(8))
-#print(f"Altura del arbol 1: {tree.height}")
+print(f"Altura del arbol 1: {tree.height}")
 print(f"Altura balanceada del arbol 1: {tree.balanced_height:.2f}")
 print(f"Nodos del arbol 1: {tree.nodes}")
 

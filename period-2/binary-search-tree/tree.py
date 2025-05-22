@@ -49,7 +49,7 @@ class BinaryTree:
         n = self.nodes
         if n == 0:
             return 0
-        return int(log2(n))
+        return int(log2(n) + 1)
 
     def _get_height(self, node: Optional[Node]) -> int:
         """Calculates the height of the subtree rooted at the given node.
@@ -65,7 +65,6 @@ class BinaryTree:
         left = self._get_height(node.left)
         right = self._get_height(node.right)
         height = max(left, right) + 1
-        print(height)
         return height
 
     def insert(self, value: int) -> None:
