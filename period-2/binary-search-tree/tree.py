@@ -21,6 +21,7 @@ class BinaryTree:
     def __init__(self):
         """Initializes an empty binary search tree."""
         self.root: Optional[Node] = None
+        self.grade: int = 2
 
     def __str__(self) -> str:
         """Generates a string representation of the tree in in-order traversal.
@@ -154,14 +155,14 @@ class BinaryTree:
         self.root = self._delete_recursive(self.root, value)
 
     def _delete_recursive(self, node: Optional[Node], value: int) -> Optional[Node]:
-        """Recursively deletes a node with the specified value from the subtree.
+        """Recursively deletes a node with the given value from the BST.
 
         Args:
-            node (Optional[Node]): The root node of the current subtree.
-            value (int): The value of the node to delete.
+            node (Optional[Node]): The current node in the recursive traversal.
+            value (int): The value to delete from the tree.
 
         Returns:
-            Optional[Node]: The root node of the modified subtree.
+            Optional[Node]: The updated node after deletion.
         """
         if node is None:
             return None
@@ -174,23 +175,23 @@ class BinaryTree:
                 return node.right
             if node.right is None:
                 return node.left
-            temp = self._min_value_node(node.right)
+            temp = self._max_value_node(node.left)
             node.value = temp.value
-            node.right = self._delete_recursive(node.right, temp.value)
+            node.left = self._delete_recursive(node.left, temp.value)
         return node
 
-    def _min_value_node(self, node: Node) -> Node:
-        """Finds the node with the minimum value in the given subtree.
+    def _max_value_node(self, node: Node) -> Node:
+        """Finds the node with the maximum value in the subtree rooted at the given node.
 
         Args:
-            node (Node): The root node of the subtree.
+            node (Node): The root of the subtree.
 
         Returns:
-            Node: The node with the smallest value in the subtree.
+            Node: The node with the maximum value in the subtree.
         """
         current = node
-        while current.left is not None:
-            current = current.left
+        while current.right is not None:
+            current = current.right
         return current
 
     def inorder_traversal(self) -> List[int]:
