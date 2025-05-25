@@ -1,5 +1,6 @@
 from math import log2
 from typing import Optional, List
+from collections import deque
 
 class Node:
     """Represents a node in a binary search tree."""
@@ -215,3 +216,73 @@ class BinaryTree:
             self._inorder_helper(node.left, result)
             result.append(node.value)
             self._inorder_helper(node.right, result)
+
+ # --- New methods for verifying tree types ---
+
+    def is_full(self) -> bool:
+        """Checks if the tree is a full binary tree.
+
+        A full binary tree is a tree in which every node has either 0 or 2 children.
+        """
+        return self._is_full_recursive(self.root)
+
+    def _is_full_recursive(self, node: Optional[Node]) -> bool:
+        """Helper for is_full.
+
+        Args:
+            node (Optional[Node]): The current node.
+
+        Returns:
+            bool: True if the subtree is full, False otherwise.
+        """
+        # An empty tree is considered full
+        if node is None:
+            return True
+
+        # Leaf node (0 children)
+        if node.left is None and node.right is None:
+            return True
+
+        # Node with two children
+        if node.left is not None and node.right is not None:
+            return self._is_full_recursive(node.left) and self._is_full_recursive(node.right)
+
+        # Node with only one child (not full)
+        return False
+
+    def is_complete(self) -> bool:
+        """Checks if the tree is a complete binary tree.
+
+        A complete binary tree is a binary tree in which all levels are
+        completely filled except possibly the last level, and all nodes
+        in the last level are as far left as possible.
+        """
+        if self.root is None:
+            return True
+
+        queue = deque()
+        queue.append(self.root)
+        found_first_null = False
+
+        while queue:
+            node = queue.popleft()
+
+            if node is None:
+                found_first_null = True
+            else:
+                if found_first_null:
+                    return False # Found a non-null node after a null node (gap)
+                queue.append(node.left)
+                queue.append(node.right)
+        return True
+
+    def is_perfect(self) -> bool:
+        """Checks if the tree is a perfect binary tree.
+
+        A perfect binary tree is a binary tree in which all interior nodes have
+        two children and all leaves are at the same depth or level.
+        """
+        h = self.height
+        n = self.nodes
+        # For a perfect binary tree, the number of nodes n should be 2^h - 1
+        return n == (2**h) - 1
