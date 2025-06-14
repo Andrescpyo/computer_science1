@@ -139,11 +139,96 @@ Un árbol binario es una estructura de datos jerárquica en la que cada nodo tie
 
 ### Tipos de árboles binarios
 - **Lleno:** Todos los niveles están completamente llenos, excepto el último, y sus nodos están lo más a la izquierda posible.
+![Arbol lleno](images/tree3_lleno.png)
 - **Completo:** Todos los nodos tienen 0 o 2 hijos, y todos los niveles están completamente llenos excepto posiblemente el último, que se llena de izquierda a derecha.
+![Arbol completo](images/tree3_completo.png)
 - **Perfecto:** Todos los niveles están completamente llenos, y todos los nodos tienen exactamente dos hijos o ninguno.
+![Arbol lleno](images/tree3_perfecto.png)
 
 ### Algoritmos de búsqueda
 
 - **BFS (Breadth-First Search o búsqueda en anchura):** Recorre nivel por nivel, de izquierda a derecha.
 - **DFS (Depth-First Search o búsqueda en profundidad):** Recorre lo más profundo posible por cada rama antes de retroceder (puede ser in-orden, pre-orden o post-orden).
+
+## Árboles AVL
+
+Un **árbol AVL** (por Adelson-Velsky y Landis) es un tipo de árbol binario de búsqueda **auto-balanceado**. En un árbol AVL, la diferencia de altura entre los subárboles izquierdo y derecho de cualquier nodo (llamada **factor de balance**) es como máximo 1.
+
+### Propiedades
+
+- **Balanceo automático:** Después de cada inserción o eliminación, el árbol verifica y corrige su balanceo.
+- **Factor de balance:** Se calcula como `altura(izquierda) - altura(derecha)`. Debe estar entre -1 y 1.
+- **Altura logarítmica:** La altura del árbol AVL se mantiene en `O(log n)`, lo que permite búsquedas, inserciones y eliminaciones eficientes.
+
+### Inserción
+
+- Se realiza igual que en un BST normal.
+- Luego se recorre hacia arriba verificando el balance y aplicando rotaciones si es necesario.
+
+### Eliminación
+
+- Se elimina igual que en un BST.
+- Luego se actualizan alturas y se balancea el árbol si es necesario.
+
+### Rotaciones
+
+Las rotaciones se aplican para mantener el equilibrio. Hay 4 tipos:
+
+| Caso de desbalance | Descripción                   | Tipo de rotación        |
+|--------------------|-------------------------------|--------------------------|
+| **Izquierda-Izquierda (LL)** | Nodo desbalanceado tiene hijo izquierdo con hijo izquierdo más alto. | Rotación simple a la derecha |
+| **Derecha-Derecha (RR)**     | Nodo desbalanceado tiene hijo derecho con hijo derecho más alto.     | Rotación simple a la izquierda |
+| **Izquierda-Derecha (LR)**   | Nodo desbalanceado tiene hijo izquierdo con hijo derecho más alto.   | Rotación doble: izquierda-derecha |
+| **Derecha-Izquierda (RL)**   | Nodo desbalanceado tiene hijo derecho con hijo izquierdo más alto.   | Rotación doble: derecha-izquierda |
+
+Dicho de otro modo:
+| 2 | 1 | (1) | (2) |
+|---|---| --- | ---|
+| + | + |   | ⬅️ |
+| + | - | ➡️ | ⬅️ |
+| - | + | ⬅️ | ➡️ |
+| - | - | | ➡️ |
+
+## Árboles Rojo-Negro
+
+Un **árbol rojo-negro** es un tipo de árbol binario de búsqueda auto-balanceado que garantiza operaciones en tiempo `O(log n)` manteniendo reglas de color y estructura específicas.
+
+### Propiedades
+
+Para que un árbol sea rojo-negro, debe cumplir estas 5 reglas:
+
+1. **Cada nodo es rojo o negro.**
+2. **La raíz siempre es negra.**
+3. **Todas las hojas (nulos) son negras.**
+4. **Un nodo rojo no puede tener hijos rojos (no puede haber dos rojos seguidos).**
+5. **Cualquier camino desde un nodo hasta sus hojas nulas debe contener el mismo número de nodos negros.**
+
+Estas reglas garantizan que el árbol se mantenga aproximadamente balanceado.
+
+## Operaciones
+
+### Inserción
+
+- El nodo nuevo se inserta como **rojo**.
+- Si esto causa dos rojos consecutivos, se reestructura el árbol:
+  - **Rotaciones** (simples o dobles)
+  - **Recoloreos**
+
+### Eliminación
+
+- Es más compleja que la inserción.
+- Requiere varios pasos de **recoloración** y **rotaciones** para restaurar las propiedades si se rompe el balance negro.
+
+## Casos de Rotación
+Consulte el documento:
+[Casos rojo-negro](rojonegro.pdf)
+## Comparación con AVL
+
+| Característica         | AVL                    | Rojo-Negro               |
+|------------------------|------------------------|--------------------------|
+| Altura                 | Más baja               | Más alta                 |
+| Balanceo               | Más estricto           | Más flexible             |
+| Velocidad inserción    | Más lenta (más rotaciones) | Más rápida (menos rotaciones) |
+| Velocidad búsqueda     | Más rápida             | Ligeramente más lenta    |
+| Uso típico             | Sistemas con muchas búsquedas | Sistemas con muchas inserciones/eliminaciones |
 
