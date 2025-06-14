@@ -2,7 +2,7 @@
 
 A continuación se encuentran los temas de segundo corte.
 
-- **[Notación -fija](#Notación--fija)** 
+- **[Notación -fija](#notación--fija)** 
     - [Notación infija](#notación-infija)
     - [Notación posfija](#notación-posfija)
     - [Conversión de infija a posfija](#conversión-de-infija-a-posfija)
@@ -14,6 +14,22 @@ A continuación se encuentran los temas de segundo corte.
     - [Operaciones principales](#operaciones-principales)
     - [Tipos de árboles binarios](#tipos-de-árboles-binarios)
     - [Algoritmos de búsqueda](#algoritmos-de-búsqueda)
+
+- **[Árboles AVL](#árboles-avl)**
+    - [Propiedades AVL](#propiedades-avl)
+    - [Inserción en AVL](#inserción-en-avl)
+    - [Eliminación en AVL](#eliminación-en-avl)
+    - [Rotaciones en AVL](#rotaciones-en-avl)
+
+- **[Árboles Rojo-Negro](#árboles-rojo-negro)**
+    - [Propiedades Rojo-Negro](#propiedades-rojo-negro)
+    - [Inserción en Rojo-Negro](#inserción-en-rojo-negro)
+    - [Eliminación en Rojo-Negro](#eliminación-en-rojo-negro)
+    - [Casos de Rotación Rojo-Negro](#casos-de-rotación-rojo-negro)
+    - [Comparación con AVL](#comparación-con-avl)
+
+- **[Ejemplo de balanceo AVL y Rojo-Negro](#ejemplo-de-balanceo-avl-y-rojo-negro)**
+
 
 ## Notación -fija
 En matemáticas y ciencias de la computación, las notaciones infija, posfija y prefija son formas de escribir expresiones aritméticas. Cada una tiene reglas distintas sobre el orden de los operandos y los operadores, lo cual influye en cómo se evalúan y procesan las expresiones, especialmente en estructuras como árboles de expresión, compiladores o calculadoras.
@@ -154,23 +170,23 @@ Un árbol binario es una estructura de datos jerárquica en la que cada nodo tie
 
 Un **árbol AVL** (por Adelson-Velsky y Landis) es un tipo de árbol binario de búsqueda **auto-balanceado**. En un árbol AVL, la diferencia de altura entre los subárboles izquierdo y derecho de cualquier nodo (llamada **factor de balance**) es como máximo 1.
 
-### Propiedades
+### Propiedades AVL
 
 - **Balanceo automático:** Después de cada inserción o eliminación, el árbol verifica y corrige su balanceo.
 - **Factor de balance:** Se calcula como `altura(izquierda) - altura(derecha)`. Debe estar entre -1 y 1.
 - **Altura logarítmica:** La altura del árbol AVL se mantiene en `O(log n)`, lo que permite búsquedas, inserciones y eliminaciones eficientes.
 
-### Inserción
+### Inserción en AVL
 
 - Se realiza igual que en un BST normal.
 - Luego se recorre hacia arriba verificando el balance y aplicando rotaciones si es necesario.
 
-### Eliminación
+### Eliminación en AVL
 
 - Se elimina igual que en un BST.
 - Luego se actualizan alturas y se balancea el árbol si es necesario.
 
-### Rotaciones
+### Rotaciones en AVL
 
 Las rotaciones se aplican para mantener el equilibrio. Hay 4 tipos:
 
@@ -193,7 +209,7 @@ Dicho de otro modo:
 
 Un **árbol rojo-negro** es un tipo de árbol binario de búsqueda auto-balanceado que garantiza operaciones en tiempo `O(log n)` manteniendo reglas de color y estructura específicas.
 
-### Propiedades
+### Propiedades Rojo-Negro
 
 Para que un árbol sea rojo-negro, debe cumplir estas 5 reglas:
 
@@ -205,24 +221,22 @@ Para que un árbol sea rojo-negro, debe cumplir estas 5 reglas:
 
 Estas reglas garantizan que el árbol se mantenga aproximadamente balanceado.
 
-## Operaciones
-
-### Inserción
+### Inserción en Rojo-Negro
 
 - El nodo nuevo se inserta como **rojo**.
 - Si esto causa dos rojos consecutivos, se reestructura el árbol:
   - **Rotaciones** (simples o dobles)
   - **Recoloreos**
 
-### Eliminación
+### Eliminación en Rojo-Negro
 
 - Es más compleja que la inserción.
 - Requiere varios pasos de **recoloración** y **rotaciones** para restaurar las propiedades si se rompe el balance negro.
 
-## Casos de Rotación
+### Casos de Rotación Rojo-Negro
 Consulte el documento:
 [Casos rojo-negro](rojonegro.pdf)
-## Comparación con AVL
+### Comparación con AVL
 
 | Característica         | AVL                    | Rojo-Negro               |
 |------------------------|------------------------|--------------------------|
@@ -232,3 +246,6 @@ Consulte el documento:
 | Velocidad búsqueda     | Más rápida             | Ligeramente más lenta    |
 | Uso típico             | Sistemas con muchas búsquedas | Sistemas con muchas inserciones/eliminaciones |
 
+## Ejemplo de balanceo AVL y Rojo-Negro
+Consulte el documento:
+[Ejemplo en pdf](<ACTIVIDAD ARBOLES BINARIOS bl.pdf>)
