@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Radioactive",
+    "artist": "Imagine Dragons",
+    "album": "Night Visions",
+    "year": 2012,
+    "duration": 186
+  },
+  {
+    "id": 2,
+    "title": "Demons",
+    "artist": "Imagine Dragons",
+    "album": "Night Visions",
+    "year": 2012,
+    "duration": 177
+  },
+  {
+    "id": 3,
+    "title": "Believer",
+    "artist": "Imagine Dragons",
+    "album": "Evolve",
+    "year": 2017,
+    "duration": 204
+  },
+  {
+    "id": 4,
+    "title": "Thunder",
+    "artist": "Imagine Dragons",
+    "album": "Evolve",
+    "year": 2017,
+    "duration": 187
+  },
+  {
+    "id": 5,
+    "title": "Enemy",
+    "artist": "Imagine Dragons",
+    "album": "Mercury - Act 1",
+    "year": 2021,
+    "duration": 174
+  }
+]
