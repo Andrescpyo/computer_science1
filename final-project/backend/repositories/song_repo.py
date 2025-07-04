@@ -1,75 +1,82 @@
 
-from typing import List, Optional
-from repositories.json_repo import JsonRepository
+from pydantic import BaseModel # Warning: This import is failed in the previous code snippet
+from environmsent_variables import EnvironmentVariables
+from repositories.base_repository import BaseRepository
+from typing import Optional
 
-class SongRepository(JsonRepository):
-    """Repository for managing song data stored in a JSON file."""
+class SongDAO(BaseModel):
+    """Represents the data structure for a song.
+
+    Attributes:
+        id (int): Unique identifier for the song.
+        title (str): Title of the song.
+        artist (str): Artist name.
+        album (str): Album name.
+        year (int): Year of release.
+        duration (int): Duration of the song in seconds.
+    """
+    id: int
+    title: str
+    artist: str
+    album: str
+    year: int
+    duration: int
+
+
+class SongRepository(BaseRepository):
+    """Repository for managing song data using SongDAO."""
 
     def __init__(self):
-        """Initializes the repository with the path to songs.json."""
-        super().__init__("repositories/data/songs.json")
+        """Initializes the repository with the path to the songs data file."""
+        env = EnvironmentVariables()
+        super().__init__(env.path_songs_data)
 
-    def get_all_songs(self) -> List[dict]:
-        """Returns all songs from the JSON file.
+    def _extract_data(self, data: list[dict]) -> list[dict]:
+        """Extracts and returns the raw list of songs.
 
-        Returns:
-            List[dict]: A list of all song records.
-        """
-        return self.load_data()
-
-    def get_song_by_id(self, song_id: int) -> Optional[dict]:
-        """Returns a song by its unique ID.
+        This method allows for preprocessing or transformation
+        of raw JSON data if needed.
 
         Args:
-            song_id (int): ID of the song to retrieve.
+            data (list[dict]): Raw list of song dictionaries.
 
         Returns:
-            Optional[dict]: The song with the given ID, or None if not found.
+            list[dict]: Cleaned or validated list of song dictionaries.
         """
-        for song in self.load_data():
+        return data
+
+    def get_all_songs(self) -> list[SongDAO]:
+        """Retrieves all songs in the repository as SongDAO objects.
+
+        Returns:
+            list[SongDAO]: List of all stored songs.
+        """
+        return [SongDAO(**song) for song in self.data]
+
+    def get_song_by_id(self, song_id: int) -> Optional[SongDAO]:
+        """Finds a song by its unique ID.
+
+        Args:
+            song_id (int): ID of the song to search.
+
+        Returns:
+            Optional[SongDAO]: The matching song, or None if not found.
+        """
+        for song in self.data:
             if song.get("id") == song_id:
-                return song
+                return SongDAO(**song)
         return None
 
-    def add_song(self, song: dict) -> None:
-        """Adds a new song to the repository.
+    def get_song_by_title(self, title: str) -> Optional[SongDAO]:
+        """Finds a song by its title, case-insensitive.
 
         Args:
-            song (dict): The song data to add. Must contain a unique "id" key.
+            title (str): Title of the song to search.
 
-        Raises:
-            ValueError: If a song with the same ID already exists.
+        Returns:
+            Optional[SongDAO]: The matching song, or None if not found.
         """
-        data = self.load_data()
-        if any(existing.get("id") == song["id"] for existing in data):
-            raise ValueError(f"Song with id {song['id']} already exists.")
-        data.append(song)
-        self.save_data(data)
-
-    def delete_song(self, song_id: int) -> None:
-        """Deletes a song by its ID.
-
-        Args:
-            song_id (int): ID of the song to delete.
-        """
-        data = self.load_data()
-        new_data = [song for song in data if song.get("id") != song_id]
-        self.save_data(new_data)
-
-    def update_song(self, song_id: int, new_data: dict) -> None:
-        """Updates an existing song with new data.
-
-        Args:
-            song_id (int): ID of the song to update.
-            new_data (dict): Dictionary containing the updated fields.
-
-        Raises:
-            ValueError: If the song with the given ID is not found.
-        """
-        data = self.load_data()
-        for index, song in enumerate(data):
-            if song.get("id") == song_id:
-                data[index].update(new_data)
-                self.save_data(data)
-                return
-        raise ValueError(f"Song with id {song_id} not found.")
+        for song in self.data:
+            if song.get("title", "").lower() == title.lower():
+                return SongDAO(**song)
+        return None
