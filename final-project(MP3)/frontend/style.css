@@ -1,0 +1,829 @@
+/* style.css */
+
+/* Variables CSS para colores y tipografía */
+:root {
+    --primary-bg-color: #1a1a1a; /* Negro oscuro */
+    --secondary-bg-color: #2a2a2a; /* Gris oscuro */
+    --accent-color: #ff4d6d; /* Rosa vibrante */
+    --text-color-light: #f0f0f0; /* Blanco suave */
+    --text-color-dark: #b0b0b0; /* Gris claro para texto secundario */
+    --border-color: #444; /* Gris para bordes */
+    --shadow-color: rgba(0, 0, 0, 0.4);
+
+    /* Gradientes para portadas de álbumes (ejemplos) */
+    --gradient-1: linear-gradient(135deg, #ff7e00, #ff007e);
+    --gradient-2: linear-gradient(135deg, #f72c72, #e75c2e);
+    --gradient-3: linear-gradient(135deg, #7c3aff, #ff3a81);
+    --gradient-4: linear-gradient(135deg, #ff9900, #ff0077);
+}
+
+/* Reset básico y estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Usar Poppins si está disponible, sino sans-serif */
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-light);
+    display: flex; /* Centrar la aplicación en la pantalla */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que la aplicación ocupe toda la altura de la ventana */
+    overflow: hidden; /* Evita el scroll del body */
+}
+
+/* Contenedor principal de la aplicación (simula el dispositivo) */
+#app-container {
+    width: 375px; /* Ancho de un móvil estándar */
+    height: 812px; /* Alto de un móvil estándar (iPhone X/XS) */
+    background-color: var(--secondary-bg-color);
+    border-radius: 30px;
+    box-shadow: 0 10px 40px var(--shadow-color);
+    overflow: hidden; /* Oculta el contenido que desborde el contenedor del teléfono */
+    display: flex;
+    flex-direction: column; /* Organiza las pantallas en columna */
+}
+
+/* Estilos para las pantallas individuales */
+.screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* transition: transform 0.3s ease-in-out; /* Para animaciones de transición entre pantallas si se implementan */
+}
+
+/* Pantalla de Exploración */
+.header-explore {
+    padding: 30px 20px 20px;
+    text-align: center;
+    background-color: var(--secondary-bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-explore h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: var(--text-color-light);
+}
+
+.header-explore p {
+    font-size: 0.9em;
+    color: var(--text-color-dark);
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-light);
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-bar input::placeholder {
+    color: var(--text-color-dark);
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+.search-bar button {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 25px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #d13a5a;
+}
+
+.search-bar button .icon {
+    color: var(--text-color-light);
+    font-size: 1.1em;
+}
+
+.add-button {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #d13a5a;
+}
+
+.add-button .icon {
+    font-size: 1.1em;
+    color: var(--text-color-light);
+}
+
+/* Contenido principal con scroll para las secciones */
+.main-content {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    padding: 0px 20px 20px; /* Ajustar padding superior si el header ya lo tiene */
+    overflow-y: auto; /* Permite scroll si el contenido desborda */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para las secciones de la biblioteca y resultados de búsqueda */
+.trending-now, .recently-played {
+    margin-bottom: 30px;
+}
+
+.trending-now h2, .recently-played h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: var(--text-color-light);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+/* Control de scroll para la sección de la biblioteca */
+.trending-now {
+    max-height: 250px; /* Altura máxima para la cuadrícula de álbumes */
+    overflow-y: auto;  /* Habilita el scroll vertical si el contenido excede la altura máxima */
+    padding-right: 10px; /* Espacio para que la barra de scroll no se superponga al contenido */
+}
+
+/* Estilo para la barra de scroll (Webkit browsers como Chrome/Safari) */
+.trending-now::-webkit-scrollbar,
+.music-list::-webkit-scrollbar,
+.track-list::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de scroll */
+}
+
+.trending-now::-webkit-scrollbar-track,
+.music-list::-webkit-scrollbar-track,
+.track-list::-webkit-scrollbar-track {
+    background: var(--primary-bg-color); /* Fondo del track */
+    border-radius: 4px;
+}
+
+.trending-now::-webkit-scrollbar-thumb,
+.music-list::-webkit-scrollbar-thumb,
+.track-list::-webkit-scrollbar-thumb {
+    background-color: var(--border-color); /* Color del "pulgar" */
+    border-radius: 4px;
+    border: 2px solid var(--primary-bg-color); /* Borde para separarlo del track */
+}
+
+.trending-now::-webkit-scrollbar-thumb:hover,
+.music-list::-webkit-scrollbar-thumb:hover,
+.track-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color al pasar el ratón */
+}
+
+/* Cuadrícula de tarjetas de música/álbumes */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+    gap: 10px; /* Espacio uniforme entre las tarjetas */
+}
+
+.music-card {
+    background-color: var(--primary-bg-color);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative; /* Para el botón de eliminar */
+    overflow: hidden; /* Importante para el botón de eliminar y quizás marquesina */
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.music-card .album-cover {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    background: var(--gradient-1); /* Color por defecto, se sobrescribe con JS */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos de álbum/canción y artistas */
+.music-card .album-name {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-color-light);
+    margin-bottom: 2px;
+    /* Marquee base styles */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Fallback if JS/animation fails */
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5px; /* Un poco de padding horizontal para el texto */
+}
+
+.music-card .artist {
+    font-size: 0.8em;
+    color: var(--text-color-dark);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding: 0 5px;
+}
+
+/* Lista de resultados de búsqueda (similar a recently-played) */
+.music-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 300px; /* Limitar altura y permitir scroll para resultados */
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.music-list .list-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    position: relative; /* Para el botón de eliminar */
+}
+
+.music-list .list-item:hover {
+    background-color: #3a3a3a;
+}
+
+.music-list .list-item .album-cover.small {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 10px;
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+.music-list .list-item .info {
+    flex-grow: 1;
+    overflow: hidden; /* Oculta el desbordamiento de texto */
+}
+
+.music-list .list-item .album-name {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: var(--text-color-light);
+    text-align: left; /* Alineación a la izquierda en la lista */
+    padding: 0; /* Eliminar padding horizontal si lo tiene */
+}
+
+.music-list .list-item .artist {
+    font-size: 0.85em;
+    color: var(--text-color-dark);
+    text-align: left; /* Alineación a la izquierda en la lista */
+    padding: 0; /* Eliminar padding horizontal si lo tiene */
+}
+
+.music-list .list-item .icon {
+    color: var(--text-color-dark);
+    font-size: 1.1em;
+    margin-left: auto; /* Empuja el icono al final */
+    cursor: pointer;
+}
+
+.music-list .list-item .icon:hover {
+    color: var(--accent-color);
+}
+
+
+/* --- Estilos para el efecto de Marquesina (Scroll de texto) --- */
+
+/* El elemento SPAN dentro de .album-name o .track-name que contendrá el texto duplicado */
+.album-name span.marquee-text,
+.track-name span.marquee-text {
+    display: inline-block; /* Crucial para aplicar transform y tener ancho */
+    padding-right: 15px;  /* Espacio entre la primera y la segunda copia del texto */
+    /* Asegurarse de que el texto del span no se corte */
+    white-space: nowrap;
+}
+
+/* La clase 'marquee' aplicada al padre (<p>) activa la animación en el hijo (<span>) */
+.album-name.marquee .marquee-text,
+.track-name.marquee .marquee-text {
+    animation-name: marquee-scroll;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-duration se setea vía JavaScript */
+    /* text-overflow: clip; /* Asegúrate de que el texto no muestre puntos suspensivos cuando se mueva */
+}
+
+/* Definición de la animación de desplazamiento */
+@keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Mueve el 50% de su propio ancho combinado (texto duplicado) */
+}
+
+
+/* --- Estilos de Botones de Eliminar --- */
+
+/* Botón de eliminar en music-card (cuadrícula de biblioteca) */
+.music-card .delete-button {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    border: none;
+    color: var(--text-color-light);
+    font-size: 1em;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+    z-index: 10; /* Asegura que esté por encima de la portada */
+}
+
+.music-card:hover .delete-button {
+    opacity: 1; /* Mostrar al pasar el ratón */
+    background-color: var(--accent-color); /* Cambiar color al hover */
+}
+
+.delete-button .fas {
+    font-size: 0.9em;
+}
+
+/* Botón de eliminar en list-item y track-item (listas de búsqueda y playlist) */
+.list-item .delete-button-small,
+.track-item .delete-button-small {
+    background: none;
+    border: none;
+    color: var(--text-color-dark);
+    font-size: 1em;
+    cursor: pointer;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.2s ease;
+    margin-left: 10px; /* Espacio con otros iconos/elementos */
+    position: absolute; /* Para posicionarlo correctamente al final */
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px; /* Hace el área clickeable más grande */
+}
+
+.list-item:hover .delete-button-small,
+.track-item:hover .delete-button-small {
+    opacity: 1; /* Mostrar al pasar el ratón */
+}
+
+/* --- Navbar (barra de navegación inferior) --- */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: var(--secondary-bg-color);
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+}
+
+.navbar .nav-item {
+    color: var(--text-color-dark);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-item:hover,
+.navbar .nav-item.active {
+    color: var(--accent-color);
+}
+
+/* --- Pantalla del Reproductor --- */
+.player-screen {
+    /* Ya está flex column */
+}
+
+.player-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: var(--text-color-dark);
+    font-size: 1.2em;
+}
+
+.player-header .icon {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.player-header .icon:hover {
+    color: var(--accent-color);
+}
+
+.player-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.album-art-large {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    background: var(--gradient-2); /* Placeholder */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+}
+
+.song-title {
+    font-size: 1.8em;
+    color: var(--text-color-light);
+    margin-bottom: 5px;
+}
+
+.artist-album {
+    font-size: 1em;
+    color: var(--text-color-dark);
+    margin-bottom: 30px;
+}
+
+.player-controls {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 40px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 5px;
+    background-color: var(--border-color);
+    border-radius: 2.5px;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 30%; /* Ejemplo de progreso */
+    background-color: var(--accent-color);
+    border-radius: 2.5px;
+}
+
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: var(--text-color-dark);
+    margin-bottom: 20px;
+}
+
+.playback-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.playback-buttons .icon {
+    font-size: 1.8em;
+    color: var(--text-color-dark);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.playback-buttons .icon.fa-play,
+.playback-buttons .icon.fa-pause {
+    font-size: 2.8em; /* Botón de play/pause más grande */
+    color: var(--accent-color);
+}
+
+.playback-buttons .icon:hover {
+    color: var(--accent-color);
+}
+
+.lyrics-button {
+    background-color: var(--primary-bg-color);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lyrics-button:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+}
+
+
+/* --- Pantalla de Playlist/Álbum --- */
+.playlist-screen {
+    /* Ya está flex column */
+}
+
+.playlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: var(--text-color-dark);
+    font-size: 1.2em;
+}
+
+.playlist-header .icon {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.playlist-header .icon:hover {
+    color: var(--accent-color);
+}
+
+.playlist-main {
+    flex-grow: 1;
+    overflow-y: auto; /* Permitir scroll en la lista de canciones */
+    padding: 0 20px 20px;
+}
+
+.playlist-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.album-cover-playlist {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    background: var(--gradient-3); /* Placeholder */
+    margin-right: 15px;
+    flex-shrink: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.playlist-info .text-info {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.playlist-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-color-light);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist-artist, .playlist-album {
+    font-size: 0.9em;
+    color: var(--text-color-dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.plays {
+    font-size: 0.8em;
+    color: var(--text-color-dark);
+    margin-top: 5px;
+}
+
+.playlist-actions {
+    display: flex;
+    gap: 15px;
+    margin-left: 15px; /* Empuja las acciones a la derecha */
+}
+
+.playlist-actions .icon {
+    font-size: 1.3em;
+    color: var(--text-color-dark);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.playlist-actions .icon:hover {
+    color: var(--accent-color);
+}
+
+.track-list {
+    list-style: none;
+    padding: 0;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    position: relative; /* Para el botón de eliminar */
+}
+
+.track-item:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.track-item:last-child {
+    border-bottom: none;
+}
+
+.track-number {
+    font-size: 0.9em;
+    color: var(--text-color-dark);
+    margin-right: 10px;
+    width: 25px; /* Ancho fijo para números */
+    text-align: center;
+}
+
+.track-details {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.track-name {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--text-color-light);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Fallback */
+    position: relative; /* Para marquesina */
+    width: 100%; /* Asegura que ocupe el ancho disponible */
+}
+
+.track-artist {
+    font-size: 0.85em;
+    color: var(--text-color-dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.explicit-tag {
+    background-color: var(--border-color);
+    color: var(--text-color-light);
+    font-size: 0.7em;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+
+/* Iconos al final de la línea */
+.track-item .icon {
+    color: var(--text-color-dark);
+    font-size: 1.1em;
+    margin-left: 15px;
+    cursor: pointer;
+    flex-shrink: 0; /* Evita que los iconos se encojan */
+}
+
+.track-item .icon:hover {
+    color: var(--accent-color);
+}
+
+/* --- Modal para añadir nueva canción --- */
+.modal {
+    display: none; /* Oculto por defecto, JS lo muestra/oculta */
+    position: fixed; /* Posición fija para cubrir toda la pantalla */
+    z-index: 1000; /* Estar por encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilitar scroll si el contenido es grande */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: var(--secondary-bg-color);
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px; /* Ancho máximo para el modal */
+    position: relative;
+    color: var(--text-color-light);
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--text-color-light);
+    font-size: 1.5em;
+}
+
+.modal-content form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-color-dark);
+}
+
+.modal-content form input[type="text"],
+.modal-content form input[type="number"] {
+    width: calc(100% - 20px); /* Ajustar el ancho para el padding */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-light);
+    font-size: 1em;
+    box-sizing: border-box; /* Incluir padding y border en el ancho */
+}
+
+.modal-content form input[type="text"]:focus,
+.modal-content form input[type="number"]:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(255, 77, 109, 0.3);
+}
+
+.modal-content form button[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content form button[type="submit"]:hover {
+    background-color: #d13a5a;
+}
+
+.close-button {
+    color: var(--text-color-dark);
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--text-color-light);
+}
