@@ -30,6 +30,14 @@ A continuación se encuentran los temas de segundo corte.
 
 - **[Ejemplo de balanceo AVL y Rojo-Negro](#ejemplo-de-balanceo-avl-y-rojo-negro)**
 
+- **[Árboles B y B+](#árboles-b-y-b)**
+    - [Árbol B](#árbol-b)
+    - [Propiedades del árbol B](#propiedades-del-árbol-b-de-orden-m)
+    - [Operaciones en árbol B](#operaciones)
+    - [Árbol B+](#árbol-b-plus)
+    - [Propiedades del árbol B+](#propiedades-de-árbol-b)
+    - [Diferencias clave con el árbol B](#diferencias-clave-con-el-árbol-b)
+    - [Usos comunes](#usos-comunes)
 
 ## Notación -fija
 En matemáticas y ciencias de la computación, las notaciones infija, posfija y prefija son formas de escribir expresiones aritméticas. Cada una tiene reglas distintas sobre el orden de los operandos y los operadores, lo cual influye en cómo se evalúan y procesan las expresiones, especialmente en estructuras como árboles de expresión, compiladores o calculadoras.
@@ -249,3 +257,83 @@ Consulte el documento:
 ## Ejemplo de balanceo AVL y Rojo-Negro
 Consulte el documento:
 [Ejemplo en pdf](<ACTIVIDAD ARBOLES BINARIOS bl.pdf>)
+
+## Árboles B y B+
+
+Los árboles **B** y **B+** son estructuras de datos de búsqueda balanceadas de orden `m`, comúnmente utilizadas en sistemas de bases de datos y sistemas de archivos para almacenar y buscar grandes cantidades de datos en memoria secundaria (disco).
+### Árbol B
+### ¿Qué es un árbol B?
+
+Un **árbol B** es un árbol de búsqueda generalizado auto-balanceado que puede tener más de dos hijos por nodo. Está diseñado para minimizar el número de accesos a disco. Todos los datos se almacenan en nodos internos o hojas.
+
+### Propiedades del árbol B de orden *m*
+
+- Cada nodo puede tener como máximo `m - 1` claves y `m` hijos.
+- Cada nodo (excepto la raíz) debe tener al menos `⌈m/2⌉` hijos.
+- Las claves dentro de cada nodo están ordenadas.
+- Todos los nodos hoja están al mismo nivel.
+- La raíz puede tener mínimo 2 hijos si no es hoja.
+
+### Operaciones
+
+- **Búsqueda:** Se realiza de manera similar a una búsqueda binaria dentro del nodo, luego se sigue hacia el hijo correspondiente.
+- **Inserción:** Si un nodo se llena, se divide en dos y se mueve una clave al nodo padre. Si el padre también se llena, se repite recursivamente.
+- **Eliminación:** Puede requerir fusiones o redistribución de claves para mantener las reglas.
+
+### Ventajas
+
+- Muy eficiente para almacenamiento en disco (menos accesos).
+- Balanceado en todo momento.
+- Adecuado para lecturas y escrituras masivas.
+
+### Árbol B+
+### ¿Qué es un árbol B+?
+
+Un **árbol B+** es una variación del árbol B en el que **todas las claves están en las hojas**, y los nodos internos solo sirven como guías para la búsqueda. Además, **las hojas están enlazadas entre sí** de forma secuencial, facilitando recorridos ordenados.
+
+### Propiedades de árbol B+
+
+- Todas las claves y datos están en nodos hoja.
+- Los nodos internos solo contienen copias de claves.
+- Las hojas están conectadas entre sí como una lista enlazada ordenada.
+- Ideal para recorridos secuenciales (rangos).
+
+### Diferencias clave con el árbol B
+
+| Característica         | Árbol B                        | Árbol B+                          |
+|------------------------|-------------------------------|------------------------------------|
+| Almacenamiento de datos| En todos los nodos            | Solo en hojas                     |
+| Recorrido ordenado     | Más complejo                  | Rápido (por enlaces entre hojas)  |
+| Redundancia            | No (una sola copia por clave) | Sí (claves duplicadas en internos)|
+| Búsqueda               | Termina en cualquier nodo     | Siempre llega a una hoja          |
+| Ideal para             | Lectura y escritura general   | Lecturas por rango / índices      |
+
+
+### Usos comunes
+
+- **Bases de datos**: Para implementar índices de gran tamaño que no caben en RAM.
+- **Sistemas de archivos**: Para organizar y acceder a archivos y bloques de disco.
+- **Sistemas operativos**: Especialmente B+ en estructuras de tipo árbol.
+
+
+### Árbol B (orden 3)
+```
+     [10 | 20]
+    /   |    \
+ [5]  [15]  [25]
+```
+
+### Árbol B+ (orden 3)
+```
+    [10 | 20]
+    /   |    \
+ →[5]→[10 15]→[20 25]→
+```
+
+- Los nodos hoja están conectados con flechas horizontales.
+- Los internos solo guían la búsqueda, los datos están todos en las hojas.
+
+
+### Ventaja principal del B+
+
+La conexión entre las hojas permite realizar recorridos por rangos de forma mucho más eficiente (como en consultas tipo `WHERE x BETWEEN a AND b`).
