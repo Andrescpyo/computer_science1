@@ -1792,12 +1792,12 @@
     "duration": 238
   },
   {
-  "id": 227,
-  "title": "7 Lunas",
-  "artist": "Nicki Nicole",
-  "album": "Recuerdos",
-  "year": 2019,
-  "duration": 208
+    "id": 227,
+    "title": "7 Lunas",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 208
   },
   {
     "id": 228,
@@ -1888,12 +1888,12 @@
     "duration": 145
   },
   {
-  "id": 239,
-  "title": "Ya No",
-  "artist": "Nicki Nicole",
-  "album": "Alma",
-  "year": 2023,
-  "duration": 172
+    "id": 239,
+    "title": "Ya No",
+    "artist": "Nicki Nicole",
+    "album": "Alma",
+    "year": 2023,
+    "duration": 172
   },
   {
     "id": 240,
@@ -1968,12 +1968,12 @@
     "duration": 128
   },
   {
-  "id": 249,
-  "title": "VEINTI",
-  "artist": "Nicki Nicole",
-  "album": "Naiki",
-  "year": 2024,
-  "duration": 152
+    "id": 249,
+    "title": "VEINTI",
+    "artist": "Nicki Nicole",
+    "album": "Naiki",
+    "year": 2024,
+    "duration": 152
   },
   {
     "id": 250,
@@ -2038,5 +2038,6509 @@
     "album": "Naiki",
     "year": 2024,
     "duration": 139
+  },
+  {
+    "id": 259,
+    "title": "Mío",
+    "artist": "Kany García",
+    "album": "Limonada",
+    "year": 2016,
+    "duration": 186
+  },
+  {
+    "id": 260,
+    "title": "De Verano a Invierno",
+    "artist": "Kany García",
+    "album": "Limonada",
+    "year": 2016,
+    "duration": 207
+  },
+  {
+    "id": 261,
+    "title": "Perfecto para Mi",
+    "artist": "Kany García",
+    "album": "Limonada",
+    "year": 2016,
+    "duration": 174
+  },
+  {
+    "id": 262,
+    "title": "El Mejor",
+    "artist": "Kany García",
+    "album": "Limonada",
+    "year": 2016,
+    "duration": 189
+  },
+  {
+    "id": 263,
+    "title": "Aquí",
+    "artist": "Kany García",
+    "album": "Limonada",
+    "year": 2016,
+    "duration": 196
+  },
+  {
+    "id": 264,
+    "title": "Peligro de Extinción",
+    "artist": "Kany García",
+    "album": "Limonada",
+    "year": 2016,
+    "duration": 169
+  },
+  {
+    "id": 265,
+    "title": "Me Pregunto",
+    "artist": "Kany García",
+    "album": "Limonada",
+    "year": 2016,
+    "duration": 176
+  },
+  {
+    "id": 266,
+    "title": "Cómo Decirle",
+    "artist": "Kany García",
+    "album": "Limonada",
+    "year": 2016,
+    "duration": 241
+  },
+  {
+    "id": 267,
+    "title": "Yo Quiero Bailar",
+    "artist": "Kany García",
+    "album": "Limonada",
+    "year": 2016,
+    "duration": 166
+  },
+  {
+    "id": 268,
+    "title": "Libre",
+    "artist": "Kany García",
+    "album": "Limonada",
+    "year": 2016,
+    "duration": 159
+  },
+  {
+    "id": 269,
+    "title": "Limonada",
+    "artist": "Kany García",
+    "album": "Limonada",
+    "year": 2016,
+    "duration": 202
+  },
+  {
+    "id": 270,
+    "title": "Arriésgate a Intentarlo",
+    "artist": "Kany García",
+    "album": "Soy Yo",
+    "year": 2018,
+    "duration": 198
+  },
+  {
+    "id": 271,
+    "title": "Bailemos un Blues",
+    "artist": "Kany García",
+    "album": "Soy Yo",
+    "year": 2018,
+    "duration": 225
+  },
+  {
+    "id": 272,
+    "title": "A Mis Amigos",
+    "artist": "Kany García",
+    "album": "Soy Yo",
+    "year": 2018,
+    "duration": 206
+  },
+  {
+    "id": 273,
+    "title": "Sin Tu Cariño",
+    "artist": "Kany García",
+    "album": "Soy Yo",
+    "year": 2018,
+    "duration": 207
+  },
+  {
+    "id": 274,
+    "title": "Confieso",
+    "artist": "Kany García",
+    "album": "Soy Yo",
+    "year": 2018,
+    "duration": 224
+  },
+  {
+    "id": 275,
+    "title": "Sácala a Bailar",
+    "artist": "Kany García",
+    "album": "Soy Yo",
+    "year": 2018,
+    "duration": 212
+  },
+  {
+    "id": 276,
+    "title": "Para Siempre",
+    "artist": "Kany García",
+    "album": "Soy Yo",
+    "year": 2018,
+    "duration": 201
+  },
+  {
+    "id": 277,
+    "title": "Soy Yo",
+    "artist": "Kany García",
+    "album": "Soy Yo",
+    "year": 2018,
+    "duration": 243
+  },
+  {
+    "id": 278,
+    "title": "Dejarte Ir",
+    "artist": "Kany García",
+    "album": "Soy Yo",
+    "year": 2018,
+    "duration": 178
+  },
+  {
+    "id": 279,
+    "title": "Que Viva la Gente",
+    "artist": "Kany García",
+    "album": "Soy Yo",
+    "year": 2018,
+    "duration": 248
+  },
+  {
+    "id": 280,
+    "title": "Banana Papaya",
+    "artist": "Kany García",
+    "album": "Soy Yo",
+    "year": 2018,
+    "duration": 178
+  },
+  {
+    "id": 281,
+    "title": "Pensamiento de Rozalén",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 29
+  },
+  {
+    "id": 282,
+    "title": "Así Voy Yo",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 171
+  },
+  {
+    "id": 283,
+    "title": "Pensamiento de Mercedes Sosa",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 32
+  },
+  {
+    "id": 284,
+    "title": "Remamos",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 232
+  },
+  {
+    "id": 285,
+    "title": "Pensamiento de Mi Madre",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 26
+  },
+  {
+    "id": 286,
+    "title": "Me Mudé",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 199
+  },
+  {
+    "id": 287,
+    "title": "Pensamiento de Natti Natasha",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 20
+  },
+  {
+    "id": 288,
+    "title": "Tu Amor Es Como Un Río",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 228
+  },
+  {
+    "id": 289,
+    "title": "Pensamiento de Natalia Lafourcade",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 37
+  },
+  {
+    "id": 290,
+    "title": "Aunque Sea Un Momento",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 220
+  },
+  {
+    "id": 291,
+    "title": "Pensamiento de Thalía",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 30
+  },
+  {
+    "id": 292,
+    "title": "Quédate",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 202
+  },
+  {
+    "id": 293,
+    "title": "Pensamiento de Soledad Pastorutti",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 28
+  },
+  {
+    "id": 294,
+    "title": "La Libreta",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 188
+  },
+  {
+    "id": 295,
+    "title": "Pensamiento de Anónimo",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 30
+  },
+  {
+    "id": 296,
+    "title": "Mundo Inventado",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 225
+  },
+  {
+    "id": 297,
+    "title": "Pensamiento de Lila Downs",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 27
+  },
+  {
+    "id": 298,
+    "title": "Solo Falta Que Llegues Tú",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 203
+  },
+  {
+    "id": 299,
+    "title": "Pensamiento de Sofia Vergara",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 23
+  },
+  {
+    "id": 300,
+    "title": "Vivir Contigo",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 203
+  },
+  {
+    "id": 301,
+    "title": "Pensamiento de Kany Garcia",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 36
+  },
+  {
+    "id": 302,
+    "title": "Las Palabras",
+    "artist": "Kany García",
+    "album": "Contra el Viento",
+    "year": 2019,
+    "duration": 262
+  },
+  {
+    "id": 303,
+    "title": "Lo Que en Ti Veo",
+    "artist": "Kany García",
+    "album": "Mesa para Dos",
+    "year": 2020,
+    "duration": 206
+  },
+  {
+    "id": 304,
+    "title": "Óxido",
+    "artist": "Kany García",
+    "album": "Mesa para Dos",
+    "year": 2020,
+    "duration": 185
+  },
+  {
+    "id": 305,
+    "title": "Se Portaba Mal",
+    "artist": "Kany García",
+    "album": "Mesa para Dos",
+    "year": 2020,
+    "duration": 196
+  },
+  {
+    "id": 306,
+    "title": "Que Pasen los Días",
+    "artist": "Kany García",
+    "album": "Mesa para Dos",
+    "year": 2020,
+    "duration": 187
+  },
+  {
+    "id": 307,
+    "title": "Búscame",
+    "artist": "Kany García",
+    "album": "Mesa para Dos",
+    "year": 2020,
+    "duration": 157
+  },
+  {
+    "id": 308,
+    "title": "Date la Vuelta",
+    "artist": "Kany García",
+    "album": "Mesa para Dos",
+    "year": 2020,
+    "duration": 197
+  },
+  {
+    "id": 309,
+    "title": "Nuevas Mentiras",
+    "artist": "Kany García",
+    "album": "Mesa para Dos",
+    "year": 2020,
+    "duration": 223
+  },
+  {
+    "id": 310,
+    "title": "Acómpañame",
+    "artist": "Kany García",
+    "album": "Mesa para Dos",
+    "year": 2020,
+    "duration": 166
+  },
+  {
+    "id": 311,
+    "title": "Cobardes",
+    "artist": "Kany García",
+    "album": "Mesa para Dos",
+    "year": 2020,
+    "duration": 166
+  },
+  {
+    "id": 312,
+    "title": "Titanic",
+    "artist": "Kany García",
+    "album": "Mesa para Dos",
+    "year": 2020,
+    "duration": 239
+  },
+  {
+    "id": 313,
+    "title": "Mi Plan de Vida",
+    "artist": "Kany García",
+    "album": "El Amor Que Merecemos",
+    "year": 2022,
+    "duration": 180
+  },
+  {
+    "id": 314,
+    "title": "DPM (De Pxta Madre)",
+    "artist": "Kany García",
+    "album": "El Amor Que Merecemos",
+    "year": 2022,
+    "duration": 182
+  },
+  {
+    "id": 315,
+    "title": "Pájaro Herido",
+    "artist": "Kany García",
+    "album": "El Amor Que Merecemos",
+    "year": 2022,
+    "duration": 217
+  },
+  {
+    "id": 316,
+    "title": "Supe Que Eras Para Mí",
+    "artist": "Kany García",
+    "album": "El Amor Que Merecemos",
+    "year": 2022,
+    "duration": 206
+  },
+  {
+    "id": 317,
+    "title": "Agüita e Coco",
+    "artist": "Kany García",
+    "album": "El Amor Que Merecemos",
+    "year": 2022,
+    "duration": 177
+  },
+  {
+    "id": 318,
+    "title": "Muero",
+    "artist": "Kany García",
+    "album": "El Amor Que Merecemos",
+    "year": 2022,
+    "duration": 218
+  },
+  {
+    "id": 319,
+    "title": "Sin Frenos",
+    "artist": "Kany García",
+    "album": "El Amor Que Merecemos",
+    "year": 2022,
+    "duration": 165
+  },
+  {
+    "id": 320,
+    "title": "Justito a Tiempo",
+    "artist": "Kany García",
+    "album": "El Amor Que Merecemos",
+    "year": 2022,
+    "duration": 162
+  },
+  {
+    "id": 321,
+    "title": "No Vuelvas",
+    "artist": "Kany García",
+    "album": "El Amor Que Merecemos",
+    "year": 2022,
+    "duration": 189
+  },
+  {
+    "id": 322,
+    "title": "Me Quedo Sola",
+    "artist": "Kany García",
+    "album": "El Amor Que Merecemos",
+    "year": 2022,
+    "duration": 148
+  },
+  {
+    "id": 323,
+    "title": "García",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 163
+  },
+  {
+    "id": 324,
+    "title": "Te Lo Agradezco",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 184
+  },
+  {
+    "id": 325,
+    "title": "En Esta Boca",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 171
+  },
+  {
+    "id": 326,
+    "title": "Historia Repetida",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 159
+  },
+  {
+    "id": 327,
+    "title": "Mi Secreto",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 164
+  },
+  {
+    "id": 328,
+    "title": "Llorar Por Ella",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 169
+  },
+  {
+    "id": 329,
+    "title": "Que Vuelva",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 167
+  },
+  {
+    "id": 330,
+    "title": "Una Vida Buena",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 130
+  },
+  {
+    "id": 331,
+    "title": "La Siguiente",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 203
+  },
+  {
+    "id": 332,
+    "title": "De Bien a Mal",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 164
+  },
+  {
+    "id": 333,
+    "title": "Fuera de Servicio",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 164
+  },
+  {
+    "id": 334,
+    "title": "La Malquerida",
+    "artist": "Kany García",
+    "album": "García",
+    "year": 2024,
+    "duration": 185
+  },
+  {
+    "id": 335,
+    "title": "Homerun (Intro)",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 150
+  },
+  {
+    "id": 336,
+    "title": "Tal Vez",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 264
+  },
+  {
+    "id": 337,
+    "title": "No Puedo",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 176
+  },
+  {
+    "id": 338,
+    "title": "Adan y Eva",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 257
+  },
+  {
+    "id": 339,
+    "title": "Demasiado Loco",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 167
+  },
+  {
+    "id": 340,
+    "title": "Maldita Abusadora",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 251
+  },
+  {
+    "id": 341,
+    "title": "Y Yo No Sé",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 191
+  },
+  {
+    "id": 342,
+    "title": "So Fresh",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 168
+  },
+  {
+    "id": 343,
+    "title": "Querido Amigo",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 229
+  },
+  {
+    "id": 344,
+    "title": "Romeo y Julieta",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 182
+  },
+  {
+    "id": 345,
+    "title": "Por Eso Vine",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 178
+  },
+  {
+    "id": 346,
+    "title": "Solo Pienso En Ti",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 268
+  },
+  {
+    "id": 347,
+    "title": "Forever Alone",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 215
+  },
+  {
+    "id": 348,
+    "title": "Condenado Para El Millón",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 222
+  },
+  {
+    "id": 349,
+    "title": "Nena Maldición",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 228
+  },
+  {
+    "id": 350,
+    "title": "Dímelo",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 213
+  },
+  {
+    "id": 351,
+    "title": "Chica Paranormal",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 222
+  },
+  {
+    "id": 352,
+    "title": "Sigan Hablando de Mi",
+    "artist": "Paulo Londra",
+    "album": "Homerun",
+    "year": 2019,
+    "duration": 161
+  },
+  {
+    "id": 353,
+    "title": "Chango",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 155
+  },
+  {
+    "id": 354,
+    "title": "Plan A",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 179
+  },
+  {
+    "id": 355,
+    "title": "Party en el Barrio",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 236
+  },
+  {
+    "id": 356,
+    "title": "Luces",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 172
+  },
+  {
+    "id": 357,
+    "title": "Por Deporte",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 170
+  },
+  {
+    "id": 358,
+    "title": "Noche de Novela",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 192
+  },
+  {
+    "id": 359,
+    "title": "Nublado",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 178
+  },
+  {
+    "id": 360,
+    "title": "A Veces",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 191
+  },
+  {
+    "id": 361,
+    "title": "Cansado",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 182
+  },
+  {
+    "id": 362,
+    "title": "Ella",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 214
+  },
+  {
+    "id": 363,
+    "title": "Julieta",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 184
+  },
+  {
+    "id": 364,
+    "title": "Ojalá",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 168
+  },
+  {
+    "id": 365,
+    "title": "Forever Alone",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 215
+  },
+  {
+    "id": 366,
+    "title": "Necio",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 219
+  },
+  {
+    "id": 367,
+    "title": "Chance",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 204
+  },
+  {
+    "id": 368,
+    "title": "Toc Toc",
+    "artist": "Paulo Londra",
+    "album": "Back to the Game",
+    "year": 2022,
+    "duration": 158
+  },
+  {
+    "id": 369,
+    "title": "SIN CADENAS",
+    "artist": "Paulo Londra",
+    "album": "VERSUS",
+    "year": 2025,
+    "duration": 143
+  },
+  {
+    "id": 370,
+    "title": "MI VERSIÓN",
+    "artist": "Paulo Londra",
+    "album": "VERSUS",
+    "year": 2025,
+    "duration": 159
+  },
+  {
+    "id": 371,
+    "title": "NEXT",
+    "artist": "Paulo Londra",
+    "album": "VERSUS",
+    "year": 2025,
+    "duration": 122
+  },
+  {
+    "id": 372,
+    "title": "GLAMPING",
+    "artist": "Paulo Londra",
+    "album": "VERSUS",
+    "year": 2025,
+    "duration": 142
+  },
+  {
+    "id": 373,
+    "title": "PVSL",
+    "artist": "Paulo Londra",
+    "album": "VERSUS",
+    "year": 2025,
+    "duration": 182
+  },
+  {
+    "id": 374,
+    "title": "GRACIAS",
+    "artist": "Paulo Londra",
+    "album": "VERSUS",
+    "year": 2025,
+    "duration": 119
+  },
+  {
+    "id": 375,
+    "title": "20 20",
+    "artist": "3AM",
+    "album": "Lluvia: Rain City Vol.2",
+    "year": 2023,
+    "duration": 140
+  },
+  {
+    "id": 376,
+    "title": "Negar",
+    "artist": "3AM",
+    "album": "Lluvia: Rain City Vol.2",
+    "year": 2023,
+    "duration": 200
+  },
+  {
+    "id": 377,
+    "title": "Olvídala",
+    "artist": "3AM",
+    "album": "Lluvia: Rain City Vol.2",
+    "year": 2023,
+    "duration": 180
+  },
+  {
+    "id": 378,
+    "title": "Traición",
+    "artist": "3AM",
+    "album": "Lluvia: Rain City Vol.2",
+    "year": 2023,
+    "duration": 153
+  },
+  {
+    "id": 379,
+    "title": "Aquí Sigo (Remix)",
+    "artist": "3AM",
+    "album": "Lluvia: Rain City Vol.2",
+    "year": 2023,
+    "duration": 209
+  },
+  {
+    "id": 380,
+    "title": "Quédate",
+    "artist": "3AM",
+    "album": "Lluvia: Rain City Vol.2",
+    "year": 2023,
+    "duration": 226
+  },
+  {
+    "id": 381,
+    "title": "Siempre",
+    "artist": "3AM",
+    "album": "Lluvia: Rain City Vol.2",
+    "year": 2023,
+    "duration": 93
+  },
+  {
+    "id": 382,
+    "title": "Tarde",
+    "artist": "3AM",
+    "album": "Lluvia: Rain City Vol.2",
+    "year": 2023,
+    "duration": 206
+  },
+  {
+    "id": 383,
+    "title": "Vacío",
+    "artist": "3AM",
+    "album": "Lluvia: Rain City Vol.2",
+    "year": 2023,
+    "duration": 145
+  },
+  {
+    "id": 384,
+    "title": "Dónde Estarás",
+    "artist": "3AM",
+    "album": "Lluvia: Rain City Vol.2",
+    "year": 2023,
+    "duration": 171
+  },
+  {
+    "id": 385,
+    "title": "Tal Vez",
+    "artist": "3AM",
+    "album": "Lluvia: Rain City Vol.2",
+    "year": 2023,
+    "duration": 160
+  },
+  {
+    "id": 386,
+    "title": "FORAJIDOS",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 172
+  },
+  {
+    "id": 387,
+    "title": "NO VOY A ENCONTRAR",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 139
+  },
+  {
+    "id": 388,
+    "title": "COMO TÚ",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 156
+  },
+  {
+    "id": 389,
+    "title": "LA CASA",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 198
+  },
+  {
+    "id": 390,
+    "title": "MI CORAZÓN",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 172
+  },
+  {
+    "id": 391,
+    "title": "CORRIENDO TRAS DE TI",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 164
+  },
+  {
+    "id": 392,
+    "title": "ESTRELLA ROJA",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 185
+  },
+  {
+    "id": 393,
+    "title": "EN EL DESIERTO",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 224
+  },
+  {
+    "id": 394,
+    "title": "SOLO DIME",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 131
+  },
+  {
+    "id": 395,
+    "title": "UNA CANCIÓN BONITA",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 156
+  },
+  {
+    "id": 396,
+    "title": "SI ALGÚN DÍA TE PIERDO",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 145
+  },
+  {
+    "id": 397,
+    "title": "LAS FLORES QUE ERAN PARA TI",
+    "artist": "3AM",
+    "album": "FORAJIDOS",
+    "year": 2025,
+    "duration": 181
+  },
+  {
+    "id": 398,
+    "title": "Casa De Chapa",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 154
+  },
+  {
+    "id": 399,
+    "title": "Slow",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 135
+  },
+  {
+    "id": 400,
+    "title": "Sabor A Miel",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 172
+  },
+  {
+    "id": 401,
+    "title": "Nadie Más",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 156
+  },
+  {
+    "id": 402,
+    "title": "Bemaste",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 144
+  },
+  {
+    "id": 403,
+    "title": "Salimo de Noche",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 178
+  },
+  {
+    "id": 404,
+    "title": "Dámelo",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 184
+  },
+  {
+    "id": 405,
+    "title": "Sex & Love (Live Version)",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 148
+  },
+  {
+    "id": 406,
+    "title": "Me Olvidé",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 163
+  },
+  {
+    "id": 407,
+    "title": "Traductor",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 223
+  },
+  {
+    "id": 408,
+    "title": "Entre Nosotros",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 192
+  },
+  {
+    "id": 409,
+    "title": "Muy Mal",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 147
+  },
+  {
+    "id": 410,
+    "title": "Házmelo",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 174
+  },
+  {
+    "id": 411,
+    "title": "Hablando De Love",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 156
+  },
+  {
+    "id": 412,
+    "title": "Que Se Parezca A Ti",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 185
+  },
+  {
+    "id": 413,
+    "title": "Eléctrica",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 193
+  },
+  {
+    "id": 414,
+    "title": "Entre Nosotros (Remix)",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 255
+  },
+  {
+    "id": 415,
+    "title": "Ríos de Sal",
+    "artist": "Tiago PZK",
+    "album": "Portales (Deluxe Edition)",
+    "year": 2023,
+    "duration": 205
+  },
+  {
+    "id": 416,
+    "title": "Todas Las Estrellas",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 128
+  },
+  {
+    "id": 417,
+    "title": "Adicción",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 139
+  },
+  {
+    "id": 418,
+    "title": "De Vuelta",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 168
+  },
+  {
+    "id": 419,
+    "title": "I'm Blessd",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 149
+  },
+  {
+    "id": 420,
+    "title": "Alegría",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 165
+  },
+  {
+    "id": 421,
+    "title": "Party BB",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 200
+  },
+  {
+    "id": 422,
+    "title": "Piel",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 134
+  },
+  {
+    "id": 423,
+    "title": "La Despedida",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 184
+  },
+  {
+    "id": 424,
+    "title": "RCP",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 184
+  },
+  {
+    "id": 425,
+    "title": "Mi Corazón",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 165
+  },
+  {
+    "id": 426,
+    "title": "Cristal",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 152
+  },
+  {
+    "id": 427,
+    "title": "Tony",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 268
+  },
+  {
+    "id": 428,
+    "title": "Griselda",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 186
+  },
+  {
+    "id": 429,
+    "title": "La Última",
+    "artist": "Tiago PZK",
+    "album": "Gotti A",
+    "year": 2024,
+    "duration": 268
+  },
+  {
+    "id": 430,
+    "title": "Señorita",
+    "artist": "Tiago PZK",
+    "album": "Gotti B",
+    "year": 2025,
+    "duration": 159
+  },
+  {
+    "id": 431,
+    "title": "Sometimes",
+    "artist": "Tiago PZK",
+    "album": "Gotti B",
+    "year": 2025,
+    "duration": 179
+  },
+  {
+    "id": 432,
+    "title": "Si Te Pinta",
+    "artist": "Tiago PZK",
+    "album": "Gotti B",
+    "year": 2025,
+    "duration": 136
+  },
+  {
+    "id": 433,
+    "title": "Mi Cuarto",
+    "artist": "Tiago PZK",
+    "album": "Gotti B",
+    "year": 2025,
+    "duration": 132
+  },
+  {
+    "id": 434,
+    "title": "Antes",
+    "artist": "Tiago PZK",
+    "album": "Gotti B",
+    "year": 2025,
+    "duration": 196
+  },
+  {
+    "id": 435,
+    "title": "Sudor",
+    "artist": "Tiago PZK",
+    "album": "Gotti B",
+    "year": 2025,
+    "duration": 196
+  },
+  {
+    "id": 436,
+    "title": "Amantes",
+    "artist": "Tiago PZK",
+    "album": "Gotti B",
+    "year": 2025,
+    "duration": 125
+  },
+  {
+    "id": 437,
+    "title": "Trapicheo",
+    "artist": "Khea",
+    "album": "Trapicheo (Mixtape)",
+    "year": 2020,
+    "duration": 130
+  },
+  {
+    "id": 438,
+    "title": "Creo Que",
+    "artist": "Khea",
+    "album": "Trapicheo (Mixtape)",
+    "year": 2020,
+    "duration": 222
+  },
+  {
+    "id": 439,
+    "title": "Mamacita",
+    "artist": "Khea",
+    "album": "Trapicheo (Mixtape)",
+    "year": 2020,
+    "duration": 180
+  },
+  {
+    "id": 440,
+    "title": "Algo Aparte",
+    "artist": "Khea",
+    "album": "Trapicheo (Mixtape)",
+    "year": 2020,
+    "duration": 203
+  },
+  {
+    "id": 441,
+    "title": "Blunt",
+    "artist": "Khea",
+    "album": "Trapicheo (Mixtape)",
+    "year": 2020,
+    "duration": 153
+  },
+  {
+    "id": 442,
+    "title": "Valgo",
+    "artist": "Khea",
+    "album": "Trapicheo (Mixtape)",
+    "year": 2020,
+    "duration": 163
+  },
+  {
+    "id": 443,
+    "title": "Miti y Miti",
+    "artist": "Khea",
+    "album": "Trapicheo (Mixtape)",
+    "year": 2020,
+    "duration": 227
+  },
+  {
+    "id": 444,
+    "title": "Nuevo",
+    "artist": "Khea",
+    "album": "Trapicheo (Mixtape)",
+    "year": 2020,
+    "duration": 211
+  },
+  {
+    "id": 445,
+    "title": "Is It Por Mi",
+    "artist": "Khea",
+    "album": "Trapicheo (Mixtape)",
+    "year": 2020,
+    "duration": 172
+  },
+  {
+    "id": 446,
+    "title": "Gelato 44",
+    "artist": "Khea",
+    "album": "Trapicheo (Mixtape)",
+    "year": 2020,
+    "duration": 136
+  },
+  {
+    "id": 447,
+    "title": "INTRO",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 84
+  },
+  {
+    "id": 448,
+    "title": "ECLIPSE",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 154
+  },
+  {
+    "id": 449,
+    "title": "BATALLA",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 158
+  },
+  {
+    "id": 450,
+    "title": "SIN CORAZÓN",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 138
+  },
+  {
+    "id": 451,
+    "title": "CON UN BESO",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 162
+  },
+  {
+    "id": 452,
+    "title": "EFECTO",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 160
+  },
+  {
+    "id": 453,
+    "title": "COMO YO TE QUIERO",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 150
+  },
+  {
+    "id": 454,
+    "title": "PARA AMARTE A TI",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 215
+  },
+  {
+    "id": 455,
+    "title": "INTERLUV RCP",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 122
+  },
+  {
+    "id": 456,
+    "title": "VOLVERÁS",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 157
+  },
+  {
+    "id": 457,
+    "title": "NUNCA VOY SOLO",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 170
+  },
+  {
+    "id": 458,
+    "title": "FEELING",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 163
+  },
+  {
+    "id": 459,
+    "title": "DE LA TIERRA A MARTE",
+    "artist": "KHEA",
+    "album": "Serotonina",
+    "year": 2023,
+    "duration": 141
+  },
+  {
+    "id": 460,
+    "title": "ESTRELLAS EN LA NOCHE",
+    "artist": "KHEA",
+    "album": "Trapicheo: EL DON",
+    "year": 2024,
+    "duration": 156
+  },
+  {
+    "id": 461,
+    "title": "FUERA DE LA ORBITA",
+    "artist": "KHEA",
+    "album": "Trapicheo: EL DON",
+    "year": 2024,
+    "duration": 201
+  },
+  {
+    "id": 462,
+    "title": "100oMIL",
+    "artist": "KHEA",
+    "album": "Trapicheo: EL DON",
+    "year": 2024,
+    "duration": 174
+  },
+  {
+    "id": 463,
+    "title": "NAVI",
+    "artist": "KHEA",
+    "album": "Trapicheo: EL DON",
+    "year": 2024,
+    "duration": 136
+  },
+  {
+    "id": 464,
+    "title": "TUTALOKO",
+    "artist": "KHEA",
+    "album": "Trapicheo: EL DON",
+    "year": 2024,
+    "duration": 204
+  },
+  {
+    "id": 465,
+    "title": "OXICODONA",
+    "artist": "KHEA",
+    "album": "Trapicheo: EL DON",
+    "year": 2024,
+    "duration": 140
+  },
+  {
+    "id": 466,
+    "title": "TAMOS OKEY",
+    "artist": "KHEA",
+    "album": "Trapicheo: EL DON",
+    "year": 2024,
+    "duration": 189
+  },
+  {
+    "id": 467,
+    "title": "F.L.I.A",
+    "artist": "KHEA",
+    "album": "Trapicheo: EL DON",
+    "year": 2024,
+    "duration": 174
+  },
+  {
+    "id": 468,
+    "title": "PIDEMELO",
+    "artist": "KHEA",
+    "album": "Trapicheo: EL DON",
+    "year": 2024,
+    "duration": 203
+  },
+  {
+    "id": 469,
+    "title": "VIBEZ",
+    "artist": "KHEA",
+    "album": "Trapicheo: EL DON",
+    "year": 2024,
+    "duration": 122
+  },
+  {
+    "id": 470,
+    "title": "EL DON",
+    "artist": "KHEA",
+    "album": "Trapicheo: EL DON",
+    "year": 2024,
+    "duration": 219
+  },
+  {
+    "id": 471,
+    "title": "INTRO - SPEECH CRUZZI",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 61
+  },
+  {
+    "id": 472,
+    "title": "AHORA QUÉ",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 172
+  },
+  {
+    "id": 473,
+    "title": "YANKEE",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 195
+  },
+  {
+    "id": 474,
+    "title": "VISTA AL MAR",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 181
+  },
+  {
+    "id": 475,
+    "title": "PLAYA DEL INGLÉS",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 238
+  },
+  {
+    "id": 476,
+    "title": "SIN SEÑAL",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 186
+  },
+  {
+    "id": 477,
+    "title": "DAME",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 232
+  },
+  {
+    "id": 478,
+    "title": "CUÉNTALE",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 198
+  },
+  {
+    "id": 479,
+    "title": "LUCES AZULES",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 161
+  },
+  {
+    "id": 480,
+    "title": "PUNTO G",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 152
+  },
+  {
+    "id": 481,
+    "title": "MUÑECA",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 211
+  },
+  {
+    "id": 482,
+    "title": "WANDA",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 161
+  },
+  {
+    "id": 483,
+    "title": "ME FALTA ALGO",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 193
+  },
+  {
+    "id": 484,
+    "title": "LISBOA",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 152
+  },
+  {
+    "id": 485,
+    "title": "ÉRAMOS DOS",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 174
+  },
+  {
+    "id": 486,
+    "title": "DONDE QUIERO ESTAR",
+    "artist": "Quevedo",
+    "album": "Donde Quiero Estar",
+    "year": 2023,
+    "duration": 201
+  },
+  {
+    "id": 471,
+    "title": "KASSANDRA",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 184
+  },
+  {
+    "id": 472,
+    "title": "DURO",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 163
+  },
+  {
+    "id": 473,
+    "title": "IGUALES",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 184
+  },
+  {
+    "id": 474,
+    "title": "GRAN VÍA",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 214
+  },
+  {
+    "id": 475,
+    "title": "CHAPIADORA.COM",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 198
+  },
+  {
+    "id": 476,
+    "title": "POR ATRÁS",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 172
+  },
+  {
+    "id": 477,
+    "title": "14 FEBREROS",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 173
+  },
+  {
+    "id": 478,
+    "title": "LA 125",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 195
+  },
+  {
+    "id": 479,
+    "title": "HALO",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 182
+  },
+  {
+    "id": 480,
+    "title": "MR. MOONDIAL",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 166
+  },
+  {
+    "id": 481,
+    "title": "QUE ASCO DE TODO",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 191
+  },
+  {
+    "id": 482,
+    "title": "NOEMÚ",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 207
+  },
+  {
+    "id": 483,
+    "title": "SHIBATTO",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 139
+  },
+  {
+    "id": 484,
+    "title": "LOS DÍAS CONTADOS",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 162
+  },
+  {
+    "id": 485,
+    "title": "EL ESTRIBILLO",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 162
+  },
+  {
+    "id": 486,
+    "title": "AMANECIÓ",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 256
+  },
+  {
+    "id": 487,
+    "title": "TE FALLÉ",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 220
+  },
+  {
+    "id": 488,
+    "title": "BUENAS NOCHES",
+    "artist": "Quevedo",
+    "album": "Buenas Noches",
+    "year": 2024,
+    "duration": 239
+  },
+  {
+    "id": 487,
+    "title": "Un Gran Sueño",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 92
+  },
+  {
+    "id": 488,
+    "title": "2 The Sky",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 148
+  },
+  {
+    "id": 489,
+    "title": "Rey",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 134
+  },
+  {
+    "id": 490,
+    "title": "Si Tu Supieras",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 235
+  },
+  {
+    "id": 491,
+    "title": "La Barra Del Bar",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 228
+  },
+  {
+    "id": 492,
+    "title": "Vulnerable",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 232
+  },
+  {
+    "id": 493,
+    "title": "Bling Bling",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 179
+  },
+  {
+    "id": 494,
+    "title": "Elíseos",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 212
+  },
+  {
+    "id": 495,
+    "title": "Ángel",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 223
+  },
+  {
+    "id": 496,
+    "title": "Cuánto Falta",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 303
+  },
+  {
+    "id": 497,
+    "title": "Demonios De Blanco",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 199
+  },
+  {
+    "id": 498,
+    "title": "Mariposas Rojas",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 195
+  },
+  {
+    "id": 499,
+    "title": "Limón Y Sal",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 168
+  },
+  {
+    "id": 500,
+    "title": "Nueva Season",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 228
+  },
+  {
+    "id": 501,
+    "title": "Still Luvin",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 247
+  },
+  {
+    "id": 502,
+    "title": "Estrella",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 209
+  },
+  {
+    "id": 503,
+    "title": "Otro Amanecer",
+    "artist": "Delaossa",
+    "album": "La Madrugá",
+    "year": 2025,
+    "duration": 243
+  },
+  {
+    "id": 504,
+    "title": "Sudor y Trabajo",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 181
+  },
+  {
+    "id": 505,
+    "title": "Pintao",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 168
+  },
+  {
+    "id": 506,
+    "title": "Chico Estrella",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 171
+  },
+  {
+    "id": 507,
+    "title": "Volando Bajito",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 135
+  },
+  {
+    "id": 508,
+    "title": "Cuanto",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 191
+  },
+  {
+    "id": 509,
+    "title": "Rapido",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 136
+  },
+  {
+    "id": 510,
+    "title": "I Don't Know",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 219
+  },
+  {
+    "id": 511,
+    "title": "Sol",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 245
+  },
+  {
+    "id": 512,
+    "title": "Luna",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 201
+  },
+  {
+    "id": 513,
+    "title": "Malbec",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 175
+  },
+  {
+    "id": 514,
+    "title": "Mi Diablo",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 192
+  },
+  {
+    "id": 515,
+    "title": "Fifty Fifty",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 280
+  },
+  {
+    "id": 516,
+    "title": "Valentino",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 156
+  },
+  {
+    "id": 517,
+    "title": "Cascada",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 192
+  },
+  {
+    "id": 518,
+    "title": "Ticket",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 188
+  },
+  {
+    "id": 519,
+    "title": "Muriendome",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 159
+  },
+  {
+    "id": 520,
+    "title": "Ella Es Mi Bitch",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 246
+  },
+  {
+    "id": 521,
+    "title": "Muero de Fiesta Este Finde",
+    "artist": "Duki",
+    "album": "Desde el Fin del Mundo",
+    "year": 2021,
+    "duration": 193
+  },
+  {
+    "id": 522,
+    "title": "Amor Bipolar",
+    "artist": "Duki",
+    "album": "Temporada de Reggaetón 2",
+    "year": 2022,
+    "duration": 196
+  },
+  {
+    "id": 523,
+    "title": "Celosa",
+    "artist": "Duki",
+    "album": "Temporada de Reggaetón 2",
+    "year": 2022,
+    "duration": 158
+  },
+  {
+    "id": 524,
+    "title": "Perreo Bendito",
+    "artist": "Duki",
+    "album": "Temporada de Reggaetón 2",
+    "year": 2022,
+    "duration": 160
+  },
+  {
+    "id": 525,
+    "title": "Si Quieren Frontear",
+    "artist": "Duki",
+    "album": "Temporada de Reggaetón 2",
+    "year": 2022,
+    "duration": 201
+  },
+  {
+    "id": 526,
+    "title": "Esto Recién Empieza",
+    "artist": "Duki",
+    "album": "Temporada de Reggaetón 2",
+    "year": 2022,
+    "duration": 173
+  },
+  {
+    "id": 527,
+    "title": "Antes de Perderte",
+    "artist": "Duki",
+    "album": "Temporada de Reggaetón 2",
+    "year": 2022,
+    "duration": 177
+  },
+  {
+    "id": 528,
+    "title": "\"La Vuelta\"",
+    "artist": "Duki",
+    "album": "Temporada de Reggaetón 2",
+    "year": 2022,
+    "duration": 41
+  },
+  {
+    "id": 529,
+    "title": "GIVENCHY",
+    "artist": "Duki",
+    "album": "Temporada de Reggaetón 2",
+    "year": 2022,
+    "duration": 183
+  },
+  {
+    "id": 530,
+    "title": "dE ENEro",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 115
+  },
+  {
+    "id": 531,
+    "title": "JEFES DEL SUDOESTE",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 148
+  },
+  {
+    "id": 532,
+    "title": "RoCKSTAR 2.0",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 174
+  },
+  {
+    "id": 533,
+    "title": "hARAkiRI",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 162
+  },
+  {
+    "id": 534,
+    "title": "cONTRA><Mi",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 160
+  },
+  {
+    "id": 535,
+    "title": "CSIpher (audio latino)",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 251
+  },
+  {
+    "id": 536,
+    "title": "GiGi",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 146
+  },
+  {
+    "id": 537,
+    "title": "don't liE",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 214
+  },
+  {
+    "id": 538,
+    "title": "antes de perderte (OG VERSION)",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 167
+  },
+  {
+    "id": 539,
+    "title": "TROYA",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 164
+  },
+  {
+    "id": 540,
+    "title": "uNO dOS",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 166
+  },
+  {
+    "id": 541,
+    "title": "N.C.L.C",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 87
+  },
+  {
+    "id": 542,
+    "title": "aPoLLo13",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 159
+  },
+  {
+    "id": 543,
+    "title": "Ultimo Tren a Ameri",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 112
+  },
+  {
+    "id": 544,
+    "title": "bUSCANDO Ameri",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 65
+  },
+  {
+    "id": 545,
+    "title": "Remember Me",
+    "artist": "Duki",
+    "album": "Antes de AMERI",
+    "year": 2023,
+    "duration": 171
+  },
+  {
+    "id": 546,
+    "title": "Leitmotiv",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 86
+  },
+  {
+    "id": 547,
+    "title": "Nueva Era",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 218
+  },
+  {
+    "id": 548,
+    "title": "Brindis",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 181
+  },
+  {
+    "id": 549,
+    "title": "Buscarte Lejos",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 195
+  },
+  {
+    "id": 550,
+    "title": "Imperio",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 169
+  },
+  {
+    "id": 551,
+    "title": "Hardaway",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 217
+  },
+  {
+    "id": 552,
+    "title": "Cine",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 143
+  },
+  {
+    "id": 553,
+    "title": "Vida De Rock",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 182
+  },
+  {
+    "id": 554,
+    "title": "No Drama",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 175
+  },
+  {
+    "id": 555,
+    "title": "Barro",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 202
+  },
+  {
+    "id": 556,
+    "title": "Un Día Más",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 166
+  },
+  {
+    "id": 557,
+    "title": "Trato De Estar Bien",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 214
+  },
+  {
+    "id": 558,
+    "title": "Wake Up & Bake Up",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 207
+  },
+  {
+    "id": 559,
+    "title": "Constelación",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 201
+  },
+  {
+    "id": 560,
+    "title": "Ameri",
+    "artist": "Duki",
+    "album": "AMERI",
+    "year": 2023,
+    "duration": 200
+  },
+  {
+    "id": 561,
+    "title": "[FREE] 5202 Type Beat",
+    "artist": "Duki",
+    "album": "5202",
+    "year": 2024,
+    "duration": 159
+  },
+  {
+    "id": 562,
+    "title": "Golfista",
+    "artist": "Duki",
+    "album": "5202",
+    "year": 2024,
+    "duration": 157
+  },
+  {
+    "id": 563,
+    "title": "aGaRRo La PLaTa",
+    "artist": "Duki",
+    "album": "5202",
+    "year": 2024,
+    "duration": 123
+  },
+  {
+    "id": 564,
+    "title": "2Tonos",
+    "artist": "Duki",
+    "album": "5202",
+    "year": 2024,
+    "duration": 134
+  },
+  {
+    "id": 565,
+    "title": "eCLIPSE sOLAR",
+    "artist": "Duki",
+    "album": "5202",
+    "year": 2024,
+    "duration": 149
+  },
+  {
+    "id": 566,
+    "title": "Toc Psycho x CRYPTONITA",
+    "artist": "Duki",
+    "album": "5202",
+    "year": 2024,
+    "duration": 192
+  },
+  {
+    "id": 567,
+    "title": "Yo-Yo",
+    "artist": "Duki",
+    "album": "5202",
+    "year": 2024,
+    "duration": 167
+  },
+  {
+    "id": 568,
+    "title": "En Parte... No lo sé",
+    "artist": "Duki",
+    "album": "5202",
+    "year": 2024,
+    "duration": 199
+  },
+  {
+    "id": 569,
+    "title": "Calabasas",
+    "artist": "Duki",
+    "album": "5202",
+    "year": 2024,
+    "duration": 207
+  },
+  {
+    "id": 570,
+    "title": "100pre@Límite",
+    "artist": "Duki",
+    "album": "5202",
+    "year": 2024,
+    "duration": 186
+  },
+  {
+    "id": 571,
+    "title": "NO ME ALCANZA",
+    "artist": "Duki",
+    "album": "5202",
+    "year": 2024,
+    "duration": 205
+  },
+  {
+    "id": 572,
+    "title": "Pa' Dónde Se Fue (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 258
+  },
+  {
+    "id": 573,
+    "title": "Funeral (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 276
+  },
+  {
+    "id": 574,
+    "title": "Cumbia Para Olvidar (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 235
+  },
+  {
+    "id": 575,
+    "title": "Por Qué Me Fui A Enamorar de Ti (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 274
+  },
+  {
+    "id": 576,
+    "title": "Vendaval (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 252
+  },
+  {
+    "id": 577,
+    "title": "Yo Te Qui (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 154
+  },
+  {
+    "id": 578,
+    "title": "Flaco (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 259
+  },
+  {
+    "id": 579,
+    "title": "Chilango Blues (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 234
+  },
+  {
+    "id": 580,
+    "title": "Quédate Esta Noche (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 240
+  },
+  {
+    "id": 581,
+    "title": "Tu Falta de Querer (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 294
+  },
+  {
+    "id": 582,
+    "title": "La Trenza (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 282
+  },
+  {
+    "id": 583,
+    "title": "El Cristal (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 187
+  },
+  {
+    "id": 584,
+    "title": "Paisaje Japonés (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 207
+  },
+  {
+    "id": 585,
+    "title": "Gavilán (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 441
+  },
+  {
+    "id": 586,
+    "title": "Mi Buen Amor (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 252
+  },
+  {
+    "id": 587,
+    "title": "Amor Completo (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 275
+  },
+  {
+    "id": 588,
+    "title": "Tormento (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 296
+  },
+  {
+    "id": 589,
+    "title": "La Vie En Rose (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "artist": "Mon Laferte",
+    "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+    "year": 2020,
+    "duration": 260
+  },
+  {
+    "id": 590,
+    "title": "Soy",
+    "artist": "Mon Laferte",
+    "album": "Desechable",
+    "year": 2011,
+    "duration": 207
+  },
+  {
+    "id": 591,
+    "title": "Un solo hombre no puedo tener",
+    "artist": "Mon Laferte",
+    "album": "Desechable",
+    "year": 2011,
+    "duration": 188
+  },
+  {
+    "id": 592,
+    "title": "Depresion",
+    "artist": "Mon Laferte",
+    "album": "Desechable",
+    "year": 2011,
+    "duration": 237
+  },
+  {
+    "id": 593,
+    "title": "Culpable (a duo con Solange)",
+    "artist": "Mon Laferte",
+    "album": "Desechable",
+    "year": 2011,
+    "duration": 168
+  },
+  {
+    "id": 594,
+    "title": "Te vas",
+    "artist": "Mon Laferte",
+    "album": "Desechable",
+    "year": 2011,
+    "duration": 254
+  },
+  {
+    "id": 595,
+    "title": "No",
+    "artist": "Mon Laferte",
+    "album": "Desechable",
+    "year": 2011,
+    "duration": 194
+  },
+  {
+    "id": 596,
+    "title": "Desechable",
+    "artist": "Mon Laferte",
+    "album": "Desechable",
+    "year": 2011,
+    "duration": 227
+  },
+  {
+    "id": 597,
+    "title": "Toxico",
+    "artist": "Mon Laferte",
+    "album": "Desechable",
+    "year": 2011,
+    "duration": 204
+  },
+  {
+    "id": 598,
+    "title": "Te quiero",
+    "artist": "Mon Laferte",
+    "album": "Desechable",
+    "year": 2011,
+    "duration": 218
+  },
+  {
+    "id": 599,
+    "title": "El",
+    "artist": "Mon Laferte",
+    "album": "Desechable",
+    "year": 2011,
+    "duration": 202
+  },
+  {
+    "id": 600,
+    "title": "Ángel Negro",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 195
+  },
+  {
+    "id": 601,
+    "title": "Tornasol",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 258
+  },
+  {
+    "id": 602,
+    "title": "Lo Que Pido",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 235
+  },
+  {
+    "id": 603,
+    "title": "Orgasmo Para Dos",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 243
+  },
+  {
+    "id": 604,
+    "title": "Vuelve Por Favor",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 256
+  },
+  {
+    "id": 605,
+    "title": "Trátame Bien",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 215
+  },
+  {
+    "id": 606,
+    "title": "Flor de Amapola",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 252
+  },
+  {
+    "id": 607,
+    "title": "Muerte en el Ring",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 223
+  },
+  {
+    "id": 608,
+    "title": "Hospital",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 169
+  },
+  {
+    "id": 609,
+    "title": "Hey Hey",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 174
+  },
+  {
+    "id": 610,
+    "title": "Nubes en Mis Pies",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 214
+  },
+  {
+    "id": 611,
+    "title": "Calma",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 190
+  },
+  {
+    "id": 612,
+    "title": "Estado Natural",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 192
+  },
+  {
+    "id": 613,
+    "title": "Igual Que Yo",
+    "artist": "Mon Laferte",
+    "album": "Tornasol",
+    "year": 2013,
+    "duration": 261
+  },
+  {
+    "id": 614,
+    "title": "Tormento",
+    "artist": "Mon Laferte",
+    "album": "Mon Laferte Vol. 1",
+    "year": 2015,
+    "duration": 277
+  },
+  {
+    "id": 615,
+    "title": "El Cristal",
+    "artist": "Mon Laferte",
+    "album": "Mon Laferte Vol. 1",
+    "year": 2015,
+    "duration": 182
+  },
+  {
+    "id": 616,
+    "title": "El Diablo",
+    "artist": "Mon Laferte",
+    "album": "Mon Laferte Vol. 1",
+    "year": 2015,
+    "duration": 244
+  },
+  {
+    "id": 617,
+    "title": "La Visita",
+    "artist": "Mon Laferte",
+    "album": "Mon Laferte Vol. 1",
+    "year": 2015,
+    "duration": 228
+  },
+  {
+    "id": 618,
+    "title": "Amor Completo",
+    "artist": "Mon Laferte",
+    "album": "Mon Laferte Vol. 1",
+    "year": 2015,
+    "duration": 242
+  },
+  {
+    "id": 619,
+    "title": "Un Alma En Pena",
+    "artist": "Mon Laferte",
+    "album": "Mon Laferte Vol. 1",
+    "year": 2015,
+    "duration": 143
+  },
+  {
+    "id": 620,
+    "title": "Tu Falta De Querer",
+    "artist": "Mon Laferte",
+    "album": "Mon Laferte Vol. 1",
+    "year": 2015,
+    "duration": 279
+  },
+  {
+    "id": 621,
+    "title": "Salvador",
+    "artist": "Mon Laferte",
+    "album": "Mon Laferte Vol. 1",
+    "year": 2015,
+    "duration": 202
+  },
+  {
+    "id": 622,
+    "title": "Si Tú Me Quisieras",
+    "artist": "Mon Laferte",
+    "album": "Mon Laferte Vol. 1",
+    "year": 2015,
+    "duration": 203
+  },
+  {
+    "id": 623,
+    "title": "Malagradecido",
+    "artist": "Mon Laferte",
+    "album": "Mon Laferte Vol. 1",
+    "year": 2015,
+    "duration": 188
+  },
+  {
+    "id": 624,
+    "title": "La Noche Del Día Que Llovió En Verano",
+    "artist": "Mon Laferte",
+    "album": "Mon Laferte Vol. 1",
+    "year": 2015,
+    "duration": 57
+  },
+  {
+    "id": 625,
+    "title": "Pa’ Dónde Se Fue",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 250
+  },
+  {
+    "id": 626,
+    "title": "Que Sí",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 204
+  },
+  {
+    "id": 627,
+    "title": "Mi Buen Amor (con Enrique Bunbury)",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 228
+  },
+  {
+    "id": 628,
+    "title": "Ana",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 166
+  },
+  {
+    "id": 629,
+    "title": "Amárrame (con Juanes)",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 208
+  },
+  {
+    "id": 630,
+    "title": "Yo Te Qui",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 167
+  },
+  {
+    "id": 631,
+    "title": "Primaveral",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 232
+  },
+  {
+    "id": 632,
+    "title": "No Te Fumes Mi Mariguana",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 271
+  },
+  {
+    "id": 633,
+    "title": "Cielito De Abril (con Manuel Garcia)",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 175
+  },
+  {
+    "id": 634,
+    "title": "Flaco",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 257
+  },
+  {
+    "id": 635,
+    "title": "La Trenza",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 229
+  },
+  {
+    "id": 636,
+    "title": "Alelí",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 193
+  },
+  {
+    "id": 637,
+    "title": "Vendaval",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 215
+  },
+  {
+    "id": 638,
+    "title": "Palomita",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 257
+  },
+  {
+    "id": 639,
+    "title": "Cuando Era Flor",
+    "artist": "Mon Laferte",
+    "album": "La Trenza (Deluxe)",
+    "year": 2017,
+    "duration": 282
+  },
+  {
+    "id": 640,
+    "title": "Ronroneo",
+    "artist": "Mon Laferte",
+    "album": "Norma",
+    "year": 2018,
+    "duration": 188
+  },
+  {
+    "id": 641,
+    "title": "No Te Me Quites De Acá",
+    "artist": "Mon Laferte",
+    "album": "Norma",
+    "year": 2018,
+    "duration": 185
+  },
+  {
+    "id": 642,
+    "title": "Por Qué Me Fui A Enamorar De Ti",
+    "artist": "Mon Laferte",
+    "album": "Norma",
+    "year": 2018,
+    "duration": 261
+  },
+  {
+    "id": 643,
+    "title": "Quédate Esta Noche",
+    "artist": "Mon Laferte",
+    "album": "Norma",
+    "year": 2018,
+    "duration": 231
+  },
+  {
+    "id": 644,
+    "title": "Caderas Blancas",
+    "artist": "Mon Laferte",
+    "album": "Norma",
+    "year": 2018,
+    "duration": 226
+  },
+  {
+    "id": 645,
+    "title": "El Mambo",
+    "artist": "Mon Laferte",
+    "album": "Norma",
+    "year": 2018,
+    "duration": 228
+  },
+  {
+    "id": 646,
+    "title": "El Beso",
+    "artist": "Mon Laferte",
+    "album": "Norma",
+    "year": 2018,
+    "duration": 179
+  },
+  {
+    "id": 647,
+    "title": "Cumbia Para Olvidar",
+    "artist": "Mon Laferte",
+    "album": "Norma",
+    "year": 2018,
+    "duration": 210
+  },
+  {
+    "id": 648,
+    "title": "Funeral",
+    "artist": "Mon Laferte",
+    "album": "Norma",
+    "year": 2018,
+    "duration": 269
+  },
+  {
+    "id": 649,
+    "title": "Si Alguna Vez",
+    "artist": "Mon Laferte",
+    "album": "Norma",
+    "year": 2018,
+    "duration": 234
+  },
+  {
+    "id": 650,
+    "title": "Se Me Va A Quemar El Corazón",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 239
+  },
+  {
+    "id": 651,
+    "title": "Amigos Simplemente",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 183
+  },
+  {
+    "id": 652,
+    "title": "No Lo Vi Venir",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 183
+  },
+  {
+    "id": 653,
+    "title": "Amado Mío",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 249
+  },
+  {
+    "id": 654,
+    "title": "Canción Feliz",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 265
+  },
+  {
+    "id": 655,
+    "title": "La Mujer (con Gloria Trevi)",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 189
+  },
+  {
+    "id": 656,
+    "title": "Calaveras",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 252
+  },
+  {
+    "id": 657,
+    "title": "Aunque Te Mueras Por Volver",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 251
+  },
+  {
+    "id": 658,
+    "title": "La Democracia",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 206
+  },
+  {
+    "id": 659,
+    "title": "Esta Morra No Se Vende",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 163
+  },
+  {
+    "id": 660,
+    "title": "Que Se Sepa Nuestro Amor (con Alejandro Fernández)",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 180
+  },
+  {
+    "id": 661,
+    "title": "Te Vi",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 217
+  },
+  {
+    "id": 662,
+    "title": "Se Va La Vida (con Banda Femenil Regional “Mujeres del Viento Florido”)",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 272
+  },
+  {
+    "id": 663,
+    "title": "Se Me Va A Quemar El Corazón (con La Arrolladora Banda El Limón De René Camacho)",
+    "artist": "Mon Laferte",
+    "album": "SEIS",
+    "year": 2021,
+    "duration": 253
+  },
+  {
+    "id": 664,
+    "title": "Placer Hollywood",
+    "artist": "Mon Laferte",
+    "album": "1940 Carmen",
+    "year": 2021,
+    "duration": 220
+  },
+  {
+    "id": 665,
+    "title": "Algo Es Mejor",
+    "artist": "Mon Laferte",
+    "album": "1940 Carmen",
+    "year": 2021,
+    "duration": 241
+  },
+  {
+    "id": 666,
+    "title": "Good Boy",
+    "artist": "Mon Laferte",
+    "album": "1940 Carmen",
+    "year": 2021,
+    "duration": 317
+  },
+  {
+    "id": 667,
+    "title": "Supermercado",
+    "artist": "Mon Laferte",
+    "album": "1940 Carmen",
+    "year": 2021,
+    "duration": 215
+  },
+  {
+    "id": 668,
+    "title": "Niña",
+    "artist": "Mon Laferte",
+    "album": "1940 Carmen",
+    "year": 2021,
+    "duration": 264
+  },
+  {
+    "id": 669,
+    "title": "Beautiful Sadness",
+    "artist": "Mon Laferte",
+    "album": "1940 Carmen",
+    "year": 2021,
+    "duration": 202
+  },
+  {
+    "id": 670,
+    "title": "Química Mayor",
+    "artist": "Mon Laferte",
+    "album": "1940 Carmen",
+    "year": 2021,
+    "duration": 232
+  },
+  {
+    "id": 671,
+    "title": "A Crying Diamond",
+    "artist": "Mon Laferte",
+    "album": "1940 Carmen",
+    "year": 2021,
+    "duration": 277
+  },
+  {
+    "id": 672,
+    "title": "No Soy Para Ti",
+    "artist": "Mon Laferte",
+    "album": "1940 Carmen",
+    "year": 2021,
+    "duration": 212
+  },
+  {
+    "id": 673,
+    "title": "Zombie",
+    "artist": "Mon Laferte",
+    "album": "1940 Carmen",
+    "year": 2021,
+    "duration": 216
+  },
+  {
+    "id": 674,
+    "title": "Tenochtitlán",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 254
+  },
+  {
+    "id": 675,
+    "title": "Te juro que volveré",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 211
+  },
+  {
+    "id": 676,
+    "title": "Préndele Fuego",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 241
+  },
+  {
+    "id": 677,
+    "title": "NO+SAD",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 175
+  },
+  {
+    "id": 678,
+    "title": "Metamorfosis",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 191
+  },
+  {
+    "id": 679,
+    "title": "Autopoiética",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 153
+  },
+  {
+    "id": 680,
+    "title": "Block 16",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 43
+  },
+  {
+    "id": 681,
+    "title": "Levítico 20:9",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 229
+  },
+  {
+    "id": 682,
+    "title": "40 y MM",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 203
+  },
+  {
+    "id": 683,
+    "title": "Pornocracia",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 264
+  },
+  {
+    "id": 684,
+    "title": "Amantes Suicidas",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 239
+  },
+  {
+    "id": 685,
+    "title": "Artículo 123",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 34
+  },
+  {
+    "id": 686,
+    "title": "Mew Shiny",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 235
+  },
+  {
+    "id": 687,
+    "title": "Casta Diva",
+    "artist": "Mon Laferte",
+    "album": "Autopoiética",
+    "year": 2023,
+    "duration": 285
+  },
+  {
+    "id": 688,
+    "title": "Querida Rosa",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 177
+  },
+  {
+    "id": 689,
+    "title": "Antorcha",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 238
+  },
+  {
+    "id": 690,
+    "title": "No Es Real (con Antonio José)",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 177
+  },
+  {
+    "id": 691,
+    "title": "Pa Callar Tus Penas",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 212
+  },
+  {
+    "id": 692,
+    "title": "Abrázame",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 200
+  },
+  {
+    "id": 693,
+    "title": "Toditas Por Ti",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 164
+  },
+  {
+    "id": 694,
+    "title": "Un Poco Más De Frío",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 210
+  },
+  {
+    "id": 695,
+    "title": "Ven",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 224
+  },
+  {
+    "id": 696,
+    "title": "Más De La Mitad",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 249
+  },
+  {
+    "id": 697,
+    "title": "Fuerte",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 141
+  },
+  {
+    "id": 698,
+    "title": "No Es Real",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 177
+  },
+  {
+    "id": 699,
+    "title": "Flashlight",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 237
+  },
+  {
+    "id": 700,
+    "title": "Mi Ruego",
+    "artist": "Cami",
+    "album": "Rosa (Deluxe)",
+    "year": 2018,
+    "duration": 274
+  },
+  {
+    "id": 701,
+    "title": "Intro",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 43
+  },
+  {
+    "id": 702,
+    "title": "La Entrevista",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 150
+  },
+  {
+    "id": 703,
+    "title": "Vuelvo",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 163
+  },
+  {
+    "id": 704,
+    "title": "Aquí Estoy",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 155
+  },
+  {
+    "id": 705,
+    "title": "Esta Canción",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 195
+  },
+  {
+    "id": 706,
+    "title": "La Despedida",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 189
+  },
+  {
+    "id": 707,
+    "title": "Pena Negra",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 160
+  },
+  {
+    "id": 708,
+    "title": "Espero Que Seas Feliz",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 201
+  },
+  {
+    "id": 709,
+    "title": "Funeral (con WOS)",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 222
+  },
+  {
+    "id": 710,
+    "title": "Tú Siempre",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 154
+  },
+  {
+    "id": 711,
+    "title": "Mala Leche",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 196
+  },
+  {
+    "id": 712,
+    "title": "Monstruo",
+    "artist": "Cami",
+    "album": "Monstruo",
+    "year": 2019,
+    "duration": 183
+  },
+  {
+    "id": 713,
+    "title": "ANASTASIA",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 154
+  },
+  {
+    "id": 714,
+    "title": "MÍA",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 154
+  },
+  {
+    "id": 715,
+    "title": "VENGANZA",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 192
+  },
+  {
+    "id": 716,
+    "title": "LUNA",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 156
+  },
+  {
+    "id": 717,
+    "title": "POCA FE",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 181
+  },
+  {
+    "id": 718,
+    "title": "REY",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 123
+  },
+  {
+    "id": 719,
+    "title": "NIÑOS DORADOS",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 190
+  },
+  {
+    "id": 720,
+    "title": "UN LUGAR",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 195
+  },
+  {
+    "id": 721,
+    "title": "CARNE Y ORO",
+    "artist": "Cami y Art House",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 170
+  },
+  {
+    "id": 722,
+    "title": "DE PENITA Y RABIA",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 226
+  },
+  {
+    "id": 723,
+    "title": "DÍA DEL AMOR",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 183
+  },
+  {
+    "id": 724,
+    "title": "BIG BANG",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 183
+  },
+  {
+    "id": 725,
+    "title": "LENTO",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 175
+  },
+  {
+    "id": 726,
+    "title": "PERREO PA LAS NENAS",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 177
+  },
+  {
+    "id": 727,
+    "title": "EL PEOR",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 114
+  },
+  {
+    "id": 728,
+    "title": "TRIP",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 241
+  },
+  {
+    "id": 729,
+    "title": "ALTURAS",
+    "artist": "Cami",
+    "album": "Anastasia",
+    "year": 2022,
+    "duration": 140
+  },
+  {
+    "id": 730,
+    "title": "Mía (En vivo desde Santiago)",
+    "artist": "Cami",
+    "album": "ANNA EL SHOW",
+    "year": 2024,
+    "duration": 174
+  },
+  {
+    "id": 731,
+    "title": "Monstruo (En vivo desde Santiago)",
+    "artist": "Cami",
+    "album": "ANNA EL SHOW",
+    "year": 2024,
+    "duration": 195
+  },
+  {
+    "id": 732,
+    "title": "Pena Negra",
+    "artist": "Cami",
+    "album": "ANNA EL SHOW",
+    "year": 2024,
+    "duration": 244
+  },
+  {
+    "id": 733,
+    "title": "La Despedida (En vivo desde Santiago)",
+    "artist": "Cami",
+    "album": "ANNA EL SHOW",
+    "year": 2024,
+    "duration": 225
+  },
+  {
+    "id": 734,
+    "title": "Un Lugar (En vivo desde Santiago)",
+    "artist": "Cami",
+    "album": "ANNA EL SHOW",
+    "year": 2024,
+    "duration": 230
+  },
+  {
+    "id": 735,
+    "title": "Anastasia (En vivo desde Santiago)",
+    "artist": "Cami",
+    "album": "ANNA EL SHOW",
+    "year": 2024,
+    "duration": 280
+  },
+  {
+    "id": 736,
+    "title": "Luna",
+    "artist": "Cami",
+    "album": "ANNA EL SHOW",
+    "year": 2024,
+    "duration": 159
+  },
+  {
+    "id": 737,
+    "title": "Poca Fe (En vivo desde Santiago)",
+    "artist": "Cami",
+    "album": "ANNA EL SHOW",
+    "year": 2024,
+    "duration": 199
+  },
+  {
+    "id": 738,
+    "title": "Ven",
+    "artist": "Cami",
+    "album": "ANNA EL SHOW",
+    "year": 2024,
+    "duration": 230
+  },
+  {
+    "id": 739,
+    "title": "Gracias A La Vida (En vivo desde Santiago)",
+    "artist": "Cami",
+    "album": "ANNA EL SHOW",
+    "year": 2024,
+    "duration": 238
+  },
+  {
+    "id": 740,
+    "title": "Alturas",
+    "artist": "Cami",
+    "album": "ANNA EL SHOW",
+    "year": 2024,
+    "duration": 192
+  },
+  {
+    "id": 741,
+    "title": "Todas Seremos Reinas",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 67
+  },
+  {
+    "id": 742,
+    "title": "Tiene Sabor",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 184
+  },
+  {
+    "id": 743,
+    "title": "Me Enamore De Mi",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 169
+  },
+  {
+    "id": 744,
+    "title": "No Olvidar",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 164
+  },
+  {
+    "id": 745,
+    "title": "Agua Segura",
+    "artist": "Denise Rosenthal feat. Mala Rodríguez",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 221
+  },
+  {
+    "id": 746,
+    "title": "Amor De Madre",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 197
+  },
+  {
+    "id": 747,
+    "title": "Gira (El Mundo Gira)",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 160
+  },
+  {
+    "id": 748,
+    "title": "Ni Un Fruto",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 190
+  },
+  {
+    "id": 749,
+    "title": "El Amor No Duele",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 199
+  },
+  {
+    "id": 750,
+    "title": "Flor De Azucena",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 212
+  },
+  {
+    "id": 751,
+    "title": "Dormir",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 194
+  },
+  {
+    "id": 752,
+    "title": "Corazón De Miel",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 165
+  },
+  {
+    "id": 753,
+    "title": "Ella Y Él",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 191
+  },
+  {
+    "id": 754,
+    "title": "Demente",
+    "artist": "Denise Rosenthal feat. Lola Indigo",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 188
+  },
+  {
+    "id": 755,
+    "title": "Solo Hay Una Vida",
+    "artist": "Denise Rosenthal",
+    "album": "Todas Seremos Reinas",
+    "year": 2021,
+    "duration": 44
+  },
+  {
+    "id": 756,
+    "title": "Bendecida",
+    "artist": "Denise Rosenthal",
+    "album": "Supernova",
+    "year": 2023,
+    "duration": 177
+  },
+  {
+    "id": 757,
+    "title": "Boomerang",
+    "artist": "Denise Rosenthal",
+    "album": "Supernova",
+    "year": 2023,
+    "duration": 178
+  },
+  {
+    "id": 758,
+    "title": "El Juego",
+    "artist": "Denise Rosenthal",
+    "album": "Supernova",
+    "year": 2023,
+    "duration": 166
+  },
+  {
+    "id": 759,
+    "title": "Rosa Jaguar",
+    "artist": "Denise Rosenthal feat. Loyaltty & Goyo",
+    "album": "Supernova",
+    "year": 2023,
+    "duration": 184
+  },
+  {
+    "id": 760,
+    "title": "Naughty Girl",
+    "artist": "Denise Rosenthal feat. Snow Tha Product",
+    "album": "Supernova",
+    "year": 2023,
+    "duration": 177
+  },
+  {
+    "id": 761,
+    "title": "Migajas",
+    "artist": "Denise Rosenthal",
+    "album": "Supernova",
+    "year": 2023,
+    "duration": 166
+  },
+  {
+    "id": 762,
+    "title": "Sugar Mami",
+    "artist": "Denise Rosenthal feat. Danna Paola",
+    "album": "Supernova",
+    "year": 2023,
+    "duration": 132
+  },
+  {
+    "id": 763,
+    "title": "Balance",
+    "artist": "Denise Rosenthal",
+    "album": "Supernova",
+    "year": 2023,
+    "duration": 160
+  },
+  {
+    "id": 764,
+    "title": "Centenas De Miles De Años",
+    "artist": "Denise Rosenthal",
+    "album": "Supernova",
+    "year": 2023,
+    "duration": 193
+  },
+  {
+    "id": 765,
+    "title": "Supernova",
+    "artist": "Denise Rosenthal",
+    "album": "Supernova",
+    "year": 2023,
+    "duration": 177
+  },
+  {
+    "id": 766,
+    "title": "Colocao (Tiny Desk)",
+    "artist": "Nicki Nicole",
+    "album": "Nicki Nicole (Live at NPR's Tiny Desk)",
+    "year": 2022,
+    "duration": 198
+  },
+  {
+    "id": 767,
+    "title": "Mala Vida/Wapo Traketero (Tiny Desk)",
+    "artist": "Nicki Nicole",
+    "album": "Nicki Nicole (Live at NPR's Tiny Desk)",
+    "year": 2022,
+    "duration": 195
+  },
+  {
+    "id": 768,
+    "title": "Parte de Mí (Tiny Desk)",
+    "artist": "Nicki Nicole",
+    "album": "Nicki Nicole (Live at NPR's Tiny Desk)",
+    "year": 2022,
+    "duration": 170
+  },
+  {
+    "id": 769,
+    "title": "Freestyle (Tiny Desk)",
+    "artist": "Nicki Nicole",
+    "album": "Nicki Nicole (Live at NPR's Tiny Desk)",
+    "year": 2022,
+    "duration": 128
+  },
+  {
+    "id": 770,
+    "title": "Baby (Tiny Desk)",
+    "artist": "Nicki Nicole",
+    "album": "Nicki Nicole (Live at NPR's Tiny Desk)",
+    "year": 2022,
+    "duration": 144
+  },
+  {
+    "id": 771,
+    "title": "nada mejor",
+    "artist": "Lara91k",
+    "album": "100PRE YORO",
+    "year": 2023,
+    "duration": 197
+  },
+  {
+    "id": 772,
+    "title": "dear rita",
+    "artist": "Lara91k ft. Dano",
+    "album": "100PRE YORO",
+    "year": 2023,
+    "duration": 202
+  },
+  {
+    "id": 773,
+    "title": "peli de terror",
+    "artist": "Lara91k ft. Álvaro Díaz",
+    "album": "100PRE YORO",
+    "year": 2023,
+    "duration": 163
+  },
+  {
+    "id": 774,
+    "title": "reyes magos",
+    "artist": "Lara91k",
+    "album": "100PRE YORO",
+    "year": 2023,
+    "duration": 146
+  },
+  {
+    "id": 775,
+    "title": "te me vas",
+    "artist": "Lara91k",
+    "album": "100PRE YORO",
+    "year": 2023,
+    "duration": 262
+  },
+  {
+    "id": 776,
+    "title": "un día",
+    "artist": "Lara91k ft. Julieta Venegas",
+    "album": "100PRE YORO",
+    "year": 2023,
+    "duration": 223
+  },
+  {
+    "id": 777,
+    "title": "atame",
+    "artist": "Lara91k ft. Javiera Mena",
+    "album": "100PRE YORO",
+    "year": 2023,
+    "duration": 173
+  },
+  {
+    "id": 778,
+    "title": "100PRE",
+    "artist": "Lara91k",
+    "album": "100PRE YORO",
+    "year": 2023,
+    "duration": 206
+  },
+  {
+    "id": 779,
+    "title": "INTRODUCCIÓN AL ÉXTASIS",
+    "artist": "WOS",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 117
+  },
+  {
+    "id": 780,
+    "title": "BUITRES",
+    "artist": "WOS",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 190
+  },
+  {
+    "id": 781,
+    "title": "CULPA",
+    "artist": "WOS ft. Ricardo Mollo",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 216
+  },
+  {
+    "id": 782,
+    "title": "PARED DE CRISTAL",
+    "artist": "WOS",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 132
+  },
+  {
+    "id": 783,
+    "title": "MIRÁ MAMÁ",
+    "artist": "WOS",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 170
+  },
+  {
+    "id": 784,
+    "title": "GATO NEGRO",
+    "artist": "WOS",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 196
+  },
+  {
+    "id": 785,
+    "title": "QUE SE MEJOREN",
+    "artist": "WOS",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 182
+  },
+  {
+    "id": 786,
+    "title": "NIÑO GORDO FLACO",
+    "artist": "WOS ft. Ca7riel",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 145
+  },
+  {
+    "id": 787,
+    "title": "CAMBIANDO LA PIEL",
+    "artist": "WOS ft. NICKI NICOLE",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 159
+  },
+  {
+    "id": 788,
+    "title": "CONTANDO OVEJAS",
+    "artist": "WOS",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 204
+  },
+  {
+    "id": 789,
+    "title": "CONVOY JARANA",
+    "artist": "WOS",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 159
+  },
+  {
+    "id": 790,
+    "title": "LLENO DE ZAFIROS",
+    "artist": "WOS",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 221
+  },
+  {
+    "id": 791,
+    "title": "MUGRE",
+    "artist": "WOS",
+    "album": "OSCURO ÉXTASIS",
+    "year": 2021,
+    "duration": 260
+  },
+  {
+    "id": 792,
+    "title": "NUEVAS COORDENADAS",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 294
+  },
+  {
+    "id": 793,
+    "title": "DESCARTABLE",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 182
+  },
+  {
+    "id": 794,
+    "title": "⅞",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 148
+  },
+  {
+    "id": 795,
+    "title": "QUEMARÁS",
+    "artist": "WOS ft. Indio Solari",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 264
+  },
+  {
+    "id": 796,
+    "title": "CABEZAS CROMADAS",
+    "artist": "WOS ft. Dillom",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 208
+  },
+  {
+    "id": 797,
+    "title": "MORFEO",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 234
+  },
+  {
+    "id": 798,
+    "title": "CAÍDA LIBRE",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 219
+  },
+  {
+    "id": 799,
+    "title": "PAUSA",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 51
+  },
+  {
+    "id": 800,
+    "title": "LA COCHERÍA",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 193
+  },
+  {
+    "id": 801,
+    "title": "MELANCOLÍA",
+    "artist": "WOS ft. Gustavo Santaolalla",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 223
+  },
+  {
+    "id": 802,
+    "title": "ESTÍMULO",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 275
+  },
+  {
+    "id": 803,
+    "title": "ERMITAÑO",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 156
+  },
+  {
+    "id": 804,
+    "title": "QUE SE HAGA TARDE",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 209
+  },
+  {
+    "id": 805,
+    "title": "LA NIEBLA",
+    "artist": "WOS ft. Natalia Lafourcade",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 212
+  },
+  {
+    "id": 806,
+    "title": "SUR",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 159
+  },
+  {
+    "id": 807,
+    "title": "ARRANCÁRMELO",
+    "artist": "WOS",
+    "album": "DESCARTABLE",
+    "year": 2024,
+    "duration": 184
+  },
+  {
+    "id": 808,
+    "title": "CANGURO",
+    "artist": "WOS",
+    "album": "CARAVANA",
+    "year": 2019,
+    "duration": 197
+  },
+  {
+    "id": 809,
+    "title": "FRESCO",
+    "artist": "WOS",
+    "album": "CARAVANA",
+    "year": 2019,
+    "duration": 171
+  },
+  {
+    "id": 810,
+    "title": "PANTANO",
+    "artist": "WOS",
+    "album": "CARAVANA",
+    "year": 2019,
+    "duration": 151
+  },
+  {
+    "id": 811,
+    "title": "MELÓN VINO",
+    "artist": "WOS",
+    "album": "CARAVANA",
+    "year": 2019,
+    "duration": 177
+  },
+  {
+    "id": 812,
+    "title": "LUZ DELITO",
+    "artist": "WOS",
+    "album": "CARAVANA",
+    "year": 2019,
+    "duration": 156
+  },
+  {
+    "id": 813,
+    "title": "OKUPA",
+    "artist": "WOS",
+    "album": "CARAVANA",
+    "year": 2019,
+    "duration": 143
+  },
+  {
+    "id": 814,
+    "title": "NO VA A BAJAR",
+    "artist": "WOS",
+    "album": "CARAVANA",
+    "year": 2019,
+    "duration": 203
+  },
+  {
+    "id": 815,
+    "title": "OJERAS NEGRAS",
+    "artist": "WOS",
+    "album": "TRES PUNTOS SUSPENSIVOS",
+    "year": 2020,
+    "duration": 178
+  },
+  {
+    "id": 816,
+    "title": "ALMA DINAMITA",
+    "artist": "WOS",
+    "album": "TRES PUNTOS SUSPENSIVOS",
+    "year": 2020,
+    "duration": 174
+  },
+  {
+    "id": 817,
+    "title": "40",
+    "artist": "WOS",
+    "album": "TRES PUNTOS SUSPENSIVOS",
+    "year": 2020,
+    "duration": 66
+  },
+  {
+    "id": 818,
+    "title": "ALGO DEL VACÍO",
+    "artist": "WOS",
+    "album": "TRES PUNTOS SUSPENSIVOS",
+    "year": 2020,
+    "duration": 214
+  },
+  {
+    "id": 819,
+    "title": "TU MANTA",
+    "artist": "Milo j",
+    "album": "111",
+    "year": 2023,
+    "duration": 188
+  },
+  {
+    "id": 820,
+    "title": "CARENCIAS DE CORDURA",
+    "artist": "Milo j",
+    "album": "111",
+    "year": 2023,
+    "duration": 179
+  },
+  {
+    "id": 821,
+    "title": "M.A.I",
+    "artist": "Milo j",
+    "album": "111",
+    "year": 2023,
+    "duration": 185
+  },
+  {
+    "id": 822,
+    "title": "DESEO PERDER (INTERLUDIO)",
+    "artist": "Milo j",
+    "album": "111",
+    "year": 2023,
+    "duration": 88
+  },
+  {
+    "id": 823,
+    "title": "SINCERA TE",
+    "artist": "Milo j",
+    "album": "111",
+    "year": 2023,
+    "duration": 243
+  },
+  {
+    "id": 824,
+    "title": "TE FUI A SEGUIR",
+    "artist": "Milo j",
+    "album": "111",
+    "year": 2023,
+    "duration": 154
+  },
+  {
+    "id": 825,
+    "title": "DOM1NGO",
+    "artist": "Milo j",
+    "album": "111",
+    "year": 2023,
+    "duration": 189
+  },
+  {
+    "id": 826,
+    "title": "UNA BALA",
+    "artist": "Milo j",
+    "album": "111",
+    "year": 2023,
+    "duration": 184
+  },
+  {
+    "id": 827,
+    "title": "ALUMBRE",
+    "artist": "Milo j",
+    "album": "111",
+    "year": 2023,
+    "duration": 257
+  },
+  {
+    "id": 828,
+    "title": "A1RE",
+    "artist": "Milo j",
+    "album": "111",
+    "year": 2023,
+    "duration": 161
+  },
+  {
+    "id": 829,
+    "title": "3 PECADOS DESPUES…",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 119
+  },
+  {
+    "id": 830,
+    "title": "ANTES DE LOS 20",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 152
+  },
+  {
+    "id": 831,
+    "title": "NI CARLOS NI JOSE",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 112
+  },
+  {
+    "id": 832,
+    "title": "LA TOLA Y EL VELERO",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 211
+  },
+  {
+    "id": 833,
+    "title": "A VOS",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 157
+  },
+  {
+    "id": 834,
+    "title": "PARAISO (daña)",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 287
+  },
+  {
+    "id": 835,
+    "title": "ALIOLI",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 190
+  },
+  {
+    "id": 836,
+    "title": "DIGAN",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 159
+  },
+  {
+    "id": 837,
+    "title": "NO HAGO TRAP",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 131
+  },
+  {
+    "id": 838,
+    "title": "I' AM",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 134
+  },
+  {
+    "id": 839,
+    "title": "SANGRE PARA DERRAMAR",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 165
+  },
+  {
+    "id": 840,
+    "title": "HIPPIE",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 153
+  },
+  {
+    "id": 841,
+    "title": "RETIRADA",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 172
+  },
+  {
+    "id": 842,
+    "title": "LA TORTURA",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 149
+  },
+  {
+    "id": 843,
+    "title": "BUEN DÍA PORTACIÓN DE ROSTRO",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 205
+  },
+  {
+    "id": 844,
+    "title": "DAÑA (ELVIRA)",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 201
+  },
+  {
+    "id": 845,
+    "title": "NO NO",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 181
+  },
+  {
+    "id": 846,
+    "title": "OLIMPO",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 170
+  },
+  {
+    "id": 847,
+    "title": "OJALA",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 174
+  },
+  {
+    "id": 848,
+    "title": "LO QUE ME CAUSA",
+    "artist": "Milo j",
+    "album": "166 (DELUXE) RETIRADA",
+    "year": 2025,
+    "duration": 181
+  },
+  {
+    "id": 849,
+    "title": "PRÓLOGO",
+    "artist": "Acru",
+    "album": "YAMAEL, LA AMBICIÓN",
+    "year": 2025,
+    "duration": 32
+  },
+  {
+    "id": 850,
+    "title": "PADRE NUESTRO",
+    "artist": "Acru",
+    "album": "YAMAEL, LA AMBICIÓN",
+    "year": 2025,
+    "duration": 221
+  },
+  {
+    "id": 851,
+    "title": "NUEVO BLUES",
+    "artist": "Acru",
+    "album": "YAMAEL, LA AMBICIÓN",
+    "year": 2025,
+    "duration": 206
+  },
+  {
+    "id": 852,
+    "title": "SIN PAPELES",
+    "artist": "Acru",
+    "album": "YAMAEL, LA AMBICIÓN",
+    "year": 2025,
+    "duration": 187
+  },
+  {
+    "id": 853,
+    "title": "Y-INTERLUDIO",
+    "artist": "Acru",
+    "album": "YAMAEL, LA AMBICIÓN",
+    "year": 2025,
+    "duration": 7
+  },
+  {
+    "id": 854,
+    "title": "PRECIO A PAGAR",
+    "artist": "Acru",
+    "album": "YAMAEL, LA AMBICIÓN",
+    "year": 2025,
+    "duration": 192
+  },
+  {
+    "id": 855,
+    "title": "VUDÚ",
+    "artist": "Acru",
+    "album": "YAMAEL, LA AMBICIÓN",
+    "year": 2025,
+    "duration": 200
+  },
+  {
+    "id": 856,
+    "title": "ESTAMO EN ESA",
+    "artist": "Acru",
+    "album": "YAMAEL, LA AMBICIÓN",
+    "year": 2025,
+    "duration": 180
+  },
+  {
+    "id": 857,
+    "title": "Y-INTERLUDIO 2",
+    "artist": "Acru",
+    "album": "YAMAEL, LA AMBICIÓN",
+    "year": 2025,
+    "duration": 15
+  },
+  {
+    "id": 858,
+    "title": "ROSA NEGRA",
+    "artist": "Acru",
+    "album": "YAMAEL, LA AMBICIÓN",
+    "year": 2025,
+    "duration": 207
+  },
+  {
+    "id": 859,
+    "title": "INTRO + 123",
+    "artist": "Neo Pistea",
+    "album": "CULTO",
+    "year": 2024,
+    "duration": 186
+  },
+  {
+    "id": 860,
+    "title": "PACTO",
+    "artist": "Neo Pistea",
+    "album": "CULTO",
+    "year": 2024,
+    "duration": 212
+  },
+  {
+    "id": 861,
+    "title": "SIN DORMIR",
+    "artist": "Neo Pistea",
+    "album": "CULTO",
+    "year": 2024,
+    "duration": 170
+  },
+  {
+    "id": 862,
+    "title": "CANADA",
+    "artist": "Neo Pistea",
+    "album": "CULTO",
+    "year": 2024,
+    "duration": 236
+  },
+  {
+    "id": 863,
+    "title": "LUNA",
+    "artist": "Neo Pistea",
+    "album": "CULTO",
+    "year": 2024,
+    "duration": 130
+  },
+  {
+    "id": 864,
+    "title": "R.I.C.O",
+    "artist": "Neo Pistea",
+    "album": "CULTO",
+    "year": 2024,
+    "duration": 186
+  },
+  {
+    "id": 865,
+    "title": "POLIS",
+    "artist": "Neo Pistea",
+    "album": "CULTO",
+    "year": 2024,
+    "duration": 169
+  },
+  {
+    "id": 866,
+    "title": "PARTNER",
+    "artist": "Neo Pistea",
+    "album": "CULTO",
+    "year": 2024,
+    "duration": 156
+  },
+  {
+    "id": 867,
+    "title": "NO SOY SAPO",
+    "artist": "Neo Pistea",
+    "album": "CULTO",
+    "year": 2024,
+    "duration": 162
+  },
+  {
+    "id": 868,
+    "title": "CUIQUI",
+    "artist": "Neo Pistea",
+    "album": "CULTO",
+    "year": 2024,
+    "duration": 126
+  },
+  {
+    "id": 869,
+    "title": "GOTA",
+    "artist": "Neo Pistea",
+    "album": "CULTO",
+    "year": 2024,
+    "duration": 149
+  },
+  {
+    "id": 870,
+    "title": "Demasiadas Mujeres",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 154
+  },
+  {
+    "id": 871,
+    "title": "Tú Me Dejaste De Querer",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 199
+  },
+  {
+    "id": 872,
+    "title": "Comerte Entera",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 175
+  },
+  {
+    "id": 873,
+    "title": "Nunca Estoy",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 163
+  },
+  {
+    "id": 874,
+    "title": "Párteme La Cara",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 168
+  },
+  {
+    "id": 875,
+    "title": "Ingobernable",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 188
+  },
+  {
+    "id": 876,
+    "title": "Nominao",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 177
+  },
+  {
+    "id": 877,
+    "title": "Un Veneno (G-Mix)",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 194
+  },
+  {
+    "id": 878,
+    "title": "Te Olvidaste",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 188
+  },
+  {
+    "id": 879,
+    "title": "Muriendo De Envidia",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 183
+  },
+  {
+    "id": 880,
+    "title": "CAMBIA!",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 189
+  },
+  {
+    "id": 881,
+    "title": "Cuándo Olvidaré",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 190
+  },
+  {
+    "id": 882,
+    "title": "Los Tontos",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 193
+  },
+  {
+    "id": 883,
+    "title": "Hong Kong",
+    "artist": "C. Tangana",
+    "album": "El Madrileño",
+    "year": 2021,
+    "duration": 204
+  },
+  {
+    "id": 884,
+    "title": "Génesis (Introducción)",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 119
+  },
+  {
+    "id": 885,
+    "title": "UCA",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 230
+  },
+  {
+    "id": 886,
+    "title": "Me Hace Mal",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 145
+  },
+  {
+    "id": 887,
+    "title": "Falso",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 176
+  },
+  {
+    "id": 888,
+    "title": "Volvernos a Amar",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 190
+  },
+  {
+    "id": 889,
+    "title": "Los Jajas",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 194
+  },
+  {
+    "id": 890,
+    "title": "Puñales",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 190
+  },
+  {
+    "id": 891,
+    "title": "Contra Todo Pronóstico",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 174
+  },
+  {
+    "id": 892,
+    "title": "Veneno",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 218
+  },
+  {
+    "id": 893,
+    "title": "Para Afuera",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 144
+  },
+  {
+    "id": 894,
+    "title": "Tensión",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 206
+  },
+  {
+    "id": 895,
+    "title": "Soñar",
+    "artist": "Lia Kali",
+    "album": "Contra Todo Pronóstico",
+    "year": 2023,
+    "duration": 162
+  },
+  {
+    "id": 896,
+    "title": "Nada Sale Mal",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 190
+  },
+  {
+    "id": 897,
+    "title": "TELÉFONO",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 163
+  },
+  {
+    "id": 898,
+    "title": "Me Quedo",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 175
+  },
+  {
+    "id": 899,
+    "title": "Vas A Quedarte",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 227
+  },
+  {
+    "id": 900,
+    "title": "Las Vegas",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 201
+  },
+  {
+    "id": 901,
+    "title": "Con La Miel En Los Labios",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 203
+  },
+  {
+    "id": 902,
+    "title": "Perdimos La Razón",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 178
+  },
+  {
+    "id": 903,
+    "title": "Mejor Que Tú",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 192
+  },
+  {
+    "id": 904,
+    "title": "Stupid",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 175
+  },
+  {
+    "id": 905,
+    "title": "Hold",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 142
+  },
+  {
+    "id": 906,
+    "title": "Cristal",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 217
+  },
+  {
+    "id": 907,
+    "title": "Popcorn",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 159
+  },
+  {
+    "id": 908,
+    "title": "El Trece",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 225
+  },
+  {
+    "id": 909,
+    "title": "Barro Y Hielo",
+    "artist": "Aitana",
+    "album": "Spoiler",
+    "year": 2019,
+    "duration": 174
+  },
+  {
+    "id": 910,
+    "title": "NO TE HAS IDO Y YA TE EXTRAÑO",
+    "artist": "Aitana",
+    "album": "11 RAZONES",
+    "year": 2020,
+    "duration": 211
+  },
+  {
+    "id": 911,
+    "title": "– (MENOS)",
+    "artist": "Aitana",
+    "album": "11 RAZONES",
+    "year": 2020,
+    "duration": 189
+  },
+  {
+    "id": 912,
+    "title": "ESTUPIDEZ",
+    "artist": "Aitana",
+    "album": "11 RAZONES",
+    "year": 2020,
+    "duration": 154
+  },
+  {
+    "id": 913,
+    "title": "X (POR)",
+    "artist": "Aitana",
+    "album": "11 RAZONES",
+    "year": 2020,
+    "duration": 142
+  },
+  {
+    "id": 914,
+    "title": "CORAZÓN SIN VIDA",
+    "artist": "Aitana",
+    "album": "11 RAZONES",
+    "year": 2020,
+    "duration": 182
+  },
+  {
+    "id": 915,
+    "title": "÷ (DIVIDIDO)",
+    "artist": "Aitana",
+    "album": "11 RAZONES",
+    "year": 2020,
+    "duration": 196
+  },
+  {
+    "id": 916,
+    "title": "CUANDO TE FUISTE",
+    "artist": "Aitana",
+    "album": "11 RAZONES",
+    "year": 2020,
+    "duration": 168
+  },
+  {
+    "id": 917,
+    "title": "+ (MÁS)",
+    "artist": "Aitana",
+    "album": "11 RAZONES",
+    "year": 2020,
+    "duration": 220
+  },
+  {
+    "id": 918,
+    "title": "SI NO VAS A VOLVER",
+    "artist": "Aitana",
+    "album": "11 RAZONES",
+    "year": 2020,
+    "duration": 156
+  },
+  {
+    "id": 919,
+    "title": "= (IGUAL)",
+    "artist": "Aitana",
+    "album": "11 RAZONES",
+    "year": 2020,
+    "duration": 225
+  },
+  {
+    "id": 920,
+    "title": "11 RAZONES",
+    "artist": "Aitana",
+    "album": "11 RAZONES",
+    "year": 2020,
+    "duration": 214
+  },
+  {
+    "id": 921,
+    "title": "Alpha09",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 63
+  },
+  {
+    "id": 922,
+    "title": "Los Ángeles",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 159
+  },
+  {
+    "id": 923,
+    "title": "LAS BABYS",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 154
+  },
+  {
+    "id": 924,
+    "title": "Dararí",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 171
+  },
+  {
+    "id": 925,
+    "title": "AQYNE",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 182
+  },
+  {
+    "id": 926,
+    "title": "Ella Bailaba",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 167
+  },
+  {
+    "id": 927,
+    "title": "Otra Noche Sin Ti",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 95
+  },
+  {
+    "id": 928,
+    "title": "The Killers",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 181
+  },
+  {
+    "id": 929,
+    "title": "miamor",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 160
+  },
+  {
+    "id": 930,
+    "title": "Luna",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 223
+  },
+  {
+    "id": 931,
+    "title": "Formentera",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 208
+  },
+  {
+    "id": 932,
+    "title": "2 Extraños",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 182
+  },
+  {
+    "id": 933,
+    "title": "24 Rosas",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 168
+  },
+  {
+    "id": 934,
+    "title": "En El Coche",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 125
+  },
+  {
+    "id": 935,
+    "title": "Pensando En Ti",
+    "artist": "Aitana",
+    "album": "Alpha",
+    "year": 2023,
+    "duration": 134
+  },
+  {
+    "id": 936,
+    "title": "6 DE FEBRERO",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 176
+  },
+  {
+    "id": 937,
+    "title": "DUELE UN MONTÓN DESPEDIRME DE TI",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 180
+  },
+  {
+    "id": 938,
+    "title": "SEGUNDO INTENTO",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 192
+  },
+  {
+    "id": 939,
+    "title": "¿PARA QUÉ VOLVER?",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 142
+  },
+  {
+    "id": 940,
+    "title": "CUARTO AZUL",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 201
+  },
+  {
+    "id": 941,
+    "title": "DESDE QUE YA NO HABLAMOS",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 174
+  },
+  {
+    "id": 942,
+    "title": "DE 1 BESO A 2 BESOS",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 198
+  },
+  {
+    "id": 943,
+    "title": "TRANKIS",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 199
+  },
+  {
+    "id": 944,
+    "title": "MÚSICA EN EL CIELO",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 231
+  },
+  {
+    "id": 945,
+    "title": "CUANDO HABLES CON ÉL",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 186
+  },
+  {
+    "id": 946,
+    "title": "LUZ DE LA MAÑANA (INTERLUDE)",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 42
+  },
+  {
+    "id": 947,
+    "title": "EN EL CENTRO DE LA CAMA",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 225
+  },
+  {
+    "id": 948,
+    "title": "SENTIMIENTO NATURAL",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 194
+  },
+  {
+    "id": 949,
+    "title": "CONEXIÓN PSÍQUICA",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 221
+  },
+  {
+    "id": 950,
+    "title": "SUPERESTRELLA",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 184
+  },
+  {
+    "id": 951,
+    "title": "EX EX EX",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 182
+  },
+  {
+    "id": 952,
+    "title": "HOY ES TU CUMPLEAÑOS",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 203
+  },
+  {
+    "id": 953,
+    "title": "LIA",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 169
+  },
+  {
+    "id": 954,
+    "title": "LA CHICA PERFECTA",
+    "artist": "Aitana",
+    "album": "CUARTO AZUL",
+    "year": 2025,
+    "duration": 192
+  },
+  {
+    "id": 740,
+    "title": "Milagro",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 169
+  },
+  {
+    "id": 741,
+    "title": "Lienzo",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 181
+  },
+  {
+    "id": 742,
+    "title": "La Pelirroja",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 165
+  },
+  {
+    "id": 743,
+    "title": "Vagabundo",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 216
+  },
+  {
+    "id": 744,
+    "title": "Disco Rayado",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 152
+  },
+  {
+    "id": 745,
+    "title": "Amen",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 172
+  },
+  {
+    "id": 746,
+    "title": "Templo de Piceas",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 208
+  },
+  {
+    "id": 747,
+    "title": "Segundo Amor",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 137
+  },
+  {
+    "id": 748,
+    "title": "Mi Puerto",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 191
+  },
+  {
+    "id": 749,
+    "title": "Energía Bacana",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 148
+  },
+  {
+    "id": 750,
+    "title": "París",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 181
+  },
+  {
+    "id": 751,
+    "title": "2AM",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 197
+  },
+  {
+    "id": 752,
+    "title": "Una Noche Sin Pensar",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 162
+  },
+  {
+    "id": 753,
+    "title": "Los Domingos",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 214
+  },
+  {
+    "id": 754,
+    "title": "La Primera Vez",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 154
+  },
+  {
+    "id": 755,
+    "title": "El final que soñábamos",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 143
+  },
+  {
+    "id": 756,
+    "title": "Óleo de Mujer Con Sombrero",
+    "artist": "Sebastián Yatra",
+    "album": "Milagro",
+    "year": 2025,
+    "duration": 148
+  },
+  {
+    "id": 757,
+    "title": "Cupido",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 175
+  },
+  {
+    "id": 758,
+    "title": "Te Pido",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 175
+  },
+  {
+    "id": 759,
+    "title": "Muñecas",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 157
+  },
+  {
+    "id": 760,
+    "title": "El Último Beso",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 198
+  },
+  {
+    "id": 761,
+    "title": "Carne y Hueso",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 179
+  },
+  {
+    "id": 762,
+    "title": "La Loto",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 191
+  },
+  {
+    "id": 763,
+    "title": "Las Jordans",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 145
+  },
+  {
+    "id": 764,
+    "title": "Beso En Las Rocas",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 145
+  },
+  {
+    "id": 765,
+    "title": "7 Veces",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 175
+  },
+  {
+    "id": 766,
+    "title": "Fantasi",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 159
+  },
+  {
+    "id": 767,
+    "title": "Miénteme",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 166
+  },
+  {
+    "id": 768,
+    "title": "Maldita Foto",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 191
+  },
+  {
+    "id": 769,
+    "title": "Bar",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 161
+  },
+  {
+    "id": 770,
+    "title": "La Triple T",
+    "artist": "TINI",
+    "album": "Cupido",
+    "year": 2023,
+    "duration": 168
+  },
+  {
+    "id": 771,
+    "title": "Un Beso en Madrid",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 145
+  },
+  {
+    "id": 772,
+    "title": "Fresa",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 166
+  },
+  {
+    "id": 773,
+    "title": "Si Tú Supieras",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 152
+  },
+  {
+    "id": 774,
+    "title": "Tuyo",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 114
+  },
+  {
+    "id": 775,
+    "title": "Te Olvidaré",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 195
+  },
+  {
+    "id": 776,
+    "title": "Acércate",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 143
+  },
+  {
+    "id": 777,
+    "title": "Playa",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 148
+  },
+  {
+    "id": 778,
+    "title": "Ella Dice",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 162
+  },
+  {
+    "id": 779,
+    "title": "Duele",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 139
+  },
+  {
+    "id": 780,
+    "title": "Recuerdo",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 201
+  },
+  {
+    "id": 781,
+    "title": "Oye",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 174
+  },
+  {
+    "id": 782,
+    "title": "Diciembre",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 189
+  },
+  {
+    "id": 783,
+    "title": "Suéltate el Pelo",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 128
+  },
+  {
+    "id": 784,
+    "title": "22",
+    "artist": "TINI",
+    "album": "TINI TINI TINI",
+    "year": 2020,
+    "duration": 160
+  },
+  {
+    "id": 785,
+    "title": "Animal",
+    "artist": "Maria Becerra",
+    "album": "Animal",
+    "year": 2021,
+    "duration": 204
+  },
+  {
+    "id": 786,
+    "title": "A Solas",
+    "artist": "Maria Becerra",
+    "album": "Animal",
+    "year": 2021,
+    "duration": 216
+  },
+  {
+    "id": 787,
+    "title": "Cerquita de Ti",
+    "artist": "Maria Becerra",
+    "album": "Animal",
+    "year": 2021,
+    "duration": 195
+  },
+  {
+    "id": 788,
+    "title": "Acaramelao",
+    "artist": "Maria Becerra",
+    "album": "Animal",
+    "year": 2021,
+    "duration": 186
+  },
+  {
+    "id": 789,
+    "title": "Cazame",
+    "artist": "Maria Becerra",
+    "album": "Animal",
+    "year": 2021,
+    "duration": 200
+  },
+  {
+    "id": 790,
+    "title": "Mi Debilidad",
+    "artist": "Maria Becerra",
+    "album": "Animal",
+    "year": 2021,
+    "duration": 166
+  },
+  {
+    "id": 791,
+    "title": "Wow Wow",
+    "artist": "Maria Becerra",
+    "album": "Animal",
+    "year": 2021,
+    "duration": 200
+  },
+  {
+    "id": 792,
+    "title": "Hace Rato",
+    "artist": "Maria Becerra",
+    "album": "Animal",
+    "year": 2021,
+    "duration": 194
+  },
+  {
+    "id": 793,
+    "title": "Hipnotiza'",
+    "artist": "Maria Becerra",
+    "album": "Animal",
+    "year": 2021,
+    "duration": 150
+  },
+  {
+    "id": 794,
+    "title": "No Eres Tú Soy Yo",
+    "artist": "Maria Becerra",
+    "album": "Animal",
+    "year": 2021,
+    "duration": 187
+  },
+  {
+    "id": 795,
+    "title": "Episodios",
+    "artist": "Maria Becerra",
+    "album": "Animal",
+    "year": 2021,
+    "duration": 172
+  },
+  {
+    "id": 796,
+    "title": "PERREO FURIOSO",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 153
+  },
+  {
+    "id": 797,
+    "title": "AUTOMÁTICO",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 176
+  },
+  {
+    "id": 798,
+    "title": "CUANDO HACEMOS EL AMOR",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 215
+  },
+  {
+    "id": 799,
+    "title": "OJALÁ",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 161
+  },
+  {
+    "id": 800,
+    "title": "ADIÓS",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 161
+  },
+  {
+    "id": 801,
+    "title": "HASTA QUE LA MUERTE NOS SEPARE",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 208
+  },
+  {
+    "id": 802,
+    "title": "DOBLE VIDA",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 182
+  },
+  {
+    "id": 803,
+    "title": "INSPIRADORA",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 181
+  },
+  {
+    "id": 804,
+    "title": "PÍDELO",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 170
+  },
+  {
+    "id": 805,
+    "title": "MANDAMIENTOS",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 143
+  },
+  {
+    "id": 806,
+    "title": "NUNCA PASARÁ",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 174
+  },
+  {
+    "id": 807,
+    "title": "LA NENA DE ARGENTINA",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 152
+  },
+  {
+    "id": 808,
+    "title": "DESAFIANDO EL DESTINO",
+    "artist": "Maria Becerra",
+    "album": "LA NENA DE ARGENTINA",
+    "year": 2022,
+    "duration": 193
+  },
+  {
+    "id": 809,
+    "title": "De Enero a Diciembre (Emilia en Vivo)",
+    "artist": "Emilia",
+    "album": "Emilia en Vivo",
+    "year": 2022,
+    "duration": 181
+  },
+  {
+    "id": 810,
+    "title": "BB (Emilia en Vivo)",
+    "artist": "Emilia",
+    "album": "Emilia en Vivo",
+    "year": 2022,
+    "duration": 166
+  },
+  {
+    "id": 811,
+    "title": "intoxicao (Emilia en Vivo)",
+    "artist": "Emilia",
+    "album": "Emilia en Vivo",
+    "year": 2022,
+    "duration": 227
+  },
+  {
+    "id": 812,
+    "title": "mi otra mitad (Emilia en Vivo)",
+    "artist": "Emilia",
+    "album": "Emilia en Vivo",
+    "year": 2022,
+    "duration": 210
+  },
+  {
+    "id": 813,
+    "title": "rápido lento (Emilia en Vivo)",
+    "artist": "Emilia",
+    "album": "Emilia en Vivo",
+    "year": 2022,
+    "duration": 226
+  },
+  {
+    "id": 814,
+    "title": "cielo en la mente (Emilia en Vivo)",
+    "artist": "Emilia",
+    "album": "Emilia en Vivo",
+    "year": 2022,
+    "duration": 191
+  },
+  {
+    "id": 815,
+    "title": "Perreito Salvaje (Emilia en Vivo)",
+    "artist": "Emilia",
+    "album": "Emilia en Vivo",
+    "year": 2022,
+    "duration": 199
+  },
+  {
+    "id": 816,
+    "title": "como si no importara (Emilia en Vivo)",
+    "artist": "Emilia",
+    "album": "Emilia en Vivo",
+    "year": 2022,
+    "duration": 194
+  },
+  {
+    "id": 817,
+    "title": "cuatro veinte (Emilia en Vivo)",
+    "artist": "Emilia",
+    "album": "Emilia en Vivo",
+    "year": 2022,
+    "duration": 151
+  },
+  {
+    "id": 818,
+    "title": "latin girl",
+    "artist": "Emilia",
+    "album": "Tú crees en mí?",
+    "year": 2022,
+    "duration": 167
+  },
+  {
+    "id": 819,
+    "title": "como si no importara",
+    "artist": "Emilia",
+    "album": "Tú crees en mí?",
+    "year": 2022,
+    "duration": 174
+  },
+  {
+    "id": 820,
+    "title": "cuatro veinte",
+    "artist": "Emilia",
+    "album": "Tú crees en mí?",
+    "year": 2022,
+    "duration": 134
+  },
+  {
+    "id": 821,
+    "title": "intoxicao",
+    "artist": "Emilia",
+    "album": "Tú crees en mí?",
+    "year": 2022,
+    "duration": 169
+  },
+  {
+    "id": 822,
+    "title": "mi otra mitad",
+    "artist": "Emilia",
+    "album": "Tú crees en mí?",
+    "year": 2022,
+    "duration": 167
+  },
+  {
+    "id": 823,
+    "title": "la balada",
+    "artist": "Emilia",
+    "album": "Tú crees en mí?",
+    "year": 2022,
+    "duration": 166
+  },
+  {
+    "id": 824,
+    "title": "rápido lento",
+    "artist": "Emilia",
+    "album": "Tú crees en mí?",
+    "year": 2022,
+    "duration": 213
+  },
+  {
+    "id": 825,
+    "title": "cielo en la mente",
+    "artist": "Emilia",
+    "album": "Tú crees en mí?",
+    "year": 2022,
+    "duration": 170
+  },
+  {
+    "id": 826,
+    "title": "Facts.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 131
+  },
+  {
+    "id": 827,
+    "title": "Jagger.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 156
+  },
+  {
+    "id": 828,
+    "title": "JET_Set.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 146
+  },
+  {
+    "id": 829,
+    "title": "IConic.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 182
+  },
+  {
+    "id": 830,
+    "title": "La_Original.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 141
+  },
+  {
+    "id": 831,
+    "title": "GTA.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 152
+  },
+  {
+    "id": 832,
+    "title": "Exclusive.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 121
+  },
+  {
+    "id": 833,
+    "title": "No_Se_Ve.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 204
+  },
+  {
+    "id": 834,
+    "title": "24_Hs.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 144
+  },
+  {
+    "id": 835,
+    "title": "Muñecos.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 166
+  },
+  {
+    "id": 836,
+    "title": "Ojitos_Verdes.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 172
+  },
+  {
+    "id": 837,
+    "title": "A_1000_Km.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 201
+  },
+  {
+    "id": 838,
+    "title": "Guerrero.mp3",
+    "artist": "Emilia",
+    "album": ".mp3",
+    "year": 2023,
+    "duration": 239
   }
 ]
