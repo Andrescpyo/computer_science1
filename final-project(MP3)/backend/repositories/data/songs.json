@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "title": "Take Me to the Beach", 
+    "title": "Take Me to the Beach",
     "artist": "Imagine Dragons",
     "album": "LOOM",
     "year": 2024,
@@ -184,14 +184,6 @@
     "duration": 151
   },
   {
-    "id": 24,
-    "title": "A-OK - Demo",
-    "artist": "Imagine Dragons",
-    "album": "Reflections",
-    "year": 2025,
-    "duration": 142
-  },
-  {
     "id": 25,
     "title": "Cowboy - Demo",
     "artist": "Imagine Dragons",
@@ -265,7 +257,7 @@
   },
   {
     "id": 34,
-    "title": "Ch-Ching(Till We Grow Older",
+    "title": "Ch-Ching(Till We Grow Older)",
     "artist": "Imagine Dragons",
     "album": "Night Visions",
     "year": 2012,
@@ -705,7 +697,7 @@
   },
   {
     "id": 89,
-    "title": "I'ts Ok",
+    "title": "It's Ok",
     "artist": "Imagine Dragons",
     "album": "Mercury",
     "year": 2022,
@@ -793,7 +785,7 @@
   },
   {
     "id": 100,
-    "title": "Higer Ground",
+    "title": "Higher Ground",
     "artist": "Imagine Dragons",
     "album": "Mercury",
     "year": 2022,
@@ -876,7 +868,7 @@
     "title": "Love Of Mine",
     "artist": "Imagine Dragons",
     "album": "Night Visions",
-    "year": 2022,
+    "year": 2012,
     "duration": 249
   },
   {
@@ -1158,14 +1150,6 @@
     "album": "Muerte",
     "year": 2012,
     "duration": 284
-  },
-  {
-    "id": 146,
-    "title": "Es épico",
-    "artist": "Canserbero",
-    "album": "Muerte",
-    "year": 2012,
-    "duration": 361
   },
   {
     "id": 147,
@@ -1678,5 +1662,381 @@
     "album": "Bandera Negra",
     "year": 2021,
     "duration": 275
+  },
+  {
+    "id": 211,
+    "title": "Parte de Mí",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 176
+  },
+  {
+    "id": 212,
+    "title": "Darling",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 166
+  },
+  {
+    "id": 213,
+    "title": "Sabe",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 178
+  },
+  {
+    "id": 214,
+    "title": "Si Vos Me Lo Pedís",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 202
+  },
+  {
+    "id": 215,
+    "title": "Pensamos",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 174
+  },
+  {
+    "id": 216,
+    "title": "Verte",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 158
+  },
+  {
+    "id": 217,
+    "title": "LL (Interludio)",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 91
+  },
+  {
+    "id": 218,
+    "title": "Colocao",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 180
+  },
+  {
+    "id": 219,
+    "title": "Toa la Vida",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 219
+  },
+  {
+    "id": 220,
+    "title": "Perdido",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 227
+  },
+  {
+    "id": 221,
+    "title": "Dangerous",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 160
+  },
+  {
+    "id": 222,
+    "title": "Baby",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 165
+  },
+  {
+    "id": 223,
+    "title": "Me Has Dejado",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 243
+  },
+  {
+    "id": 224,
+    "title": "Mala Vida",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 161
+  },
+  {
+    "id": 225,
+    "title": "Tengo To",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 183
+  },
+  {
+    "id": 226,
+    "title": "Dame",
+    "artist": "Nicki Nicole",
+    "album": "Parte de Mí",
+    "year": 2021,
+    "duration": 238
+  },
+  {
+  "id": 227,
+  "title": "7 Lunas",
+  "artist": "Nicki Nicole",
+  "album": "Recuerdos",
+  "year": 2019,
+  "duration": 208
+  },
+  {
+    "id": 228,
+    "title": "Cómo Dímelo",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 200
+  },
+  {
+    "id": 229,
+    "title": "Nos Encontramos",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 158
+  },
+  {
+    "id": 230,
+    "title": "Tras Vos",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 171
+  },
+  {
+    "id": 231,
+    "title": "Diva",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 201
+  },
+  {
+    "id": 232,
+    "title": "Shorty",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 206
+  },
+  {
+    "id": 233,
+    "title": "Recuerdos",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 171
+  },
+  {
+    "id": 234,
+    "title": "Me Gusta",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 189
+  },
+  {
+    "id": 235,
+    "title": "Plegarias",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 199
+  },
+  {
+    "id": 236,
+    "title": "Wapo Traketero",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 181
+  },
+  {
+    "id": 237,
+    "title": "Años Luz",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 194
+  },
+  {
+    "id": 238,
+    "title": "Fucking Diablo",
+    "artist": "Nicki Nicole",
+    "album": "Recuerdos",
+    "year": 2019,
+    "duration": 145
+  },
+  {
+  "id": 239,
+  "title": "Ya No",
+  "artist": "Nicki Nicole",
+  "album": "Alma",
+  "year": 2023,
+  "duration": 172
+  },
+  {
+    "id": 240,
+    "title": "DISPARA ***",
+    "artist": "Nicki Nicole",
+    "album": "Alma",
+    "year": 2023,
+    "duration": 144
+  },
+  {
+    "id": 241,
+    "title": "NO voy a llorar :')",
+    "artist": "Nicki Nicole",
+    "album": "Alma",
+    "year": 2023,
+    "duration": 179
+  },
+  {
+    "id": 242,
+    "title": "8 AM",
+    "artist": "Nicki Nicole",
+    "album": "Alma",
+    "year": 2023,
+    "duration": 148
+  },
+  {
+    "id": 243,
+    "title": "Se va 1 llegan 2",
+    "artist": "Nicki Nicole",
+    "album": "Alma",
+    "year": 2023,
+    "duration": 144
+  },
+  {
+    "id": 244,
+    "title": "Llámame",
+    "artist": "Nicki Nicole",
+    "album": "Alma",
+    "year": 2023,
+    "duration": 125
+  },
+  {
+    "id": 245,
+    "title": "qué le pasa conmigo?",
+    "artist": "Nicki Nicole",
+    "album": "Alma",
+    "year": 2023,
+    "duration": 167
+  },
+  {
+    "id": 246,
+    "title": "Tuyo (Cover) - una que quise hacer",
+    "artist": "Nicki Nicole",
+    "album": "Alma",
+    "year": 2023,
+    "duration": 134
+  },
+  {
+    "id": 247,
+    "title": "CAEN LAS ESTRELLAS",
+    "artist": "Nicki Nicole",
+    "album": "Alma",
+    "year": 2023,
+    "duration": 146
+  },
+  {
+    "id": 248,
+    "title": "TIENES MI ALMA",
+    "artist": "Nicki Nicole",
+    "album": "Alma",
+    "year": 2023,
+    "duration": 128
+  },
+  {
+  "id": 249,
+  "title": "VEINTI",
+  "artist": "Nicki Nicole",
+  "album": "Naiki",
+  "year": 2024,
+  "duration": 152
+  },
+  {
+    "id": 250,
+    "title": "SHEITE",
+    "artist": "Nicki Nicole",
+    "album": "Naiki",
+    "year": 2024,
+    "duration": 131
+  },
+  {
+    "id": 251,
+    "title": "FORTY",
+    "artist": "Nicki Nicole",
+    "album": "Naiki",
+    "year": 2024,
+    "duration": 128
+  },
+  {
+    "id": 252,
+    "title": "MONEY MACHINE",
+    "artist": "Nicki Nicole",
+    "album": "Naiki",
+    "year": 2024,
+    "duration": 147
+  },
+  {
+    "id": 253,
+    "title": "FUCK THAT",
+    "artist": "Nicki Nicole",
+    "album": "Naiki",
+    "year": 2024,
+    "duration": 100
+  },
+  {
+    "id": 254,
+    "title": "WE LOVE THAT SHIT",
+    "artist": "Nicki Nicole",
+    "album": "Naiki",
+    "year": 2024,
+    "duration": 170
+  },
+  {
+    "id": 255,
+    "title": "BITCHES",
+    "artist": "Nicki Nicole",
+    "album": "Naiki",
+    "year": 2024,
+    "duration": 139
+  },
+  {
+    "id": 256,
+    "title": "MASCARA",
+    "artist": "Nicki Nicole",
+    "album": "Naiki",
+    "year": 2024,
+    "duration": 145
+  },
+  {
+    "id": 257,
+    "title": "ALH",
+    "artist": "Nicki Nicole",
+    "album": "Naiki",
+    "year": 2024,
+    "duration": 139
   }
 ]

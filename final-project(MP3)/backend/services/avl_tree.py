@@ -1,5 +1,27 @@
+"""AVL Tree implementation for storing and retrieving key-value pairs efficiently.
+
+This module is part of the MP3AVLtree project. It provides an AVLTree class
+that supports insertion, deletion, full traversal, exact search, and partial
+search by substring on string-based keys (e.g., song titles).
+
+Author: Juan Esteban Bedoya <jebedoyal@udistrital.edu.co>
+
+This file is part of the MP3AVLtree project.
+
+MP3AVLtree is free software: you can redistribute it and/or modify it under 
+the terms of the GNU General Public License as published by the Free Software 
+Foundation, either version 3 of the License, or (at your option) any later version.
+
+MP3AVLtree is distributed in the hope that it will be useful, but WITHOUT ANY 
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR 
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with 
+MP3AVLtree. If not, see <https://www.gnu.org/licenses/>.
+"""
 
 from typing import Any, Optional
+
 
 class AVLNode:
     """Node for AVL Tree.
@@ -27,7 +49,7 @@ class AVLNode:
 
 
 class AVLTree:
-    """AVL Tree implementation supporting insertion, deletion, and search."""
+    """AVL Tree implementation supporting insertion, deletion, search, and traversal."""
 
     def __init__(self):
         """Initializes an empty AVL Tree."""
@@ -226,8 +248,7 @@ class AVLTree:
             return node.value
         if key < node.key:
             return self._search(node.left, key)
-        else:
-            return self._search(node.right, key)
+        return self._search(node.right, key)
 
     def search(self, key: Any) -> Optional[dict]:
         """Searches for a key in the AVL Tree.
@@ -253,11 +274,34 @@ class AVLTree:
             self._inorder(node.right, result)
 
     def get_all(self) -> list:
-        """Returns all values in the AVL Tree in in-order.
+        """Returns all values in the AVL Tree in sorted order.
 
         Returns:
-            list: List of all node values in sorted order.
+            list: List of all node values in in-order traversal.
         """
         result = []
         self._inorder(self.root, result)
         return result
+
+    def search_partial(self, substring: str) -> list:
+        """Finds all nodes whose key contains the given substring (case-insensitive).
+
+        Args:
+            substring (str): Substring to search for in the keys.
+
+        Returns:
+            list: List of values whose keys contain the substring.
+        """
+        results = []
+        substring = substring.lower()
+
+        def _in_order_search(node: Optional[AVLNode]) -> None:
+            if not node:
+                return
+            _in_order_search(node.left)
+            if substring in node.key:
+                results.append(node.value)
+            _in_order_search(node.right)
+
+        _in_order_search(self.root)
+        return results
