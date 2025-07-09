@@ -104,7 +104,7 @@ def update_song(song_id: int, new_data: dict = Body(...)):
         raise HTTPException(status_code=404, detail=str(e)) from e
 
 
-@router.delete("/songs/delete/{song_id} ", response_model=dict, summary="Delete a song by its ID")
+@router.delete("/songs/delete/{song_id}", response_model=dict, summary="Delete a song by its ID")
 def delete_song_by_id(song_id: int):
     """Deletes a song by its ID.
 

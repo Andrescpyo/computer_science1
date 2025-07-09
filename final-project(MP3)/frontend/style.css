@@ -264,7 +264,11 @@ body {
     width: 100%; /* Ocupa el ancho completo */
 }
 
-.mp3-list li {
+/* NUEVOS ESTILOS PARA LOS ELEMENTOS DE LA LISTA Y BOTÓN ELIMINAR */
+.song-item {
+    display: flex; /* Para alinear el texto y el botón en la misma línea */
+    justify-content: space-between; /* Para que el texto y el botón estén en extremos opuestos */
+    align-items: center; /* Para alinear verticalmente el texto y el botón */
     padding: 10px 8px; /* Más padding */
     cursor: pointer;
     white-space: nowrap;
@@ -275,16 +279,50 @@ body {
     font-size: 1.1em;
 }
 
-.mp3-list li:last-child {
+.song-item:last-child {
     border-bottom: none;
 }
 
-.mp3-list li:hover,
-.mp3-list li.selected {
+.song-item:hover,
+.song-item.selected {
     background-color: rgba(0, 224, 224, 0.1); /* Usando el valor de var(--mp3-highlight-color) */
     color: var(--mp3-highlight-color);
     text-shadow: 0 0 3px var(--mp3-highlight-color);
 }
+
+.song-item span { /* Estilo para el texto (título - artista) dentro del li */
+    flex-grow: 1; /* Permite que el texto ocupe el espacio disponible */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Estilos para el botón de eliminar */
+.delete-song-button {
+    background-color: #FF4444; /* Rojo para eliminar */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em; /* Tamaño de fuente más pequeño para el botón */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    margin-left: 10px; /* Espacio a la izquierda del botón */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Sombra para el botón */
+}
+
+.delete-song-button:hover {
+    background-color: #CC0000; /* Rojo más oscuro al pasar el ratón */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+.delete-song-button:active {
+    background-color: #990000;
+    transform: translateY(1px);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
 
 /* --- Input de búsqueda --- */
 .search-input-mp3 {
@@ -367,10 +405,14 @@ body {
     position: absolute;
     width: var(--button-in-circle-size);
     height: var(--button-in-circle-size);
-    border-radius: 50%;
-    background: linear-gradient(to bottom, var(--mp3-button-medium), var(--mp3-button-dark));
+    border-radius: 50%; /* Mantén esto para la forma si quieres que sigan siendo 'botones' circulares */
+    /* *** CAMBIOS AQUÍ *** */
+    /* Usamos el mismo gradiente que el fondo de la rueda circular para que se "funda" */
+    background: radial-gradient(circle at 60% 30%, var(--mp3-button-light) 0%, var(--mp3-button-medium) 40%, var(--mp3-button-dark) 100%);
     color: var(--mp3-screen-text);
-    border: 1px solid var(--mp3-button-dark);
+    /* Borde más sutil o transparente para que no se separe tanto */
+    border: 1px solid rgba(0,0,0,0.2); /* Un borde muy oscuro y casi transparente */
+    /* *** FIN CAMBIOS *** */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,15 +424,19 @@ body {
 }
 
 .circular-control .navigation-button:hover {
-    background: linear-gradient(to bottom, var(--mp3-button-light), var(--mp3-button-medium));
+    /* *** CAMBIOS AQUÍ *** */
+    /* Aclara el fondo al pasar el ratón, pero aún con el gradiente */
+    background: radial-gradient(circle at 60% 30%, var(--mp3-body-highlight) 0%, var(--mp3-button-light) 40%, var(--mp3-button-medium) 100%);
     color: var(--mp3-highlight-color);
     box-shadow: inset 0 2px 8px rgba(0,0,0,0.6), 0 3px 8px rgba(0,0,0,0.4);
     text-shadow: 0 0 7px var(--mp3-highlight-color);
 }
 
 .circular-control .navigation-button:active {
-    background: var(--mp3-button-active);
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.7);
+    /* *** CAMBIOS AQUÍ *** */
+    /* Oscurece significativamente al presionar para dar sensación de "click" */
+    background: var(--mp3-button-dark); /* Color más oscuro del cuerpo */
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.7), inset 0 0 5px rgba(0,0,0,0.9); /* Más sombra interna */
     transform: translateY(1px); /* Efecto de pulsado */
 }
 
@@ -479,19 +525,32 @@ body {
 
 /* Estilos para botones de icono sin fondo, como el "atrás" en las pantallas */
 .icon-button {
-    background: none;
+    /* background: none;  <-- ELIMINAR O COMENTAR ESTA LÍNEA */
+    background-color: var(--mp3-highlight-color); /* Fondo verde brillante para los botones de icono */
+    color: var(--mp3-screen-bg); /* Texto/icono oscuro para contrastar */
     border: none;
-    color: var(--mp3-screen-text);
-    font-size: 1.5em; /* Iconos más grandes en la pantalla */
+    border-radius: 50%; /* Esto los hace circulares */
+    width: 35px; /* Tamaño fijo para el botón circular */
+    height: 35px; /* Asegura que sea un círculo perfecto */
+    display: flex; /* Para centrar el contenido (el icono) */
+    align-items: center; /* Centra verticalmente el icono */
+    justify-content: center; /* Centra horizontalmente el icono */
+    font-size: 1.2em; /* Tamaño del icono dentro del círculo */
     cursor: pointer;
-    transition: color 0.1s ease, text-shadow 0.1s ease;
-    text-shadow: 0 0 5px var(--mp3-screen-text);
+    transition: background-color 0.2s ease-in-out, color 0.1s ease, text-shadow 0.1s ease;
+    flex-shrink: 0; /* IMPORTE: Evita que el botón se encoja en un contenedor flex */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Una pequeña sombra para dar profundidad */
 }
 .icon-button:hover {
-    color: var(--mp3-highlight-color);
-    text-shadow: 0 0 7px var(--mp3-highlight-color);
+    background-color: var(--mp3-screen-text); /* Un verde ligeramente diferente al pasar el ratón */
+    color: var(--mp3-screen-bg);
+    text-shadow: none; /* Quitamos la sombra del texto al pasar el ratón para que resalte más el fondo */
 }
-
+.icon-button:active {
+    background-color: #009999; /* Color de fondo cuando se presiona */
+    transform: translateY(1px);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
 
 /* --- Modal de Añadir Canción (adaptado al estilo MP3) --- */
 .mp3-modal {

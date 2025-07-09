@@ -121,6 +121,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // --- NUEVA FUNCIÓN: Eliminar canción del backend ---
+    async function deleteSongFromBackend(songId) {
+        try {
+            const response = await fetch(`${API_BASE_URL}/songs/delete/${songId}`, {
+                method: 'DELETE' // Método HTTP DELETE
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.detail || 'Error al eliminar la canción');
+            }
+
+            const result = await response.json();
+            alert(result.message); // Muestra el mensaje de éxito del backend
+
+            // Recargar todas las canciones y la biblioteca después de eliminar
+            await fetchAllSongs();
+            loadSongsIntoLibrary();
+            return true;
+        } catch (error) {
+            console.error('Error deleting song:', error);
+            alert(`Error al eliminar canción: ${error.message}`);
+            return false;
+        }
+    }
+
     // --- Funciones de Renderizado y Lógica del MP3 Player ---
 
     function displaySong(song) {
@@ -136,6 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
         durationElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
     }
 
+    // --- FUNCIÓN MODIFICADA: renderSongList para incluir el botón de eliminar ---
     function renderSongList(songs, targetListElement) {
         targetListElement.innerHTML = ''; // Limpiar lista
         if (songs.length === 0) {
@@ -147,15 +174,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
         songs.forEach(song => {
             const listItem = document.createElement('li');
-            listItem.textContent = `${song.title} - ${song.artist}`;
-            listItem.dataset.songId = song.id; // Guarda el ID para futuras interacciones
-            listItem.addEventListener('click', () => {
+            listItem.classList.add('song-item'); // Añade una clase para posibles estilos
+
+            // Contenedor para el título/artista y el botón
+            const songInfo = document.createElement('span');
+            songInfo.textContent = `${song.title} - ${song.artist}`;
+            songInfo.dataset.songId = song.id; // Guarda el ID para reproducir
+            songInfo.style.cursor = 'pointer'; // Para indicar que es clickeable
+            songInfo.style.flexGrow = '1'; // Para que ocupe el espacio disponible
+            songInfo.addEventListener('click', () => {
                 // Lógica para reproducir la canción seleccionada
                 console.log('Reproduciendo:', song.title);
                 displaySong(song);
                 showScreen('nowPlaying');
-                // Aquí podrías guardar el ID de la canción actual si tuvieras más lógica de reproducción
             });
+
+            const deleteButton = document.createElement('button');
+            deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
+            deleteButton.classList.add('delete-song-button'); // Añade una clase para estilos
+            deleteButton.style.marginLeft = '10px'; // Espacio entre el texto y el botón
+            deleteButton.style.backgroundColor = '#FF4444'; // Rojo para eliminar
+            deleteButton.style.color = 'white';
+            deleteButton.style.border = 'none';
+            deleteButton.style.padding = '5px 8px'; // Adjust padding
+            deleteButton.style.cursor = 'pointer';
+            deleteButton.style.borderRadius = '5px';
+            deleteButton.style.fontSize = '1em'; // Adjust icon size using font-size 
+                                
+            deleteButton.addEventListener('click', async (event) => {
+                event.stopPropagation(); // Evita que el clic en el botón active también el evento de 'songInfo' (reproducir)
+                if (confirm(`¿Estás seguro de que quieres eliminar "${song.title}"?`)) {
+                    const success = await deleteSongFromBackend(song.id);
+                    if (success) {
+                        // La función deleteSongFromBackend ya recarga la lista, no se necesita hacer nada más aquí
+                        console.log(`Canción ${song.title} eliminada con éxito.`);
+                    }
+                }
+            });
+
+            listItem.style.display = 'flex'; // Usar flexbox para alinear el texto y el botón
+            listItem.style.alignItems = 'center'; // Alinear verticalmente
+            listItem.style.justifyContent = 'space-between'; // Espacio entre elementos
+
+            listItem.appendChild(songInfo);
+            listItem.appendChild(deleteButton);
             targetListElement.appendChild(listItem);
         });
     }
