@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic MP3 Player Simulator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mp3-player-body">
+        <div class="mp3-shine-top"></div> <div class="mp3-screen-outer-bezel"> <div class="mp3-screen">
+                <div id="nowPlayingScreen" class="screen active-screen">
+                    <p class="song-title-mp3" id="playerSongTitle">No song playing</p>
+                    <p class="artist-mp3" id="playerArtistAlbum"></p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill"></div>
+                    </div>
+                    <p class="duration-mp3" id="playerDuration">00:00</p>
+                </div>
+
+                <div id="libraryScreen" class="screen">
+                    <div class="menu-header">
+                        <span id="libraryTitle">LIBRARY</span>
+                        <button id="backToNowPlaying" class="icon-button"><i class="fas fa-chevron-left"></i></button>
+                    </div>
+                    <ul id="mp3LibraryList" class="mp3-list">
+                        </ul>
+                </div>
+
+                <div id="searchScreen" class="screen">
+                    <div class="menu-header">
+                        <input type="text" id="searchInputMP3" placeholder="Search song/artist..." class="search-input-mp3">
+                        <button id="searchButtonMP3" class="icon-button"><i class="fas fa-search"></i></button>
+                        <button id="backToLibraryFromSearch" class="icon-button"><i class="fas fa-times"></i></button>
+                    </div>
+                    <ul id="searchResultsList" class="mp3-list">
+                        </ul>
+                </div>
+
+                 <div id="addSongModalMP3" class="mp3-modal">
+                    <div class="mp3-modal-content">
+                        <h2>Add New Song</h2>
+                        <form id="addSongFormMP3">
+                            <div class="form-group-mp3">
+                                <label for="newIdMP3">ID:</label>
+                                <input type="number" id="newIdMP3" required>
+                            </div>
+                            <div class="form-group-mp3">
+                                <label for="newTitleMP3">Title:</label>
+                                <input type="text" id="newTitleMP3" required>
+                            </div>
+                            <div class="form-group-mp3">
+                                <label for="newArtistMP3">Artist:</label>
+                                <input type="text" id="newArtistMP3" required>
+                            </div>
+                            <div class="form-group-mp3">
+                                <label for="newAlbumMP3">Album:</label>
+                                <input type="text" id="newAlbumMP3" required>
+                            </div>
+                            <div class="form-group-mp3">
+                                <label for="newYearMP3">Year:</label>
+                                <input type="number" id="newYearMP3" required>
+                            </div>
+                            <div class="form-group-mp3">
+                                <label for="newDurationMP3">Duration (seconds):</label>
+                                <input type="number" id="newDurationMP3" required>
+                            </div>
+                            <button type="submit" class="mp3-button">Add Song</button>
+                        </form>
+                        <button class="mp3-button close-modal-mp3" id="closeAddModalMP3">Close</button>
+                    </div>
+                </div>
+
+            </div> </div> <div class="mp3-controls">
+            <div class="circular-control">
+                <button id="prevButtonMP3" class="mp3-button navigation-button prev"><i class="fas fa-backward"></i></button>
+                <button id="nextButtonMP3" class="mp3-button navigation-button next"><i class="fas fa-forward"></i></button>
+                <button id="menuButtonMP3" class="mp3-button navigation-button menu">M</button>
+                <button id="playPauseButtonMP3" class="mp3-button play-pause-button"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="function-buttons">
+                <button id="searchMenuButtonMP3" class="mp3-button function-button">SEARCH</button>
+                <button id="addSongMenuButtonMP3" class="mp3-button function-button">ADD</button>
+            </div>
+        </div>
+        <div class="mp3-shine-bottom"></div> </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

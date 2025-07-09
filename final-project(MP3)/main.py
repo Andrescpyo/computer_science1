@@ -20,6 +20,7 @@ MP3AVLtree. If not, see <https://www.gnu.org/licenses/>.
 """
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from backend.controllers import song_router  # pylint: disable=import-error
 
 
@@ -27,6 +28,24 @@ app: FastAPI = FastAPI(
     title="MP3 Song Management API",
     description="API for managing MP3 songs with features like search, insert, delete, and update.",
     version="0.0.1"
+)
+
+origins = [
+    "http://localhost",
+    "http://localhost:8000",
+    "http://localhost:8001",
+    "http://127.0.0.1",
+    "http://127.0.0.1:8001",
+    "http://127.0.0.1:8000",
+    "null",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 app.include_router(song_router)

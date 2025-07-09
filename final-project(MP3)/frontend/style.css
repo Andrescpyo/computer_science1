@@ -1,0 +1,631 @@
+/* style.css */
+
+/* Fuentes para el estilo MP3 */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* Pixelada */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); /* Monospace retro */
+
+/* --- Variables de Color y Dimensiones --- */
+:root {
+    /* Colores del cuerpo del MP3 */
+    --mp3-body-dark: #2a2a2a;
+    --mp3-body-medium: #4a4a4a;
+    --mp3-body-light: #6a6a6a;
+    --mp3-body-highlight: #888;
+    --mp3-body-shadow: rgba(0,0,0,0.7);
+
+    /* Colores de pantalla */
+    --mp3-screen-bg: #0d120a; /* Fondo verde oscuro casi negro */
+    --mp3-screen-text: #6bff6b; /* Verde brillante para el texto (LCD look) */
+    --mp3-screen-border: #1a1a1a;
+
+    /* Colores de botones */
+    --mp3-button-dark: #3a3a3a;
+    --mp3-button-medium: #5a5a5a;
+    --mp3-button-light: #7a7a7a;
+    --mp3-button-active: #2a2a2a; /* Color cuando el botón está presionado */
+    --mp3-button-accent: #e74c3c; /* Rojo para Play/Pause */
+    --mp3-button-accent-hover: #c0392b;
+
+    /* Colores de acento para listas y progreso */
+    --mp3-highlight-color: #00e0e0; /* Cian brillante */
+
+    /* Scrollbar */
+    --mp3-scrollbar-thumb: #888;
+    --mp3-scrollbar-track: #444;
+
+    /* Dimensiones */
+    --mp3-body-width: 380px;
+    --mp3-body-height: 600px;
+    --circular-control-size: 180px;
+    --button-in-circle-size: 60px;
+    --play-pause-center-size: 80px;
+}
+
+/* --- Estilos Generales del Body --- */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #2c2c2c, #1a1a1a); /* Fondo más suave */
+    font-family: 'VT323', monospace;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* --- Cuerpo del Reproductor MP3 --- */
+.mp3-player-body {
+    width: var(--mp3-body-width);
+    height: var(--mp3-body-height);
+    background: linear-gradient(to bottom, var(--mp3-body-medium) 0%, var(--mp3-body-dark) 100%);
+    border-radius: 30px; /* Bordes más pronunciados */
+    box-shadow:
+        0 25px 50px var(--mp3-body-shadow), /* Sombra externa grande */
+        inset 0 0 30px rgba(0,0,0,0.9), /* Sombra interna para profundidad */
+        inset 0 10px 10px rgba(255,255,255,0.1); /* Ligero brillo superior interno */
+    display: flex;
+    flex-direction: column;
+    padding: 30px; /* Más padding para el borde físico */
+    gap: 25px; /* Espacio entre pantalla y controles */
+    border: 3px solid var(--mp3-body-highlight); /* Borde sutil del cuerpo */
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden; /* Para el brillo superior/inferior */
+}
+
+/* --- Efectos de Brillo/Reflejo en el cuerpo del MP3 --- */
+.mp3-shine-top, .mp3-shine-bottom {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    border-radius: 50%;
+    filter: blur(15px);
+    opacity: 0.6;
+    z-index: 1; /* Asegura que estén detrás de los elementos principales */
+}
+
+.mp3-shine-top {
+    top: 5px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mp3-shine-bottom {
+    bottom: 5px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Bisel Exterior de la Pantalla --- */
+.mp3-screen-outer-bezel {
+    flex-grow: 1;
+    background-color: var(--mp3-screen-border); /* Color oscuro del bisel */
+    border-radius: 12px; /* Bordes redondeados del bisel */
+    padding: 8px; /* Grosor del bisel */
+    box-shadow:
+        inset 0 0 10px rgba(0,0,0,0.6), /* Sombra interna para profundidad del bisel */
+        0 2px 5px rgba(0,0,0,0.3); /* Sombra externa del bisel */
+    display: flex; /* Para que la pantalla interna se ajuste bien */
+    position: relative;
+}
+
+/* --- Pantalla Interna del MP3 --- */
+.mp3-screen {
+    flex-grow: 1;
+    background-color: var(--mp3-screen-bg);
+    border: 1px solid rgba(0,255,0,0.2); /* Borde suave verde */
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    /* Efecto de escaneo CRT (opcional, si se quiere algo más retro) */
+    /*
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(
+            to bottom,
+            transparent 0px,
+            transparent 1px,
+            rgba(0, 0, 0, 0.2) 2px,
+            rgba(0, 0, 0, 0.2) 3px
+        );
+        pointer-events: none;
+        z-index: 2;
+    }
+    */
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    padding: 15px; /* Más padding para el contenido de la pantalla */
+    box-sizing: border-box;
+    color: var(--mp3-screen-text);
+    font-size: 1.2em; /* Texto un poco más grande */
+    text-shadow: 0 0 5px var(--mp3-screen-text); /* Efecto de brillo de texto */
+    /* Añadido para asegurar que la pantalla se ajuste y el contenido se distribuya */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos flex */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.screen.active-screen {
+    display: flex;
+    z-index: 10;
+}
+
+/* --- Estilos de la Pantalla "Now Playing" --- */
+#nowPlayingScreen {
+    /* Mantenemos justify-content y align-items para centrado general */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em; /* Título aún más grande */
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el 100% de width/height */
+    /* Ajuste para la distribución interna del contenido de Now Playing */
+    display: flex; /* Asegura que funcione flexbox */
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+    justify-content: center; /* Centra verticalmente los elementos dentro de esta pantalla */
+    align-items: center; /* Centra horizontalmente los elementos dentro de esta pantalla */
+    gap: 10px; /* Espacio entre los elementos de la pantalla (título, artista, progreso, duración) */
+}
+
+.song-title-mp3 {
+    font-size: 1.1em; /* Título de canción principal */
+    margin-bottom: 8px;
+    color: var(--mp3-highlight-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 7px var(--mp3-highlight-color);
+    /* Flexibilidad para que ocupe espacio y no se colapse */
+    flex-shrink: 0; /* No se encogerá */
+    width: 100%; /* Asegura que ocupe el ancho completo disponible */
+}
+
+.artist-mp3 {
+    font-size: 0.8em;
+    color: var(--mp3-screen-text);
+    margin-top: 0;
+    margin-bottom: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Flexibilidad similar */
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.progress-bar-container {
+    width: 90%; /* Más ancho */
+    height: 10px; /* Más alto */
+    background-color: rgba(0,0,0,0.5); /* Fondo más oscuro y sutil */
+    border-radius: 5px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    flex-shrink: 0; /* No se encogerá */
+}
+
+.progress-bar-fill {
+    width: 0%; /* Se controlaría con JS */
+    height: 100%;
+    background-color: var(--mp3-highlight-color); /* Usamos el color de acento para el progreso */
+    border-radius: 5px;
+    box-shadow: 0 0 8px var(--mp3-highlight-color); /* Brillo para el progreso */
+}
+
+.duration-mp3 {
+    font-size: 0.8em;
+    color: var(--mp3-screen-text);
+    flex-shrink: 0; /* No se encogerá */
+}
+
+/* --- Estilos de la Pantalla "Library / Search" --- */
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 15px; /* Más espacio */
+    border-bottom: 2px solid var(--mp3-screen-text); /* Separador más fuerte */
+    color: var(--mp3-highlight-color);
+    font-weight: bold;
+    font-size: 1.3em;
+    text-shadow: 0 0 5px var(--mp3-highlight-color);
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye padding en el ancho */
+}
+
+.mp3-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    flex-grow: 1; /* Ocupa el espacio restante */
+    scrollbar-color: var(--mp3-scrollbar-thumb) var(--mp3-scrollbar-track);
+    width: 100%; /* Ocupa el ancho completo */
+}
+
+.mp3-list li {
+    padding: 10px 8px; /* Más padding */
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.1s ease, color 0.1s ease, text-shadow 0.1s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.05); /* Línea más suave */
+    font-size: 1.1em;
+}
+
+.mp3-list li:last-child {
+    border-bottom: none;
+}
+
+.mp3-list li:hover,
+.mp3-list li.selected {
+    background-color: rgba(0, 224, 224, 0.1); /* Usando el valor de var(--mp3-highlight-color) */
+    color: var(--mp3-highlight-color);
+    text-shadow: 0 0 3px var(--mp3-highlight-color);
+}
+
+/* --- Input de búsqueda --- */
+.search-input-mp3 {
+    flex-grow: 1;
+    background-color: rgba(0,0,0,0.5); /* Fondo más oscuro */
+    border: 1px solid var(--mp3-screen-text);
+    border-radius: 5px;
+    color: var(--mp3-screen-text);
+    padding: 8px; /* Más padding */
+    font-family: inherit;
+    font-size: 1.1em;
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0,255,0,0.2);
+}
+.search-input-mp3::placeholder {
+    color: #444; /* Placeholder más discreto */
+}
+.search-input-mp3:focus {
+    border-color: var(--mp3-highlight-color);
+    box-shadow: inset 0 0 5px var(--mp3-highlight-color);
+}
+
+
+/* --- Controles del MP3 (Rueda Circular y Botones Inferiores) --- */
+.mp3-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Mayor espacio entre rueda y botones de función */
+    padding-top: 25px; /* Más espacio superior antes de los controles */
+    border-top: 1px solid rgba(255,255,255,0.05); /* Separador sutil */
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.circular-control {
+    position: relative;
+    width: var(--circular-control-size);
+    height: var(--circular-control-size);
+    border-radius: 50%;
+    background: radial-gradient(circle at 60% 30%, var(--mp3-button-light) 0%, var(--mp3-button-medium) 40%, var(--mp3-button-dark) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        inset 0 0 15px rgba(0,0,0,0.5), /* Sombra interna para profundidad */
+        0 5px 15px rgba(0,0,0,0.4); /* Sombra externa de la rueda */
+    border: 2px solid rgba(255,255,255,0.1); /* Borde sutil */
+}
+
+/* Efecto de borde brillante para la rueda (simula metal pulido) */
+.circular-control::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.1);
+    z-index: -1;
+}
+.circular-control::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+
+/* Estilos para los botones de navegación (Prev/Next/Menu) dentro de la rueda */
+.circular-control .navigation-button {
+    position: absolute;
+    width: var(--button-in-circle-size);
+    height: var(--button-in-circle-size);
+    border-radius: 50%;
+    background: linear-gradient(to bottom, var(--mp3-button-medium), var(--mp3-button-dark));
+    color: var(--mp3-screen-text);
+    border: 1px solid var(--mp3-button-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em; /* Iconos más grandes */
+    cursor: pointer;
+    transition: background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.4), 0 2px 5px rgba(0,0,0,0.3); /* Sombra interna y externa */
+    text-shadow: 0 0 5px rgba(0,255,0,0.5); /* Sombra de texto verde */
+}
+
+.circular-control .navigation-button:hover {
+    background: linear-gradient(to bottom, var(--mp3-button-light), var(--mp3-button-medium));
+    color: var(--mp3-highlight-color);
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.6), 0 3px 8px rgba(0,0,0,0.4);
+    text-shadow: 0 0 7px var(--mp3-highlight-color);
+}
+
+.circular-control .navigation-button:active {
+    background: var(--mp3-button-active);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.7);
+    transform: translateY(1px); /* Efecto de pulsado */
+}
+
+/* Posicionamiento específico para cada botón de navegación */
+.circular-control .prev {
+    top: 50%;
+    left: 10px; /* Distancia del borde izquierdo de la rueda */
+    transform: translateY(-50%);
+}
+
+.circular-control .next {
+    top: 50%;
+    right: 10px; /* Distancia del borde derecho de la rueda */
+    transform: translateY(-50%);
+}
+
+.circular-control .menu {
+    top: 10px; /* Distancia del borde superior de la rueda */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8em; /* La 'M' más grande */
+}
+
+/* Estilos para el botón de Play/Pause (en el centro de la rueda) */
+.circular-control .play-pause-button {
+    background: linear-gradient(to bottom, var(--mp3-button-accent), var(--mp3-button-accent-hover));
+    color: white;
+    width: var(--play-pause-center-size); /* Tamaño del botón central */
+    height: var(--play-pause-center-size);
+    border-radius: 50%;
+    font-size: 2em; /* Icono grande */
+    position: absolute; /* Centrado sobre la rueda */
+    cursor: pointer;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.6), 0 5px 15px rgba(0,0,0,0.4);
+    border: 2px solid rgba(255,255,255,0.2);
+    text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+.circular-control .play-pause-button:hover {
+    background: linear-gradient(to bottom, var(--mp3-button-accent-hover), var(--mp3-button-accent));
+    box-shadow: inset 0 2px 15px rgba(0,0,0,0.7), 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.circular-control .play-pause-button:active {
+    background: var(--mp3-button-active);
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.9);
+    transform: translateY(2px);
+}
+
+
+/* Estilos para los botones de función (Search y Add), colocados debajo de la rueda */
+.function-buttons {
+    display: flex;
+    gap: 15px; /* Espacio entre los botones laterales */
+    width: 100%;
+    justify-content: space-around; /* Distribuir los botones equitativamente */
+}
+
+.function-buttons .function-button {
+    flex-grow: 1; /* Para que ocupen el espacio disponible */
+    max-width: 120px; /* Ancho máximo para que no sean demasiado grandes */
+    font-size: 1em;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, var(--mp3-button-medium), var(--mp3-button-dark));
+    color: var(--mp3-screen-text);
+    border: 1px solid var(--mp3-button-dark);
+    cursor: pointer;
+    transition: background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.4), 0 2px 5px rgba(0,0,0,0.3);
+    text-shadow: 0 0 5px rgba(0,255,0,0.5);
+}
+
+.function-buttons .function-button:hover {
+    background: linear-gradient(to bottom, var(--mp3-button-light), var(--mp3-button-medium));
+    color: var(--mp3-highlight-color);
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.6), 0 3px 8px rgba(0,0,0,0.4);
+    text-shadow: 0 0 7px var(--mp3-highlight-color);
+}
+
+.function-buttons .function-button:active {
+    background: var(--mp3-button-active);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.7);
+    transform: translateY(1px);
+}
+
+/* Estilos para botones de icono sin fondo, como el "atrás" en las pantallas */
+.icon-button {
+    background: none;
+    border: none;
+    color: var(--mp3-screen-text);
+    font-size: 1.5em; /* Iconos más grandes en la pantalla */
+    cursor: pointer;
+    transition: color 0.1s ease, text-shadow 0.1s ease;
+    text-shadow: 0 0 5px var(--mp3-screen-text);
+}
+.icon-button:hover {
+    color: var(--mp3-highlight-color);
+    text-shadow: 0 0 7px var(--mp3-highlight-color);
+}
+
+
+/* --- Modal de Añadir Canción (adaptado al estilo MP3) --- */
+.mp3-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95); /* Más opaco */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.mp3-modal-content {
+    background-color: var(--mp3-body-dark); /* Más oscuro */
+    padding: 30px; /* Más padding */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    width: 90%; /* Más ancho dentro de la pantalla */
+    max-height: 95%;
+    overflow-y: auto;
+    text-align: center;
+    color: var(--mp3-screen-text);
+    box-sizing: border-box;
+    border: 2px solid var(--mp3-highlight-color);
+}
+
+.mp3-modal-content h2 {
+    color: var(--mp3-highlight-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8em; /* Título más grande */
+    text-shadow: 0 0 5px var(--mp3-highlight-color);
+}
+
+/* ... dentro del .mp3-modal-content ... */
+
+.mp3-modal-content button[type="submit"] {
+    margin-top: 15px; /* Espacio superior */
+    background: linear-gradient(to bottom, var(--mp3-button-medium), var(--mp3-button-dark));
+    color: var(--mp3-screen-text);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    border: 1px solid var(--mp3-button-dark);
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.4), 0 2px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, transform 0.05s ease;
+    text-transform: uppercase; /* Para que se vea como los otros */
+}
+
+.mp3-modal-content button[type="submit"]:hover {
+    background: linear-gradient(to bottom, var(--mp3-button-light), var(--mp3-button-medium));
+    color: var(--mp3-highlight-color);
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.6), 0 3px 8px rgba(0,0,0,0.4);
+}
+
+.mp3-modal-content button[type="submit"]:active {
+    background: var(--mp3-button-active);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.7);
+    transform: translateY(1px);
+}
+
+.form-group-mp3 {
+    margin-bottom: 15px; /* Más espacio entre campos */
+    text-align: left;
+}
+
+.form-group-mp3 label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: var(--mp3-highlight-color);
+}
+
+.form-group-mp3 input {
+    width: calc(100% - 16px); /* Ajuste por el padding */
+    padding: 8px; /* Más padding */
+    background-color: rgba(0,0,0,0.6);
+    border: 1px solid var(--mp3-screen-text);
+    border-radius: 5px;
+    color: var(--mp3-screen-text);
+    font-family: inherit;
+    font-size: 1.1em;
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0,255,0,0.2);
+}
+
+.form-group-mp3 input:focus {
+    border-color: var(--mp3-highlight-color);
+    box-shadow: inset 0 0 8px var(--mp3-highlight-color);
+}
+
+.close-modal-mp3 {
+    margin-top: 20px;
+    background: linear-gradient(to bottom, var(--mp3-button-medium), var(--mp3-button-dark));
+    color: var(--mp3-screen-text);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    border: 1px solid var(--mp3-button-dark);
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.4), 0 2px 5px rgba(0,0,0,0.3);
+}
+.close-modal-mp3:hover {
+    background: linear-gradient(to bottom, var(--mp3-button-light), var(--mp3-button-medium));
+    color: var(--mp3-highlight-color);
+}
+.close-modal-mp3:active {
+    background: var(--mp3-button-active);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.7);
+    transform: translateY(1px);
+}
+
+
+/* --- Estilos para la barra de scroll (Webkit browsers - Chrome, Safari, Edge) --- */
+::-webkit-scrollbar {
+    width: 6px; /* Más ancho */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--mp3-scrollbar-track);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--mp3-scrollbar-thumb);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+/* Opcional: Estilos para Firefox */
+/*
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--mp3-scrollbar-thumb) var(--mp3-scrollbar-track);
+}
+*/
