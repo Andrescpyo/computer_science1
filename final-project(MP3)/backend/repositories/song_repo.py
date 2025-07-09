@@ -35,7 +35,7 @@ class SongDAO(BaseModel):
         year (int): Year the song was released.
         duration (int): Duration of the song in seconds.
     """
-    id: int
+    id: Optional[int] = None
     title: str
     artist: str
     album: str

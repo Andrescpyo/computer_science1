@@ -77,7 +77,7 @@ def add_song(song: SongDAO):
         HTTPException: If the song could not be added (e.g., duplicate ID).
     """
     try:
-        services.insert_song(song.model_dump())
+        services.insert_song(song.model_dump(exclude_none=True))
         return {"message": "Song added successfully."}
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e)) from e

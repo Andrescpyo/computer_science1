@@ -193,7 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault(); // Prevenir el envío del formulario por defecto
 
         const newSong = {
-            id: parseInt(document.getElementById('newIdMP3').value), // Aunque el backend lo genera, lo enviamos para el ejemplo
             title: document.getElementById('newTitleMP3').value,
             artist: document.getElementById('newArtistMP3').value,
             album: document.getElementById('newAlbumMP3').value,

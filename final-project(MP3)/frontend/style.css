@@ -157,11 +157,16 @@ body {
     /* Añadido para asegurar que la pantalla se ajuste y el contenido se distribuya */
     justify-content: space-between; /* Distribuye el espacio entre los elementos flex */
     align-items: center; /* Centra los elementos horizontalmente */
+
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .screen.active-screen {
     display: flex;
     z-index: 10;
+    opacity: 1;
 }
 
 /* --- Estilos de la Pantalla "Now Playing" --- */

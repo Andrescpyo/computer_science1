@@ -8534,5 +8534,13 @@
     "album": ".mp3",
     "year": 2023,
     "duration": 239
+  },
+  {
+    "title": "Narcisista por Excelencia",
+    "artist": "PXNDX",
+    "album": "Amantes Sunt Amentes",
+    "year": 2006,
+    "duration": 227,
+    "id": 1054
   }
 ]
