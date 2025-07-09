@@ -23,8 +23,8 @@ You should have received a copy of the GNU General Public License
 along with MP3AVLtree. If not, see <https://www.gnu.org/licenses/>.
 """
 
-from typing import List, Optional
-from fastapi import APIRouter, HTTPException, Body
+from typing import List, Dict
+from fastapi import APIRouter, HTTPException
 from backend.services.song_service import SongService  # pylint: disable=import-error
 from backend.repositories.song_repo import SongDAO  # pylint: disable=import-error
 
@@ -83,24 +83,25 @@ def add_song(song: SongDAO):
         raise HTTPException(status_code=400, detail=str(e)) from e
 
 
-@router.put("/songs/{song_id}", response_model=dict, summary="Update an existing song by ID")
-def update_song(song_id: int, new_data: dict = Body(...)):
-    """Updates an existing song by ID.
+@router.put("/songs/{song_id}", response_model=SongDAO)
+def update_song(song_id: int, song: Dict):
+    """
+    Updates a song by its ID.
 
     Args:
-        song_id (int): ID of the song to update.
-        new_data (SongDao): Song fields to update. 
+        song_id (int): The ID of the song to update.
+        song (dict): Fields to update.
 
     Returns:
-        dict: Success message.
-
+        SongDAO: The updated song.
+    
     Raises:
-        HTTPException: If the song does not exist or update fails.
+        HTTPException: If the song is not found.
     """
     try:
-        services.update_song(song_id, new_data.model_dump(exclude_unset=True))
-        return {"message": f"Song with ID {song_id} updated successfully."}
-    except Exception as e:
+        updated_song = services.update_song(song_id, song)
+        return SongDAO(**updated_song)
+    except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e)) from e
 
 

@@ -136,9 +136,9 @@ class SongRepository(BaseRepository):
             if song["id"] == song_id:
                 data[i].update(new_data)
                 self.save_data(data)
-                return
+                return SongDAO(**data[i])
         raise ValueError(f"Song with ID {song_id} not found.")
-
+    
     def delete_song(self, song_id: int) -> None:
         """Deletes a song from the repository.
 
