@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInputMP3 = document.getElementById('searchInputMP3');
     const searchResultsList = document.getElementById('searchResultsList');
 
+    // NUEVAS REFERENCIAS: Botones de navegación de la rueda
+    const prevButtonMP3 = document.getElementById('prevButtonMP3');
+    const nextButtonMP3 = document.getElementById('nextButtonMP3');
+    // Si tienes un botón de Play/Pause, también lo necesitarás aquí
+    // const playPauseButtonMP3 = document.getElementById('playPauseButtonMP3'); // Si lo vas a implementar más tarde
+
     // Estado global de la aplicación (simula un reproductor)
     let currentScreen = 'nowPlaying'; // 'nowPlaying', 'library', 'search'
     let allSongs = [];
@@ -61,12 +67,17 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(`${API_BASE_URL}/songs/all`);
             if (!response.ok) {
-                // Manejar errores HTTP (ej. 404, 500)
                 const errorData = await response.json();
                 throw new Error(errorData.detail || 'Error al cargar las canciones');
             }
             const data = await response.json();
             allSongs = data; // Almacenar todas las canciones
+
+            // Si es la primera carga y no hay canción reproduciéndose, reproduce la primera
+            if (currentPlayingSongIndex === -1 && allSongs.length > 0) {
+                currentPlayingSongIndex = 0;
+                displaySong(allSongs[currentPlayingSongIndex]);
+            }
             return data;
         } catch (error) {
             console.error('Error fetching all songs:', error);
@@ -80,9 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch(`${API_BASE_URL}/songs/search/${encodeURIComponent(query)}`);
             if (!response.ok) {
                 const errorData = await response.json();
-                // Si no se encuentran canciones, FastAPI devuelve 404 con un mensaje específico
                 if (response.status === 404 && errorData.detail === "No matching songs found.") {
-                    return []; // Retorna un array vacío si no hay coincidencias
+                    return [];
                 }
                 throw new Error(errorData.detail || 'Error al buscar canciones');
             }
@@ -110,7 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             const result = await response.json();
             alert(result.message);
-            // Recargar todas las canciones y la biblioteca después de añadir
             await fetchAllSongs();
             loadSongsIntoLibrary();
             return true;
@@ -121,11 +130,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- NUEVA FUNCIÓN: Eliminar canción del backend ---
     async function deleteSongFromBackend(songId) {
         try {
             const response = await fetch(`${API_BASE_URL}/songs/delete/${songId}`, {
-                method: 'DELETE' // Método HTTP DELETE
+                method: 'DELETE'
             });
 
             if (!response.ok) {
@@ -134,11 +142,41 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const result = await response.json();
-            alert(result.message); // Muestra el mensaje de éxito del backend
+            alert(result.message);
 
             // Recargar todas las canciones y la biblioteca después de eliminar
-            await fetchAllSongs();
+            await fetchAllSongs(); // Esto actualizará `allSongs`
             loadSongsIntoLibrary();
+
+            // Lógica adicional para manejar la eliminación de la canción actualmente en reproducción
+            if (currentPlayingSongIndex !== -1 && allSongs.length > 0) {
+                // Si la canción eliminada era la que se estaba reproduciendo,
+                // o si el índice actual ahora es inválido (ej. era la última y se eliminó)
+                const deletedSongIndex = allSongs.findIndex(song => song.id === songId);
+                if (deletedSongIndex === currentPlayingSongIndex) {
+                    // Si se eliminó la canción actual, intentar reproducir la siguiente o la primera
+                    if (allSongs.length > 0) {
+                        currentPlayingSongIndex = Math.min(deletedSongIndex, allSongs.length - 1);
+                        displaySong(allSongs[currentPlayingSongIndex]);
+                    } else {
+                        // No hay más canciones
+                        displaySong({ title: 'No hay canciones', artist: '', album: '', year: '', duration: 0 });
+                        currentPlayingSongIndex = -1;
+                    }
+                } else if (deletedSongIndex < currentPlayingSongIndex) {
+                    // Si se eliminó una canción anterior a la actual, el índice de la actual se desplaza
+                    currentPlayingSongIndex--;
+                }
+                // Si la canción actualmente en reproducción es válida después de la eliminación, simplemente se mantiene
+                if (currentPlayingSongIndex !== -1 && allSongs.length > 0) {
+                    displaySong(allSongs[currentPlayingSongIndex]);
+                }
+            } else if (allSongs.length === 0) {
+                // Si no quedan canciones
+                displaySong({ title: 'No hay canciones', artist: '', album: '', year: '', duration: 0 });
+                currentPlayingSongIndex = -1;
+            }
+
             return true;
         } catch (error) {
             console.error('Error deleting song:', error);
@@ -152,19 +190,25 @@ document.addEventListener('DOMContentLoaded', () => {
     function displaySong(song) {
         const playerSongTitle = document.getElementById('playerSongTitle');
         const playerArtistAlbum = document.getElementById('playerArtistAlbum');
-        // Actualizar otros elementos de la UI como la duración y la barra de progreso si es necesario
-        playerSongTitle.textContent = song.title;
-        playerArtistAlbum.textContent = `${song.artist} - ${song.album} (${song.year})`;
-        // Simular duración (aquí solo mostramos el total)
         const durationElement = document.getElementById('playerDuration');
-        const minutes = Math.floor(song.duration / 60);
-        const seconds = song.duration % 60;
-        durationElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+        if (song) {
+            playerSongTitle.textContent = song.title;
+            playerArtistAlbum.textContent = `${song.artist} - ${song.album} (${song.year})`;
+            const minutes = Math.floor(song.duration / 60);
+            const seconds = song.duration % 60;
+            durationElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        } else {
+            playerSongTitle.textContent = 'No hay canción';
+            playerArtistAlbum.textContent = 'N/A';
+            durationElement.textContent = '00:00';
+        }
+        // Nota: la barra de progreso y el tiempo restante requerirían una API de audio real
+        // o una simulación más compleja con setInterval.
     }
 
-    // --- FUNCIÓN MODIFICADA: renderSongList para incluir el botón de eliminar ---
     function renderSongList(songs, targetListElement) {
-        targetListElement.innerHTML = ''; // Limpiar lista
+        targetListElement.innerHTML = '';
         if (songs.length === 0) {
             const noResultsItem = document.createElement('li');
             noResultsItem.textContent = "No hay canciones para mostrar.";
@@ -172,49 +216,44 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        songs.forEach(song => {
+        songs.forEach((song, index) => { // Asegúrate de obtener el índice aquí
             const listItem = document.createElement('li');
-            listItem.classList.add('song-item'); // Añade una clase para posibles estilos
+            listItem.classList.add('song-item');
 
-            // Contenedor para el título/artista y el botón
             const songInfo = document.createElement('span');
             songInfo.textContent = `${song.title} - ${song.artist}`;
-            songInfo.dataset.songId = song.id; // Guarda el ID para reproducir
-            songInfo.style.cursor = 'pointer'; // Para indicar que es clickeable
-            songInfo.style.flexGrow = '1'; // Para que ocupe el espacio disponible
+            songInfo.dataset.songId = song.id;
+            songInfo.style.cursor = 'pointer';
+            songInfo.style.flexGrow = '1';
             songInfo.addEventListener('click', () => {
-                // Lógica para reproducir la canción seleccionada
-                console.log('Reproduciendo:', song.title);
+                // Cuando una canción de la lista es seleccionada, actualiza el índice de la canción actual
+                currentPlayingSongIndex = allSongs.findIndex(s => s.id === song.id); // Encuentra el índice real de la canción seleccionada en `allSongs`
                 displaySong(song);
                 showScreen('nowPlaying');
             });
 
             const deleteButton = document.createElement('button');
             deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
-            deleteButton.classList.add('delete-song-button'); // Añade una clase para estilos
-            deleteButton.style.marginLeft = '10px'; // Espacio entre el texto y el botón
-            deleteButton.style.backgroundColor = '#FF4444'; // Rojo para eliminar
+            deleteButton.classList.add('delete-song-button');
+            deleteButton.style.marginLeft = '10px';
+            deleteButton.style.backgroundColor = '#FF4444';
             deleteButton.style.color = 'white';
             deleteButton.style.border = 'none';
-            deleteButton.style.padding = '5px 8px'; // Adjust padding
+            deleteButton.style.padding = '5px 8px';
             deleteButton.style.cursor = 'pointer';
             deleteButton.style.borderRadius = '5px';
-            deleteButton.style.fontSize = '1em'; // Adjust icon size using font-size 
-                                
+            deleteButton.style.fontSize = '1em';
+
             deleteButton.addEventListener('click', async (event) => {
-                event.stopPropagation(); // Evita que el clic en el botón active también el evento de 'songInfo' (reproducir)
+                event.stopPropagation();
                 if (confirm(`¿Estás seguro de que quieres eliminar "${song.title}"?`)) {
-                    const success = await deleteSongFromBackend(song.id);
-                    if (success) {
-                        // La función deleteSongFromBackend ya recarga la lista, no se necesita hacer nada más aquí
-                        console.log(`Canción ${song.title} eliminada con éxito.`);
-                    }
+                    await deleteSongFromBackend(song.id); // Esta función ya maneja la recarga y actualización del UI
                 }
             });
 
-            listItem.style.display = 'flex'; // Usar flexbox para alinear el texto y el botón
-            listItem.style.alignItems = 'center'; // Alinear verticalmente
-            listItem.style.justifyContent = 'space-between'; // Espacio entre elementos
+            listItem.style.display = 'flex';
+            listItem.style.alignItems = 'center';
+            listItem.style.justifyContent = 'space-between';
 
             listItem.appendChild(songInfo);
             listItem.appendChild(deleteButton);
@@ -226,6 +265,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const songs = await fetchAllSongs();
         renderSongList(songs, mp3LibraryList);
     }
+
+    // --- NUEVAS FUNCIONES PARA CAMBIAR CANCIONES ---
+    function playNextSong() {
+        if (allSongs.length === 0) {
+            console.log('No hay canciones para reproducir.');
+            return;
+        }
+        currentPlayingSongIndex++;
+        if (currentPlayingSongIndex >= allSongs.length) {
+            currentPlayingSongIndex = 0; // Vuelve al principio si llega al final
+        }
+        displaySong(allSongs[currentPlayingSongIndex]);
+        showScreen('nowPlaying'); // Asegúrate de que la pantalla de reproducción esté activa
+    }
+
+    function playPreviousSong() {
+        if (allSongs.length === 0) {
+            console.log('No hay canciones para reproducir.');
+            return;
+        }
+        currentPlayingSongIndex--;
+        if (currentPlayingSongIndex < 0) {
+            currentPlayingSongIndex = allSongs.length - 1; // Vuelve al final si llega al principio
+        }
+        displaySong(allSongs[currentPlayingSongIndex]);
+        showScreen('nowPlaying'); // Asegúrate de que la pantalla de reproducción esté activa
+    }
+
 
     // --- Event Listeners ---
 
@@ -246,13 +313,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     backToLibraryFromSearch.addEventListener('click', () => {
-        showScreen('library'); // Volver a la biblioteca después de la búsqueda
-        searchInputMP3.value = ''; // Limpiar el campo de búsqueda
-        searchResultsList.innerHTML = ''; // Limpiar resultados
+        showScreen('library');
+        searchInputMP3.value = '';
+        searchResultsList.innerHTML = '';
     });
 
     addSongFormMP3.addEventListener('submit', async (event) => {
-        event.preventDefault(); // Prevenir el envío del formulario por defecto
+        event.preventDefault();
 
         const newSong = {
             title: document.getElementById('newTitleMP3').value,
@@ -264,11 +331,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const success = await addSongToBackend(newSong);
         if (success) {
-            addSongFormMP3.reset(); // Limpiar formulario
-            addSongModalMP3.style.display = 'none'; // Cerrar modal
-            showScreen('library'); // Mostrar la biblioteca actualizada
+            addSongFormMP3.reset();
+            addSongModalMP3.style.display = 'none';
+            showScreen('library');
         }
     });
+
+    // NUEVOS EVENT LISTENERS PARA LOS BOTONES DE NAVEGACIÓN
+    if (prevButtonMP3) {
+        prevButtonMP3.addEventListener('click', playPreviousSong);
+    }
+    if (nextButtonMP3) {
+        nextButtonMP3.addEventListener('click', playNextSong);
+    }
+
 
     // Inicializar la aplicación al cargar
     showScreen('nowPlaying'); // Muestra la pantalla de "now playing" al inicio

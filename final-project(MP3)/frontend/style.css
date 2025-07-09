@@ -37,7 +37,7 @@
     --mp3-body-width: 380px;
     --mp3-body-height: 600px;
     --circular-control-size: 180px;
-    --button-in-circle-size: 60px;
+    --button-in-circle-size: 60px; /* Esto ahora es el tamaño del área visual del icono */
     --play-pause-center-size: 80px;
 }
 
@@ -365,6 +365,7 @@ body {
     width: var(--circular-control-size);
     height: var(--circular-control-size);
     border-radius: 50%;
+    /* Mantenemos el gradiente para el fondo general de la rueda */
     background: radial-gradient(circle at 60% 30%, var(--mp3-button-light) 0%, var(--mp3-button-medium) 40%, var(--mp3-button-dark) 100%);
     display: flex;
     justify-content: center;
@@ -373,6 +374,7 @@ body {
         inset 0 0 15px rgba(0,0,0,0.5), /* Sombra interna para profundidad */
         0 5px 15px rgba(0,0,0,0.4); /* Sombra externa de la rueda */
     border: 2px solid rgba(255,255,255,0.1); /* Borde sutil */
+    /*overflow: hidden; /* Muy importante para que los segmentos no sobresalgan */ 
 }
 
 /* Efecto de borde brillante para la rueda (simula metal pulido) */
@@ -401,63 +403,79 @@ body {
 
 
 /* Estilos para los botones de navegación (Prev/Next/Menu) dentro de la rueda */
+/* ESTOS SON LOS CAMBIOS PARA QUE SE "FUNDAN" CON LA RUEDA */
 .circular-control .navigation-button {
     position: absolute;
-    width: var(--button-in-circle-size);
-    height: var(--button-in-circle-size);
-    border-radius: 50%; /* Mantén esto para la forma si quieres que sigan siendo 'botones' circulares */
-    /* *** CAMBIOS AQUÍ *** */
-    /* Usamos el mismo gradiente que el fondo de la rueda circular para que se "funda" */
-    background: radial-gradient(circle at 60% 30%, var(--mp3-button-light) 0%, var(--mp3-button-medium) 40%, var(--mp3-button-dark) 100%);
+    /* Eliminamos el width/height fijo y border-radius aquí,
+       ya que su tamaño y forma se definirán más abajo para cada uno */
+    background: none; /* Quitamos el fondo propio para que el de la rueda se vea a través */
     color: var(--mp3-screen-text);
-    /* Borde más sutil o transparente para que no se separe tanto */
-    border: 1px solid rgba(0,0,0,0.2); /* Un borde muy oscuro y casi transparente */
-    /* *** FIN CAMBIOS *** */
+    border: none; /* Sin bordes individuales de botón para que se fusionen */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em; /* Iconos más grandes */
+    font-size: 1.5em; /* Tamaño de los iconos */
     cursor: pointer;
-    transition: background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease;
-    box-shadow: inset 0 2px 5px rgba(0,0,0,0.4), 0 2px 5px rgba(0,0,0,0.3); /* Sombra interna y externa */
-    text-shadow: 0 0 5px rgba(0,255,0,0.5); /* Sombra de texto verde */
+    transition: background-color 0.1s ease, color 0.1s ease, text-shadow 0.1s ease, box-shadow 0.1s ease;
+    padding: 0; /* Aseguramos que no haya padding interno que afecte el tamaño */
+    z-index: 15; /* Asegura que sean clicables por encima del fondo de la rueda */
+    width: var(--button-in-circle-size); /* Reutiliza la variable, por ejemplo 60px */
+    height: var(--button-in-circle-size);
+    border-radius: 50%;
 }
 
 .circular-control .navigation-button:hover {
-    /* *** CAMBIOS AQUÍ *** */
-    /* Aclara el fondo al pasar el ratón, pero aún con el gradiente */
-    background: radial-gradient(circle at 60% 30%, var(--mp3-body-highlight) 0%, var(--mp3-button-light) 40%, var(--mp3-button-medium) 100%);
+    /* Un ligero fondo semitransparente para indicar que está activo, usando el color de acento */
+    background-color: rgba(0, 224, 224, 0.15);
     color: var(--mp3-highlight-color);
-    box-shadow: inset 0 2px 8px rgba(0,0,0,0.6), 0 3px 8px rgba(0,0,0,0.4);
     text-shadow: 0 0 7px var(--mp3-highlight-color);
+    /* Opcional: una sombra interna sutil al pasar el ratón */
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
 }
 
 .circular-control .navigation-button:active {
-    /* *** CAMBIOS AQUÍ *** */
-    /* Oscurece significativamente al presionar para dar sensación de "click" */
-    background: var(--mp3-button-dark); /* Color más oscuro del cuerpo */
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.7), inset 0 0 5px rgba(0,0,0,0.9); /* Más sombra interna */
-    transform: translateY(1px); /* Efecto de pulsado */
+    /* Un fondo más oscuro/opaco al presionar */
+    background-color: rgba(0, 224, 224, 0.4);
+    color: var(--mp3-highlight-color);
+    /* Una sombra interna para el efecto de presión */
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.7);
 }
 
-/* Posicionamiento específico para cada botón de navegación */
+/* Posicionamiento y TAMAÑO ESPECÍFICO para cada botón de navegación
+   Estos simulan las "áreas" clicables y centran los iconos.
+   Los valores exactos pueden requerir ajuste fino según tu gusto visual. */
+.circular-control .prev,
+.circular-control .next,
+.circular-control .menu {
+    /* Establecemos un tamaño base para el área de cada botón de navegación */
+    /* Por ejemplo, un 45% del radio de la rueda (para que no se solapen con el botón central) */
+    width: calc(var(--circular-control-size) / 2.2); /* Ajustado para que sean más pequeños que la mitad */
+    height: calc(var(--circular-control-size) / 2.2);
+    /* Mantenemos border-radius: 50% para que el área de hover/active sea un círculo,
+       aunque visualmente se verá como parte del círculo grande. */
+    border-radius: 50%;
+}
+
 .circular-control .prev {
+    /* Mueve la izquierda para que el botón esté a 90 grados a la izquierda del centro */
+    left: calc(42% - (var(--circular-control-size) / 2) + (var(--button-in-circle-size) / 2) + 15px); /* Ajuste basado en el radio de la rueda - medio botón - espacio */
     top: 50%;
-    left: 10px; /* Distancia del borde izquierdo de la rueda */
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%); /* Centra el botón respecto a su propio tamaño */
 }
 
 .circular-control .next {
+    /* Mueve la derecha para que el botón esté a 90 grados a la derecha del centro */
+    right: calc(42% - (var(--circular-control-size) / 2) + (var(--button-in-circle-size) / 2) + 15px);
     top: 50%;
-    right: 10px; /* Distancia del borde derecho de la rueda */
-    transform: translateY(-50%);
+    transform: translate(50%, -50%); /* Centra el botón respecto a su propio tamaño */
 }
 
 .circular-control .menu {
-    top: 10px; /* Distancia del borde superior de la rueda */
+    /* Mueve hacia arriba */
+    top: calc(42% - (var(--circular-control-size) / 2) + (var(--button-in-circle-size) / 2) + 15px);
     left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.8em; /* La 'M' más grande */
+    transform: translate(-50%, -50%); /* Centra el botón respecto a su propio tamaño */
+    font-size: 1.8em; /* M más grande */
 }
 
 /* Estilos para el botón de Play/Pause (en el centro de la rueda) */
@@ -468,11 +486,12 @@ body {
     height: var(--play-pause-center-size);
     border-radius: 50%;
     font-size: 2em; /* Icono grande */
-    position: absolute; /* Centrado sobre la rueda */
+    position: relative; /* Asegura que esté en el flujo de los elementos, pero aún en el centro */
     cursor: pointer;
     box-shadow: inset 0 2px 10px rgba(0,0,0,0.6), 0 5px 15px rgba(0,0,0,0.4);
     border: 2px solid rgba(255,255,255,0.2);
     text-shadow: 0 0 10px rgba(255,255,255,0.8);
+    z-index: 20; /* Asegura que esté por encima de los otros botones de navegación */
 }
 
 .circular-control .play-pause-button:hover {
@@ -483,7 +502,6 @@ body {
 .circular-control .play-pause-button:active {
     background: var(--mp3-button-active);
     box-shadow: inset 0 0 15px rgba(0,0,0,0.9);
-    transform: translateY(2px);
 }
 
 
@@ -525,7 +543,6 @@ body {
 
 /* Estilos para botones de icono sin fondo, como el "atrás" en las pantallas */
 .icon-button {
-    /* background: none;  <-- ELIMINAR O COMENTAR ESTA LÍNEA */
     background-color: var(--mp3-highlight-color); /* Fondo verde brillante para los botones de icono */
     color: var(--mp3-screen-bg); /* Texto/icono oscuro para contrastar */
     border: none;
